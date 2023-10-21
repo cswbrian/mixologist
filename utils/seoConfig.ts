@@ -34,17 +34,17 @@ export const manifest: Partial<ManifestOptions> = {
 	display: "minimal-ui",
 	icons: [
 		{
-			src: "/favicons/favicon-192x192.png",
+			src: "/mixologist/favicons/favicon-192x192.png",
 			sizes: "192x192",
 			type: "image/png"
 		},
 		{
-			src: "/favicons/favicon-512x512.png",
+			src: "/mixologist/favicons/favicon-512x512.png",
 			sizes: "512x512",
 			type: "image/png"
 		},
 		{
-			src: "/favicons/favicon-512x512.png",
+			src: "/mixologist/favicons/favicon-512x512.png",
 			sizes: "512x512",
 			type: "image/png",
 			purpose: "any maskable"
