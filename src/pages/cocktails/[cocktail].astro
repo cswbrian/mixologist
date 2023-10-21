@@ -1,0 +1,25 @@
+---
+import { cocktails } from '../../cocktailStore';
+import Layout from '../../layouts/Layout.astro';
+
+
+export function getStaticPaths() {
+  return cocktails.map(cocktail => {
+    return {
+        params: {
+            cocktail: cocktail.name.toLocaleLowerCase().replace(/ /g, '-')
+        }
+    }
+  })
+//   return [
+//     {params: {dog: 'clifford'}},
+//     {params: {dog: 'rover'}},
+//     {params: {dog: 'spot'}},
+//   ];
+}
+
+const { cocktail } = Astro.params;
+---
+<Layout title="Welcome to Astro.">
+    <div>This is {cocktail}!</div>
+</Layout>

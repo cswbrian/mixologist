@@ -1,0 +1,13 @@
+---
+import IngredientSelector from '../components/IngredientSelector';
+import Layout from '../layouts/Layout.astro';
+
+
+const ingredients = ["Campari", "Sweet Vermouth", "Soda water", "Light Rum", "Lime juice", "Simple syrup", "Maraschino", "Grapefruit juice", "Bourbon Whiskey", "Lemon juice", "Egg white", "Rye Whiskey", "Red wine syrup", "Grand Marnier", "Grenadine", "Gin", "Dry Vermouth", "Angostura bitters", "Scotch Whisky", "Cherry Heering", "Orange juice", "Canadian Whisky", "Fernet-Branca", "Cynar", "Champagne", "Guinness Stout", "Prosecco", "Peach pure", "Crème de cassis", "Cognac", "Orange bitters", "Apricot Brandy", "Calvados", "Crème de Violette", "St. Germain", "Crème Yvette", "Green Chartreuse", "Triple Sec", "Vodka", "Cranberry juice", "Old Tom Gin", "Raspberry syrup", "Pineapple juice", "Absinth", "Absinthe", "Brandy", "Port wine", "Egg yolk", "Buttermilk", "Egg", "Maple syrup", "Drambuie", "Peychaud's bitters", "Amaretto", "Lillet Blanc", "Galliano", "Orgeat", "Honey syrup", "Benedictine", "Milk", "Angustura", "Kümmel", "Amaro Montenegro", "Aperol", "Light crème de cacao", "Irish Whiskey", "Coffee", "Fresh cream", "Tequila", "White grapes", "Kohlrabi leaves"
+]
+---
+
+<Layout title="Welcome to Astro.">
+	<IngredientSelector client:load ingredients={ingredients} />
+</Layout>
+
