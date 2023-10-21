@@ -45,7 +45,7 @@ export default function Recipes() {
                 {
                     filteredResult.map(({ name, taste, ingredients }) => {
                         return <div key={name}>
-                            <b><a href={`/cocktails/${name.toLocaleLowerCase().replace(/ /g, '-')}`}>{name}</a></b> - {taste}
+                            <b><a href={`/mixologist/cocktails/${name.toLocaleLowerCase().replace(/ /g, '-')}`}>{name}</a></b> - {taste}
                             <ul>{ingredients.map(({ name, amount, unit }) => {
                                 if ($ingredientsInventory.includes(name)) {
                                     return <li>{name} - {amount} {unit}</li>
