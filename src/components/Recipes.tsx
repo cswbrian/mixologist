@@ -41,10 +41,10 @@ export default function Recipes() {
             }</div>
             <div>Count: {filteredResult.length}</div>
 
-            <ul>
+            <ul className="flex flex-col gap-6">
                 {
                     filteredResult.map(({ name, taste, ingredients }) => {
-                        return <div key={name}>
+                        return <div key={name} className="bg-white p-4 border border-b-2 border-r-2 border-black rounded-lg shadow-xs hover:shadow-sm">
                             <b><a href={`/mixologist/cocktails/${name.toLocaleLowerCase().replace(/ /g, '-')}`}>{name}</a></b> - {taste}
                             <ul>{ingredients.map(({ name, amount, unit }) => {
                                 if ($ingredientsInventory.includes(name)) {
