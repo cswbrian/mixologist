@@ -11,15 +11,10 @@ export function getStaticPaths() {
         }
     }
   })
-//   return [
-//     {params: {dog: 'clifford'}},
-//     {params: {dog: 'rover'}},
-//     {params: {dog: 'spot'}},
-//   ];
 }
 
 const { cocktail } = Astro.params;
 ---
-<Layout title="Welcome to Astro.">
+<Layout title={cocktail || 'Cocktails'}>
     <div>This is {cocktail}!</div>
 </Layout>
