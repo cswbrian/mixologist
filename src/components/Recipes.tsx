@@ -61,7 +61,7 @@ export default function Recipes() {
                 {
                     filteredResult.map(({ name, taste, ingredients }) => {
                         return <a href={`/mixologist/cocktails/${name.toLocaleLowerCase().replace(/ /g, "-")}`}>
-                            <div key={name} className={`bg-white p-4 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm ${tasteColorMapping[taste as TasteColorMapping]}`}>
+                            <div key={name} className={`p-4 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm ${tasteColorMapping[taste as TasteColorMapping]}`}>
                                 <div className="flex justify-between">
                                 <span className="font-bold">{name}</span>
                                 <span className="">{taste}</span>
