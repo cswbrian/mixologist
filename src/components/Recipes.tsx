@@ -34,7 +34,7 @@ export default function Recipes() {
     const regex = new RegExp(searchQuery, 'i');
     const filteredResult = sortedResult.filter(item => item.name.match(regex))
     return (
-        <>
+        <div className="flex flex-col gap-2">
             <input type="text" placeholder="Search cocktails..." onChange={e => setSearchQuery(e.target.value)} />
             <div>Inventory: {
                 $ingredientsInventory.join(', ')
@@ -56,6 +56,6 @@ export default function Recipes() {
                     })
                 }
             </ul>
-        </>
+        </div>
     )
 }

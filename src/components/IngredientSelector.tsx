@@ -45,19 +45,24 @@ const CheckboxList: React.FC<CheckboxListProps> = ({ ingredients }) => {
     });
   };
 
+
   return (
-    <div>
-      {ingredients.sort().map((ingredient) => (
-        <label key={ingredient}>
+    <div className='flex flex-wrap gap-2'>
+      {ingredients.sort().map((ingredient) => {
+        const isChecked = selectedIngredients.includes(ingredient)
+      return (
+        <label key={ingredient} className={`${isChecked ? `bg-yellow` : ``}`}>
           <input
+            className='hidden'
             type="checkbox"
             value={ingredient}
-            checked={selectedIngredients.includes(ingredient)}
+            checked={isChecked}
             onChange={handleCheckboxChange}
           />
-          {ingredient}
+          <span className={`p-2 text-xs	font-bold border border-b-2 border-r-2 border-black rounded-lg shadow-xs hover:shadow-sm flex justify-center items-center ${isChecked ? `bg-yellow-400` : `bg-white`}`}>{ingredient}</span>
         </label>
-      ))}
+      )
+      })}
     </div>
   );
 };
