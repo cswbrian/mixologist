@@ -107,10 +107,8 @@ const { title } = Astro.props;
 		<link rel="manifest" href="/mixologist/manifest.webmanifest" />
 	</head>
 	<body>
+		<slot />
 		<Header />
-		<div class="content">
-			<slot />
-		</div>
 
 		<script>
 			// This is a hack to get vite-plugin-pwa to generate a sw.js file.
@@ -119,19 +117,4 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-
-	.content {
-		margin-top: 50px;
-	}
 </style>

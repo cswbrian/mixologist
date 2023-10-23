@@ -35,11 +35,11 @@ export default function Recipes() {
     const filteredResult = sortedResult.filter(item => item.name.match(regex))
     return (
         <>
-            <input type="text" onChange={e => setSearchQuery(e.target.value)} />
+            <input type="text" placeholder="Search cocktails..." onChange={e => setSearchQuery(e.target.value)} />
             <div>Inventory: {
                 $ingredientsInventory.join(', ')
             }</div>
-            <div>Count: {sortedResult.length}</div>
+            <div>Count: {filteredResult.length}</div>
 
             <ul>
                 {
