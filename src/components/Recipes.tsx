@@ -6,7 +6,7 @@ import { cocktails } from "../cocktailStore";
 
 
 const tasteColorMapping = {
-    "Sour": "bg-red-400",
+    "Sour": "bg-yellow-400",
     "Fresh": "bg-green-400",
     "Sweet": "bg-pink-300",
     "Boozy": "bg-orange-400",
