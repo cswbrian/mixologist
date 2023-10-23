@@ -45,10 +45,7 @@ export default function Recipes() {
         return b.matchedCount / b.ingredients.length - a.matchedCount / a.ingredients.length
     })
 
-    console.log([...new Set(sortedResult.map(a => a.taste))])
-
-    const regex = new RegExp(searchQuery, "i");
-    const filteredResult = sortedResult.filter(item => item.name.match(regex))
+    const filteredResult = sortedResult.filter(item => item.name.toLocaleLowerCase().includes(searchQuery.toLocaleLowerCase()))
     return (
         <div className="flex flex-col gap-6">
             <input
