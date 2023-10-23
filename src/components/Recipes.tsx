@@ -1,7 +1,21 @@
 import { useState } from "react"
-import { useStore } from '@nanostores/react';
-import { ingredientsInventory } from '../inventoryStore';
-import { cocktails } from '../cocktailStore';
+import { useStore } from "@nanostores/react";
+import { ingredientsInventory } from "../inventoryStore";
+import { cocktails } from "../cocktailStore";
+
+
+
+const tasteColorMapping = {
+    "Sour": "bg-red-400",
+    "Fresh": "bg-green-400",
+    "Sweet": "bg-pink-300",
+    "Boozy": "bg-orange-400",
+    "Unknown": "bg-stone-300",
+    "Salty": "bg-cyan-400",
+    "Bitter sweet": "bg-fuchsia-400",
+}
+
+type TasteColorMapping = keyof typeof tasteColorMapping
 
 function countMatches(arr1: string[], arr2: string[]): number {
     let count = 0;
@@ -31,28 +45,36 @@ export default function Recipes() {
         return b.matchedCount / b.ingredients.length - a.matchedCount / a.ingredients.length
     })
 
-    const regex = new RegExp(searchQuery, 'i');
+    console.log([...new Set(sortedResult.map(a => a.taste))])
+
+    const regex = new RegExp(searchQuery, "i");
     const filteredResult = sortedResult.filter(item => item.name.match(regex))
     return (
-        <div className="flex flex-col gap-2">
-            <input type="text" placeholder="Search cocktails..." onChange={e => setSearchQuery(e.target.value)} />
-            <div>Inventory: {
-                $ingredientsInventory.join(', ')
-            }</div>
-            <div>Count: {filteredResult.length}</div>
+        <div className="flex flex-col gap-6">
+            <input
+                type="text" 
+                className="p-2 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm"
+                placeholder="Search cocktails..." onChange={e => setSearchQuery(e.target.value)}
+             />
 
             <ul className="flex flex-col gap-6">
                 {
                     filteredResult.map(({ name, taste, ingredients }) => {
-                        return <div key={name} className="bg-white p-4 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm">
-                            <b><a href={`/mixologist/cocktails/${name.toLocaleLowerCase().replace(/ /g, '-')}`}>{name}</a></b> - {taste}
-                            <ul>{ingredients.map(({ name, amount, unit }) => {
-                                if ($ingredientsInventory.includes(name)) {
-                                    return <li>{name} - {amount} {unit}</li>
-                                }
-                                return <li><s>{name} - {amount} {unit}</s></li>
-                            })}</ul>
-                        </div>
+                        return <a href={`/mixologist/cocktails/${name.toLocaleLowerCase().replace(/ /g, "-")}`}>
+                            <div key={name} className={`bg-white p-4 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm ${tasteColorMapping[taste as TasteColorMapping]}`}>
+                                <div className="flex justify-between">
+                                <span className="font-bold">{name}</span>
+                                <span className="">{taste}</span>
+                                </div>
+                                <ul>
+                                    {ingredients.map(({ name, amount, unit }) => {
+                                    if ($ingredientsInventory.includes(name)) {
+                                        return <li>{name} - {amount} {unit}</li>
+                                    }
+                                    return <li><s>{name} - {amount} {unit}</s></li>
+                                })}</ul>
+                            </div>
+                        </a>
                     })
                 }
             </ul>
