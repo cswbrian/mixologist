@@ -4,16 +4,16 @@ import { defineConfig } from 'astro/config';
 import react from "@astrojs/react";
 import { VitePWA } from "vite-plugin-pwa";
 import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
 
 // Helper imports
-import { manifest } from "./utils/seoConfig";
+import { manifest, seoConfig } from "./utils/seoConfig"
 
-import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://cswbrian.github.io',
-  base: '/mixologist',
+  site: seoConfig.siteURL,
+  base: seoConfig.base,
   integrations: [react(), sitemap(), tailwind()],
   vite: {
     plugins: [VitePWA({

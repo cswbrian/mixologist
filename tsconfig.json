@@ -2,6 +2,15 @@
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "jsxImportSource": "react",
+    "paths": {
+			"@globals": ["src/components/global"],
+			"@component/*": ["src/components/*"],
+			"@style/*": ["src/styles/*"],
+			"@util/*": ["utils/*"],
+			"@img/*": ["src/assets/img/*"],
+			"@svg/*": ["src/assets/svg/*"],
+			"@icon/*": ["src/assets/svg/icon/*"]
+		}
   }
 }
