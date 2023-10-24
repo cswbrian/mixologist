@@ -32,7 +32,7 @@ export const manifest: Partial<ManifestOptions> = {
 		"Discover the Perfect Mix: Explore Cocktail Ingredients and Recipes.", // Change this to your websites description.
 	theme_color: "#30E130", // Change this to your primary color.
 	background_color: "#ffffff", // Change this to your background color.
-	display: "minimal-ui",
+	display: "standalone",
 	icons: [
 		{
 			src: "/mixologist/favicons/favicon-192x192.png",
