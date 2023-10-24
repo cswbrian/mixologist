@@ -35,14 +35,16 @@ export default function Recipes() {
 
     const matchedResult = cocktails.map(cocktail => {
         const cocktailIngredents = cocktail.ingredients.map(ingredient => ingredient.name)
+        const matchedCount = countMatches($ingredientsInventory, cocktailIngredents)
         return {
             ...cocktail,
-            matchedCount: countMatches($ingredientsInventory, cocktailIngredents)
+            matchedCount,
+            score: matchedCount / cocktail.ingredients.length
         }
     })
 
     const sortedResult = matchedResult.sort((a, b) => {
-        return b.matchedCount / b.ingredients.length - a.matchedCount / a.ingredients.length
+        return b.score - a.score
     })
 
     const filteredResult = sortedResult.filter(item => item.name.toLocaleLowerCase().includes(searchQuery.toLocaleLowerCase()))
@@ -56,9 +58,9 @@ export default function Recipes() {
 
             <ul className="flex flex-col gap-6">
                 {
-                    filteredResult.map(({ name, taste, ingredients }) => {
+                    filteredResult.map(({ name, taste, ingredients, score }) => {
                         return <a href={`/mixologist/cocktails/${name.toLocaleLowerCase().replace(/ /g, "-")}`}>
-                            <div key={name} className={`p-4 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm ${tasteColorMapping[taste as TasteColorMapping]}`}>
+                            <div key={name} className={`p-4 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm ${tasteColorMapping[taste as TasteColorMapping]} ${score < 1 ? `opacity-60`: ``}`}>
                                 <div className="flex justify-between">
                                 <span className="font-bold">{name}</span>
                                 <span className="">{taste}</span>
