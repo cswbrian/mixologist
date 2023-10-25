@@ -48,10 +48,9 @@ export default function Recipes() {
         return b.score - a.score
     })
 
-    const filteredResult = sortedResult.filter(item => {
-        return item.name.toLocaleLowerCase().includes(searchQuery.toLocaleLowerCase()) && 
-            selectedTastes.length ? selectedTastes.includes(item.taste) : true
-    })
+    const filteredResult = sortedResult
+        .filter(item => selectedTastes.length ? selectedTastes.includes(item.taste) : true)
+        .filter(item => item.name.toLocaleLowerCase().includes(searchQuery.toLocaleLowerCase()))
     return (
         <div className="flex flex-col gap-4">
             <input
