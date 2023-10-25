@@ -63,7 +63,7 @@ export default function Recipes() {
              {
                 Object.keys(tasteColorMapping).map(taste => {
                     const isChecked = selectedTastes.includes(taste)
-                    return <label>
+                    return <label key={taste}>
                     <input
                       className='hidden'
                       type="checkbox"
@@ -87,8 +87,8 @@ export default function Recipes() {
             <ul className="flex flex-col gap-6">
                 {
                     filteredResult.map(({ name, taste, ingredients, score }) => {
-                        return <a href={`/mixologist/cocktails/${name.toLocaleLowerCase().replace(/ /g, "-")}`}>
-                            <div key={name} className={`p-4 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm ${tasteColorMapping[taste as TasteColorMapping]} ${score < 1 ? `opacity-60`: ``}`}>
+                        return <a key={name} href={`/mixologist/cocktails/${name.toLocaleLowerCase().replace(/ /g, "-")}`}>
+                            <div className={`p-4 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm ${tasteColorMapping[taste as TasteColorMapping]} ${score < 1 ? `opacity-60`: ``}`}>
                                 <div className="flex justify-between">
                                 <span className="font-bold">{name}</span>
                                 <span className="">{taste}</span>
@@ -96,9 +96,9 @@ export default function Recipes() {
                                 <ul>
                                     {ingredients.map(({ name, amount, unit }) => {
                                     if ($ingredientsInventory.includes(name)) {
-                                        return <li>{name} - {amount} {unit}</li>
+                                        return <li key={name}>{name} - {amount} {unit}</li>
                                     }
-                                    return <li><s>{name} - {amount} {unit}</s></li>
+                                    return <li key={name}><s>{name} - {amount} {unit}</s></li>
                                 })}</ul>
                             </div>
                         </a>
