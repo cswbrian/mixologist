@@ -6,13 +6,13 @@ import { cocktails } from "../cocktailStore";
 
 
 const tasteColorMapping = {
-    "Sour": "bg-yellow-400",
     "Fresh": "bg-green-400",
+    "Sour": "bg-yellow-400",
     "Sweet": "bg-pink-300",
+    "Bitter sweet": "bg-fuchsia-400",
+    "Salty": "bg-cyan-400",
     "Boozy": "bg-orange-400",
     "Unknown": "bg-stone-300",
-    "Salty": "bg-cyan-400",
-    "Bitter sweet": "bg-fuchsia-400",
 }
 
 type TasteColorMapping = keyof typeof tasteColorMapping
@@ -31,6 +31,7 @@ function countMatches(arr1: string[], arr2: string[]): number {
 
 export default function Recipes() {
     const [searchQuery, setSearchQuery] = useState("")
+    const [selectedTastes, setSelectedTastes] = useState<TasteColorMapping[]>([])
     const $ingredientsInventory = useStore(ingredientsInventory);
 
     const matchedResult = cocktails.map(cocktail => {
@@ -47,14 +48,42 @@ export default function Recipes() {
         return b.score - a.score
     })
 
-    const filteredResult = sortedResult.filter(item => item.name.toLocaleLowerCase().includes(searchQuery.toLocaleLowerCase()))
+    const filteredResult = sortedResult.filter(item => {
+        return item.name.toLocaleLowerCase().includes(searchQuery.toLocaleLowerCase()) && 
+            selectedTastes.length ? selectedTastes.includes(item.taste) : true
+    })
     return (
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-4">
             <input
                 type="text" 
                 className="p-2 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm"
                 placeholder="Search cocktails..." onChange={e => setSearchQuery(e.target.value)}
              />
+
+            <div className="flex flex-wrap gap-2">
+             {
+                Object.keys(tasteColorMapping).map(taste => {
+                    const isChecked = selectedTastes.includes(taste)
+                    return <label>
+                    <input
+                      className='hidden'
+                      type="checkbox"
+                      value={taste}
+                      checked={isChecked}
+                      onChange={() => {
+                        if (isChecked) {
+                            setSelectedTastes(selectedTastes.filter(selectedTaste => selectedTaste !== taste))
+                        } else {
+                            setSelectedTastes([...selectedTastes, taste])
+                        }
+                      }}
+                    />
+                    <span className={`p-2 text-xs	font-bold border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm flex justify-center items-center ${isChecked ? tasteColorMapping[taste as TasteColorMapping] : `bg-white`}`}>{taste}</span>
+                  </label>
+                })
+             }
+
+            </div>
 
             <ul className="flex flex-col gap-6">
                 {
