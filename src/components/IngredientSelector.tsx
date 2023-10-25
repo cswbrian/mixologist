@@ -51,7 +51,7 @@ const CheckboxList: React.FC<CheckboxListProps> = ({ ingredients }) => {
       {ingredients.sort().map((ingredient) => {
         const isChecked = selectedIngredients.includes(ingredient)
       return (
-        <label key={ingredient} className={`${isChecked ? `bg-yellow` : ``}`}>
+        <label key={ingredient}>
           <input
             className='hidden'
             type="checkbox"
