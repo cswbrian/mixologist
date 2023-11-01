@@ -6,7 +6,7 @@ export function getStaticPaths() {
   return cocktails.map((cocktail) => {
     return {
       params: {
-        cocktail: cocktail.name.toLocaleLowerCase().replace(/ /g, "-"),
+        cocktail: cocktail.name.toLocaleLowerCase().replace(/[\s#\/]/g, "-"),
       },
       props: { cocktail },
     };

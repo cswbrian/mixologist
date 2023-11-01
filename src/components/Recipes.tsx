@@ -82,7 +82,6 @@ export default function Recipes() {
         })
         .filter(item => item.name.toLocaleLowerCase().includes(searchQuery.toLocaleLowerCase()))
     
-    console.log('filteredResult', filteredResult)
     return (
         <div className="flex flex-col gap-4">
             <input
