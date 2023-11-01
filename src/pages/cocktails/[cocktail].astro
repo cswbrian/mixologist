@@ -14,14 +14,14 @@ export function getStaticPaths() {
 }
 
 const {
-  cocktail: { name, timing, taste, ingredients, preparation },
+  cocktail: { name, timing, tastes, ingredients, preparation },
 } = Astro.props;
 ---
 
 <Layout title={name || "Cocktails"}>
   <h1 class="font-bold text-2xl">{name}</h1>
   <p>Timing: {timing}</p>
-  <p>Taste: {taste}</p>
+  <p>Tastes: {tastes.map(taste => taste).join(', ')}</p>
   <p>preparation: {preparation}</p>
   <h2 class="text-xl">Ingredients</h2>
   <ul>
