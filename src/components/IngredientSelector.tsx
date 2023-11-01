@@ -20,7 +20,7 @@ const CheckboxList: React.FC<CheckboxListProps> = ({ ingredients }) => {
 
   // Update the selected ingredients and save to local storage
   const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const value = event.target.value;
+    const value = event.target.value.toLocaleLowerCase();
 
     setSelectedIngredients((prevSelectedIngredients) => {
       const updatedSelectedIngredients = [...prevSelectedIngredients];
@@ -49,7 +49,7 @@ const CheckboxList: React.FC<CheckboxListProps> = ({ ingredients }) => {
   return (
     <div className='flex flex-wrap gap-2'>
       {ingredients.sort().map((ingredient) => {
-        const isChecked = selectedIngredients.includes(ingredient)
+        const isChecked = selectedIngredients.includes(ingredient.toLocaleLowerCase())
       return (
         <label key={ingredient}>
           <input
