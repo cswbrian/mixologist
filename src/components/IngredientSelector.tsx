@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { ingredientsInventory } from '../inventoryStore';
-
+import React, { useState, useEffect } from "react";
+import { ingredientsInventory } from "../inventoryStore";
 
 interface CheckboxListProps {
   ingredients: string[];
@@ -11,7 +10,7 @@ const CheckboxList: React.FC<CheckboxListProps> = ({ ingredients }) => {
 
   // Load the selected ingredients from local storage on component mount
   useEffect(() => {
-    const savedSelectedIngredients = ingredientsInventory // localStorage.getItem('selectedIngredients');
+    const savedSelectedIngredients = ingredientsInventory; // localStorage.getItem('selectedIngredients');
 
     if (savedSelectedIngredients) {
       setSelectedIngredients(savedSelectedIngredients.get());
@@ -35,7 +34,7 @@ const CheckboxList: React.FC<CheckboxListProps> = ({ ingredients }) => {
       }
 
       // Save the updated selected ingredients to local storage
-      ingredientsInventory.set(updatedSelectedIngredients)
+      ingredientsInventory.set(updatedSelectedIngredients);
       // localStorage.setItem(
       //   'selectedIngredients',
       //   JSON.stringify(updatedSelectedIngredients)
@@ -45,28 +44,33 @@ const CheckboxList: React.FC<CheckboxListProps> = ({ ingredients }) => {
     });
   };
 
-
   return (
-    <div className='flex flex-wrap gap-2'>
+    <div className="flex flex-wrap gap-2">
       {ingredients.sort().map((ingredient) => {
-        const isChecked = selectedIngredients.includes(ingredient.toLocaleLowerCase())
-      return (
-        <label key={ingredient}>
-          <input
-            className='hidden'
-            type="checkbox"
-            value={ingredient}
-            checked={isChecked}
-            onChange={handleCheckboxChange}
-          />
-          <span className={`p-2 text-xs	font-bold border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm flex justify-center items-center ${isChecked ? `bg-yellow-400` : `bg-white`}`}>{ingredient}</span>
-        </label>
-      )
+        const isChecked = selectedIngredients.includes(
+          ingredient.toLocaleLowerCase(),
+        );
+        return (
+          <label key={ingredient}>
+            <input
+              className="hidden"
+              type="checkbox"
+              value={ingredient}
+              checked={isChecked}
+              onChange={handleCheckboxChange}
+            />
+            <span
+              className={`p-2 text-xs	font-bold border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm flex justify-center items-center ${
+                isChecked ? `bg-yellow-400` : `bg-white`
+              }`}
+            >
+              {ingredient}
+            </span>
+          </label>
+        );
       })}
     </div>
   );
 };
 
 export default CheckboxList;
-
-

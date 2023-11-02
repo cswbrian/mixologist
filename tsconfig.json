@@ -5,13 +5,13 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "paths": {
-			"@globals": ["src/components/global"],
-			"@components/*": ["src/components/*"],
-			"@style/*": ["src/styles/*"],
-			"@utils/*": ["utils/*"],
-			"@img/*": ["src/assets/img/*"],
-			"@svg/*": ["src/assets/svg/*"],
-			"@icon/*": ["src/assets/svg/icon/*"]
-		}
+      "@globals": ["src/components/global"],
+      "@components/*": ["src/components/*"],
+      "@style/*": ["src/styles/*"],
+      "@utils/*": ["utils/*"],
+      "@img/*": ["src/assets/img/*"],
+      "@svg/*": ["src/assets/svg/*"],
+      "@icon/*": ["src/assets/svg/icon/*"]
+    }
   }
 }
