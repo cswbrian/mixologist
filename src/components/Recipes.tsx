@@ -2,8 +2,9 @@ import { useState } from "react";
 import { useStore } from "@nanostores/react";
 import { ingredientsInventory } from "../inventoryStore";
 import { cocktails } from "../cocktails";
+import type { Taste } from "type";
 
-const tasteColorMapping = {
+const tasteColorMapping: Record<Taste, string> = {
   Fresh: "bg-green-400",
   Sour: "bg-yellow-400",
   Sweet: "bg-pink-300",
@@ -13,6 +14,7 @@ const tasteColorMapping = {
   Spicy: "bg-red-500",
   Nutty: "bg-orange-300",
   Creamy: "bg-orange-200",
+  Fruity: "bg-amber-300",
   Tart: "bg-fuchsia-400",
   Umami: "bg-teal-400",
   Herbal: "bg-lime-300",
@@ -21,7 +23,7 @@ const tasteColorMapping = {
   Unknown: "bg-stone-300",
 };
 
-type TasteColorMapping = keyof typeof tasteColorMapping;
+type TasteColorMapping = Taste;
 
 function countMatches(arr1: string[], arr2: string[]): number {
   const arr1LowerCase = arr1.map((i) => i.toLocaleLowerCase());
@@ -97,7 +99,7 @@ export default function Recipes() {
 
       <div className="flex flex-wrap gap-2">
         {Object.keys(tasteColorMapping).map((taste) => {
-          const isChecked = selectedTastes.includes(taste);
+          const isChecked = selectedTastes.includes(taste as Taste);
           return (
             <label key={taste}>
               <input
@@ -119,9 +121,7 @@ export default function Recipes() {
               />
               <span
                 className={`p-2 text-xs font-bold border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm flex justify-center items-center ${
-                  isChecked
-                    ? tasteColorMapping[taste as TasteColorMapping]
-                    : `bg-white`
+                  isChecked ? tasteColorMapping[taste as Taste] : `bg-white`
                 }`}
               >
                 {taste}

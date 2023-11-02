@@ -1,4 +1,6 @@
-export const cocktails = [
+import type { Cocktail } from "type";
+
+export const cocktails: Cocktail[] = [
   {
     name: "Mojito",
     timing: "",
@@ -91,7 +93,7 @@ export const cocktails = [
         unit: "",
       },
       {
-        name: "Coca-cola",
+        name: "Cola",
         amount: "1 splash",
         unit: "",
       },
@@ -1893,7 +1895,7 @@ export const cocktails = [
         unit: "",
       },
       {
-        name: "Coca-cola",
+        name: "Cola",
         amount: "",
         unit: "",
       },
@@ -2694,7 +2696,7 @@ export const cocktails = [
   {
     name: "Harvey Wallbanger",
     timing: "",
-    tastes: ["Citrusy", "Boozy"],
+    tastes: ["Sour", "Boozy"],
     ingredients: [
       {
         name: "Vodka",
@@ -2791,7 +2793,7 @@ export const cocktails = [
   {
     name: "Imperial Fizz",
     timing: "",
-    tastes: ["Boozy", "Fizz"],
+    tastes: ["Boozy"],
     ingredients: [
       {
         name: "Light Rum",
@@ -2885,7 +2887,7 @@ export const cocktails = [
   {
     name: "Japanese Fizz",
     timing: "",
-    tastes: ["Fizz"],
+    tastes: ["Sour"],
     ingredients: [
       {
         name: "Blended Whiskey",
@@ -2946,7 +2948,7 @@ export const cocktails = [
   {
     name: "John Collins",
     timing: "",
-    tastes: ["Fresh", "Citrusy", "Boozy"],
+    tastes: ["Fresh", "Sour", "Boozy"],
     ingredients: [
       {
         name: "Bourbon",
@@ -3048,7 +3050,7 @@ export const cocktails = [
   {
     name: "Lady Love Fizz",
     timing: "",
-    tastes: ["Fizz", "Sweet"],
+    tastes: ["Sweet"],
     ingredients: [
       {
         name: "Gin",
@@ -3764,7 +3766,7 @@ export const cocktails = [
   {
     name: "Royal Fizz",
     timing: "",
-    tastes: ["Fizz", "Boozy"],
+    tastes: ["Boozy"],
     ingredients: [
       {
         name: "Gin",
@@ -3782,7 +3784,7 @@ export const cocktails = [
         unit: "",
       },
       {
-        name: "Coca-cola",
+        name: "Cola",
         amount: "",
         unit: "",
       },
@@ -3792,7 +3794,7 @@ export const cocktails = [
   {
     name: "Royal Gin Fizz",
     timing: "",
-    tastes: ["Fizz", "Boozy"],
+    tastes: ["Boozy"],
     ingredients: [
       {
         name: "Gin",
@@ -4316,7 +4318,7 @@ export const cocktails = [
   {
     name: "Sidecar",
     timing: "",
-    tastes: ["Citrusy", "Boozy"],
+    tastes: ["Sour", "Boozy"],
     ingredients: [
       {
         name: "Cognac",
@@ -4339,7 +4341,7 @@ export const cocktails = [
   {
     name: "Sidecar Cocktail",
     timing: "",
-    tastes: ["Citrusy", "Boozy"],
+    tastes: ["Sour", "Boozy"],
     ingredients: [
       {
         name: "Brandy",
@@ -6869,7 +6871,7 @@ export const cocktails = [
   {
     name: "Creme De Menthe",
     timing: "",
-    tastes: ["Sweet", "Minty"],
+    tastes: ["Sweet"],
     ingredients: [
       {
         name: "Sugar",
@@ -8158,7 +8160,7 @@ export const cocktails = [
   {
     name: "Caipirissima",
     timing: "",
-    tastes: ["Boozy", "Citrusy"],
+    tastes: ["Boozy", "Sour"],
     ingredients: [
       {
         name: "Lime",
@@ -8554,7 +8556,7 @@ export const cocktails = [
         unit: "",
       },
       {
-        name: "Coca-cola",
+        name: "Cola",
         amount: "",
         unit: "",
       },
@@ -8677,7 +8679,7 @@ export const cocktails = [
         unit: "",
       },
       {
-        name: "Coca-cola",
+        name: "Cola",
         amount: "Fill with",
         unit: "",
       },
@@ -8710,7 +8712,7 @@ export const cocktails = [
   {
     name: "After Five",
     timing: "",
-    tastes: ["Sweet", "Minty"],
+    tastes: ["Sweet"],
     ingredients: [
       {
         name: "Peppermint Schnapps",
@@ -9695,7 +9697,7 @@ export const cocktails = [
   {
     name: "A.d.m. (after Dinner Mint)",
     timing: "",
-    tastes: ["Sweet", "Minty"],
+    tastes: ["Sweet"],
     ingredients: [
       {
         name: "White Creme De Menthe",
@@ -10126,7 +10128,7 @@ export const cocktails = [
   {
     name: "Midnight Mint",
     timing: "",
-    tastes: ["Sweet", "Minty"],
+    tastes: ["Sweet"],
     ingredients: [
       {
         name: "Baileys Irish Cream",
@@ -10715,7 +10717,7 @@ export const cocktails = [
         unit: "",
       },
       {
-        name: "Coca-cola",
+        name: "Cola",
         amount: "1/2 oz",
         unit: "",
       },
@@ -11163,7 +11165,7 @@ export const cocktails = [
         unit: "",
       },
       {
-        name: "Coca-cola",
+        name: "Cola",
         amount: "slice",
         unit: "",
       },
@@ -11948,7 +11950,7 @@ export const cocktails = [
         unit: "",
       },
       {
-        name: "Coca-cola",
+        name: "Cola",
         amount: "10-12 oz",
         unit: "",
       },
@@ -12175,7 +12177,7 @@ export const cocktails = [
         unit: "",
       },
       {
-        name: "Coca-cola",
+        name: "Cola",
         amount: "1 can",
         unit: "",
       },
@@ -12730,7 +12732,7 @@ export const cocktails = [
         unit: "",
       },
       {
-        name: "Coca-cola",
+        name: "Cola",
         amount: "1 dash",
         unit: "",
       },
@@ -13041,7 +13043,7 @@ export const cocktails = [
     tastes: ["Sweet"],
     ingredients: [
       {
-        name: "Coca-cola",
+        name: "Cola",
         amount: "1 dl",
         unit: "",
       },
@@ -13166,7 +13168,7 @@ export const cocktails = [
         unit: "",
       },
       {
-        name: "Coca-cola",
+        name: "Cola",
         amount: "2 parts",
         unit: "",
       },
@@ -13960,7 +13962,7 @@ export const cocktails = [
   {
     name: "Grasshopper",
     timing: "",
-    tastes: ["Sweet", "Minty"],
+    tastes: ["Sweet"],
     ingredients: [
       {
         name: "Green Creme De Menthe",
@@ -14080,7 +14082,7 @@ export const cocktails = [
         unit: "",
       },
       {
-        name: "Coca-cola",
+        name: "Cola",
         amount: "1 dash",
         unit: "",
       },
@@ -14113,7 +14115,7 @@ export const cocktails = [
   {
     name: "Mint Julep",
     timing: "",
-    tastes: ["Sweet", "Minty"],
+    tastes: ["Sweet"],
     ingredients: [
       {
         name: "Mint",
@@ -14765,7 +14767,7 @@ export const cocktails = [
         unit: "",
       },
       {
-        name: "Fresh Lime Juice",
+        name: "Lime Juice",
         amount: "1/4 shot",
         unit: "",
       },
@@ -14940,7 +14942,7 @@ export const cocktails = [
         unit: "",
       },
       {
-        name: "Fresh Lime Juice",
+        name: "Lime Juice",
         amount: "15 ml",
         unit: "",
       },
