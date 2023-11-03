@@ -2,10 +2,11 @@
 // Component imports
 import { SEO } from "astro-seo"
 import '@fontsource-variable/inter';
-import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
 
 // Helper imports
 import { seoConfig } from "@utils/seoConfig"
+import Header from "@components/Header.astro";
 
 export interface Props {
 	/** Title of the page. */
@@ -171,10 +172,11 @@ const {
 		<link rel="manifest" href="/mixologist/manifest.webmanifest" />
 	</head>
 	<body class="bg-[#f2f5f2]">
+		<Header />
 		<main>
 			<slot />
 		</main>
-		<Header />
+		<Footer />
 
 		<script>
 			// This is a hack to get vite-plugin-pwa to generate a sw.js file.

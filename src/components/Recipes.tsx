@@ -58,7 +58,7 @@ export default function Recipes() {
     );
 
   return (
-    <div className="container mx-auto p-4 mb-16">
+    <div className="container mx-auto px-4 mb-16">
       <div className="flex flex-col gap-4">
         <div className="flex justify-between gap-2">
           <input

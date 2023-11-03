@@ -1,8 +1,9 @@
 ---
+import { seoConfig } from "@utils/seoConfig";
 ---
-<nav class="fixed bottom-0 w-full flex bg-white border-t-2 border-black">
-    <a class="p-4 flex-grow text-center border-r-2 border-black" href="/mixologist/">Cocktails</a>
-    <a class="p-4 flex-grow text-center" href="/mixologist/inventory/">Inventory</a>
-</nav>
+<header class="p-4 flex justify-between align-middle">
+   <a class="flex-grow font-bold" href="/mixologist">{seoConfig.siteName} 🍸</a>
+   <a href="/mixologist/about/">about</a>
+</header>
 <style>
 </style>
