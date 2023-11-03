@@ -22,7 +22,7 @@ export type Cocktail = {
   tastes: Taste[];
   ingredients: {
     name: string;
-    amount: string;
+    amount: string | number;
     unit: string;
   }[];
   preparation: string;

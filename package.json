@@ -15,6 +15,8 @@
   "dependencies": {
     "@astrojs/react": "^3.0.3",
     "@astrojs/tailwind": "^5.0.2",
+    "@fontsource-variable/inter": "^5.0.15",
+    "@fontsource-variable/inter-tight": "^5.0.18",
     "@nanostores/persistent": "^0.9.1",
     "@nanostores/react": "^0.7.1",
     "@types/react": "^18.2.31",

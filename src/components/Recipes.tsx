@@ -58,106 +58,108 @@ export default function Recipes() {
     );
 
   return (
-    <div className="flex flex-col gap-4">
-      <div className="flex justify-between gap-2">
-        <input
-          type="text"
-          className="p-2 flex-grow border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm"
-          placeholder="Search cocktails..."
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
-        <button
-          type="button"
-          className="p-2 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm"
-          disabled={!searchQuery.length}
-          onClick={() => {
-            setSearchQuery("");
-            setSelectedTastes([]);
-          }}
-        >
-          <img className="w-6" src={Clear.src} alt="" />
-        </button>
-      </div>
-      <div className="flex flex-wrap gap-2">
-        {Object.keys(tasteColorMapping).map((taste) => {
-          const isChecked = selectedTastes.includes(taste as Taste);
-          return (
-            <label key={taste}>
-              <input
-                className="hidden"
-                type="checkbox"
-                value={taste}
-                checked={isChecked}
-                onChange={() => {
-                  if (isChecked) {
-                    setSelectedTastes(
-                      selectedTastes.filter(
-                        (selectedTaste) => selectedTaste !== taste,
-                      ),
-                    );
-                  } else {
-                    setSelectedTastes([...selectedTastes, taste]);
-                  }
-                }}
-              />
-              <span
-                className={`p-2 text-xs font-bold border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm flex justify-center items-center cursor-pointer ${
-                  isChecked ? tasteColorMapping[taste as Taste] : `bg-white`
-                }`}
-              >
-                {taste}
-                {/* ({tasteCount[taste] || 0}) */}
-              </span>
-            </label>
-          );
-        })}
-      </div>
+    <div className="container mx-auto p-4 mb-16">
+      <div className="flex flex-col gap-4">
+        <div className="flex justify-between gap-2">
+          <input
+            type="text"
+            className="p-2 flex-grow border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm"
+            placeholder="Search cocktails..."
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+          <button
+            type="button"
+            className="p-2 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm"
+            disabled={!searchQuery.length}
+            onClick={() => {
+              setSearchQuery("");
+              setSelectedTastes([]);
+            }}
+          >
+            <img className="w-6" src={Clear.src} alt="" />
+          </button>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          {Object.keys(tasteColorMapping).map((taste) => {
+            const isChecked = !selectedTastes.includes(taste as Taste);
+            return (
+              <label key={taste}>
+                <input
+                  className="hidden"
+                  type="checkbox"
+                  value={taste}
+                  checked={isChecked}
+                  onChange={() => {
+                    if (isChecked) {
+                      setSelectedTastes(
+                        selectedTastes.filter(
+                          (selectedTaste) => selectedTaste !== taste,
+                        ),
+                      );
+                    } else {
+                      setSelectedTastes([...selectedTastes, taste]);
+                    }
+                  }}
+                />
+                <span
+                  className={`p-2 text-xs font-bold border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm flex justify-center items-center cursor-pointer ${
+                    isChecked ? tasteColorMapping[taste as Taste] : `bg-white`
+                  }`}
+                >
+                  {taste}
+                  {/* ({tasteCount[taste] || 0}) */}
+                </span>
+              </label>
+            );
+          })}
+        </div>
 
-      <ul className="flex flex-col gap-6">
-        {filteredResult.map(({ name, tastes, ingredients, score }, index) => {
-          return (
-            <a
-              key={`${name}-${index}`}
-              href={`/mixologist/cocktails/${name
-                .toLocaleLowerCase()
-                .replace(/ /g, "-")}`}
-            >
-              <div
-                className={`p-4 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm 
+        <ul className="flex flex-col gap-6">
+          {filteredResult.map(({ name, tastes, ingredients, score }, index) => {
+            return (
+              <a
+                key={`${name}-${index}`}
+                href={`/mixologist/cocktails/${name
+                  .toLocaleLowerCase()
+                  .replace(/ /g, "-")}`}
+              >
+                <div
+                  className={`p-4 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm 
                             ${
                               tasteColorMapping[
                                 tastes.length && (tastes[0] as Taste)
                               ]
                             } ${score < 1 ? `opacity-60` : ``}`}
-              >
-                <div className="flex justify-between">
-                  <span className="font-bold">{name}</span>
-                  <span className="">{tastes.join(", ")}</span>
+                >
+                  <div className="flex justify-between">
+                    <span className="font-bold">{name}</span>
+                    <span className="">{tastes.join(", ")}</span>
+                  </div>
+                  <ul>
+                    {ingredients.map(({ name, amount, unit }, index) => {
+                      return (
+                        <li key={`${name}-${index}`}>
+                          {$ingredientsInventory.includes(
+                            name.toLocaleLowerCase(),
+                          ) ? (
+                            <>
+                              {name} - {amount} {unit}
+                            </>
+                          ) : (
+                            <s>
+                              {name} - {amount} {unit}
+                            </s>
+                          )}
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </div>
-                <ul>
-                  {ingredients.map(({ name, amount, unit }, index) => {
-                    return (
-                      <li key={`${name}-${index}`}>
-                        {$ingredientsInventory.includes(
-                          name.toLocaleLowerCase(),
-                        ) ? (
-                          <>
-                            {name} - {amount} {unit}
-                          </>
-                        ) : (
-                          <s>
-                            {name} - {amount} {unit}
-                          </s>
-                        )}
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            </a>
-          );
-        })}
-      </ul>
+              </a>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 }
