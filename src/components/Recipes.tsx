@@ -4,6 +4,7 @@ import { ingredientsInventory } from "../inventoryStore";
 import { cocktails } from "../const/cocktails";
 import type { Taste } from "type";
 import { tasteColorMapping } from "../const";
+import Clear from "@icon/clear.svg";
 
 export default function Recipes() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -58,13 +59,25 @@ export default function Recipes() {
 
   return (
     <div className="flex flex-col gap-4">
-      <input
-        type="text"
-        className="p-2 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm"
-        placeholder="Search cocktails..."
-        onChange={(e) => setSearchQuery(e.target.value)}
-      />
-
+      <div className="flex justify-between gap-2">
+        <input
+          type="text"
+          className="p-2 flex-grow border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm"
+          placeholder="Search cocktails..."
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+        <button
+          type="button"
+          className="p-2 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm"
+          disabled={!searchQuery.length}
+          onClick={() => {
+            setSearchQuery("");
+            setSelectedTastes([]);
+          }}
+        >
+          <img className="w-6" src={Clear.src} alt="" />
+        </button>
+      </div>
       <div className="flex flex-wrap gap-2">
         {Object.keys(tasteColorMapping).map((taste) => {
           const isChecked = selectedTastes.includes(taste as Taste);
@@ -88,7 +101,7 @@ export default function Recipes() {
                 }}
               />
               <span
-                className={`p-2 text-xs font-bold border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm flex justify-center items-center ${
+                className={`p-2 text-xs font-bold border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm flex justify-center items-center cursor-pointer ${
                   isChecked ? tasteColorMapping[taste as Taste] : `bg-white`
                 }`}
               >
