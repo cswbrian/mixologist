@@ -81,7 +81,7 @@ export default function Recipes() {
         </div>
         <div className="flex flex-wrap gap-2">
           {Object.keys(tasteColorMapping).map((taste) => {
-            const isChecked = !selectedTastes.includes(taste as Taste);
+            const isChecked = selectedTastes.includes(taste as Taste);
             return (
               <label key={taste}>
                 <input
