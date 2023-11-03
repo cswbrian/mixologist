@@ -1,7 +1,7 @@
 ---
 import Inventory from '@components/Inventory';
 import Layout from '../layouts/Layout.astro';
-import { ingredients } from '../ingredients';
+import { ingredients } from '../const/ingredients';
 
 const groupByType = (ingredients) => {
   const types = {};
@@ -37,3 +37,4 @@ const groupedIngredients = groupByType(ingredients);
 	</div>
 </Layout>
 
+../const/ingredients

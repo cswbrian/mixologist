@@ -1,63 +1,29 @@
-import { useState } from "react";
+import { useState, useCallback, useMemo } from "react";
 import { useStore } from "@nanostores/react";
 import { ingredientsInventory } from "../inventoryStore";
-import { cocktails } from "../cocktails";
+import { cocktails } from "../const/cocktails";
 import type { Taste } from "type";
-
-const tasteColorMapping: Record<Taste, string> = {
-  Fresh: "bg-green-400",
-  Sour: "bg-yellow-400",
-  Sweet: "bg-pink-300",
-  "Bitter sweet": "bg-fuchsia-400",
-  Salty: "bg-cyan-400",
-  Boozy: "bg-orange-400",
-  Spicy: "bg-red-500",
-  Nutty: "bg-orange-300",
-  Creamy: "bg-orange-200",
-  Fruity: "bg-amber-300",
-  Tart: "bg-fuchsia-400",
-  Umami: "bg-teal-400",
-  Herbal: "bg-lime-300",
-  Floral: "bg-rose-400",
-  Smoky: "bg-gray-300",
-  Unknown: "bg-stone-300",
-};
-
-type TasteColorMapping = Taste;
-
-function countMatches(arr1: string[], arr2: string[]): number {
-  const arr1LowerCase = arr1.map((i) => i.toLocaleLowerCase());
-  const arr2LowerCase = arr2.map((i) => i.toLocaleLowerCase());
-  let count = 0;
-
-  for (const element of arr1LowerCase) {
-    if (arr2LowerCase.includes(element)) {
-      count++;
-    }
-  }
-
-  return count;
-}
-
-// function getTasteCounts(cocktails) {
-//     const count = {}
-//     for (const cocktail of cocktails) {
-//         const cocktailTaste = cocktail.taste || 'Unknown'
-//         if (!count[cocktailTaste]) {
-//             count[cocktailTaste] = 1
-//         } else {
-//             count[cocktailTaste] += 1
-//         }
-//     }
-//     return count
-// }
+import { tasteColorMapping } from "../const";
 
 export default function Recipes() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedTastes, setSelectedTastes] = useState<TasteColorMapping[]>([]);
+  const [selectedTastes, setSelectedTastes] = useState<Taste[]>([]);
   const $ingredientsInventory = useStore(ingredientsInventory);
 
-  // const tasteCount = getTasteCounts(cocktails)
+  const countMatches = useCallback((arr1: string[], arr2: string[]): number => {
+    const arr1LowerCase = arr1.map((i) => i.toLocaleLowerCase());
+    const arr2LowerCase = arr2.map((i) => i.toLocaleLowerCase());
+    let count = 0;
+
+    for (const element of arr1LowerCase) {
+      if (arr2LowerCase.includes(element)) {
+        count++;
+      }
+    }
+
+    return count;
+  }, []);
+
   const matchedResult = cocktails.map((cocktail) => {
     const cocktailIngredents = cocktail.ingredients.map(
       (ingredient) => ingredient.name,
@@ -73,9 +39,11 @@ export default function Recipes() {
     };
   });
 
-  const sortedResult = matchedResult.sort((a, b) => {
-    return b.score - a.score;
-  });
+  const sortedResult = useMemo(() => {
+    return matchedResult.sort((a, b) => {
+      return b.score - a.score;
+    });
+  }, [matchedResult]);
 
   const filteredResult = sortedResult
     .filter((item) => {
@@ -133,10 +101,10 @@ export default function Recipes() {
       </div>
 
       <ul className="flex flex-col gap-6">
-        {filteredResult.map(({ name, tastes, ingredients, score }) => {
+        {filteredResult.map(({ name, tastes, ingredients, score }, index) => {
           return (
             <a
-              key={name}
+              key={`${name}-${index}`}
               href={`/mixologist/cocktails/${name
                 .toLocaleLowerCase()
                 .replace(/ /g, "-")}`}
@@ -145,8 +113,7 @@ export default function Recipes() {
                 className={`p-4 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm 
                             ${
                               tasteColorMapping[
-                                tastes.length &&
-                                  (tastes[0] as TasteColorMapping)
+                                tastes.length && (tastes[0] as Taste)
                               ]
                             } ${score < 1 ? `opacity-60` : ``}`}
               >
@@ -155,21 +122,20 @@ export default function Recipes() {
                   <span className="">{tastes.join(", ")}</span>
                 </div>
                 <ul>
-                  {ingredients.map(({ name, amount, unit }) => {
-                    if (
-                      $ingredientsInventory.includes(name.toLocaleLowerCase())
-                    ) {
-                      return (
-                        <li key={name}>
-                          {name} - {amount} {unit}
-                        </li>
-                      );
-                    }
+                  {ingredients.map(({ name, amount, unit }, index) => {
                     return (
-                      <li key={name}>
-                        <s>
-                          {name} - {amount} {unit}
-                        </s>
+                      <li key={`${name}-${index}`}>
+                        {$ingredientsInventory.includes(
+                          name.toLocaleLowerCase(),
+                        ) ? (
+                          <>
+                            {name} - {amount} {unit}
+                          </>
+                        ) : (
+                          <s>
+                            {name} - {amount} {unit}
+                          </s>
+                        )}
                       </li>
                     );
                   })}
