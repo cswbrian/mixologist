@@ -1250,14 +1250,14 @@ export const ingredients: Ingredient[] = [
     abv: 0,
   },
   {
-    name: "Fresh Basil",
+    name: "Basil",
     description: "",
     type: "Spice",
     isAlcoholic: false,
     abv: 0,
   },
   {
-    name: "Fresh Lemon Juice",
+    name: "Lemon Juice",
     description:
       "The lemon, Citrus limon (L.) Osbeck, is a species of small evergreen tree in the flowering plant family Rutaceae, native to Asia.\nThe tree's ellipsoidal yellow fruit is used for culinary and non-culinary purposes throughout the world, primarily for its juice, which has both culinary and cleaning uses. The pulp and rind (zest) are also used in cooking and baking. The juice of the lemon is about 5% to 6% citric acid, with a pH of around 2.2, giving it a sour taste. The distinctive sour taste of lemon juice makes it a key ingredient in drinks and foods such as lemonade and lemon meringue pie.",
     type: "Juice",
@@ -1697,13 +1697,6 @@ export const ingredients: Ingredient[] = [
     abv: 4,
   },
   {
-    name: "Lemon Juice",
-    description: "",
-    type: "Juice",
-    isAlcoholic: false,
-    abv: 0,
-  },
-  {
     name: "Lemon Peel",
     description: "",
     type: "",
@@ -1901,7 +1894,7 @@ export const ingredients: Ingredient[] = [
   {
     name: "Margarita Mix",
     description: "",
-    type: "",
+    type: "Mix",
     isAlcoholic: false,
     abv: 0,
   },
@@ -1975,14 +1968,6 @@ export const ingredients: Ingredient[] = [
     name: "Mint Syrup",
     description: "",
     type: "Syrup",
-    isAlcoholic: false,
-    abv: 0,
-  },
-  {
-    name: "Mint",
-    description:
-      "Lamiaceae (/ˌleɪmiˈeɪsiˌaɪ/ or /ˌleɪmiˈeɪsiiː/) or Labiatae is a family of flowering plants commonly known as the mint or deadnettle family. Many of the plants are aromatic in all parts and include widely used culinary herbs, such as basil, mint, rosemary, sage, savory, marjoram, oregano, hyssop, thyme, lavender, and perilla. Some species are shrubs, trees (such as teak), or, rarely, vines. Many members of the family are widely cultivated, not only for their aromatic qualities but also their ease of cultivation, since they are readily propagated by stem cuttings. Besides those grown for their edible leaves, some are grown for decorative foliage, such as Coleus. Others are grown for seed, such as Salvia hispanica (chia), or for their edible tubers, such as Plectranthus edulis, Plectranthus esculentus, Plectranthus rotundifolius, and Stachys affinis (Chinese artichoke).\nThe family has a cosmopolitan distribution. The enlarged Lamiaceae contains about 236 genera and has been stated to contain 6,900 to 7,200 species, but the World Checklist lists 7,534. The largest genera are Salvia (900), Scutellaria (360), Stachys (300), Plectranthus (300), Hyptis (280), Teucrium (250), Vitex (250), Thymus (220), and Nepeta (200). Clerodendrum was once a genus of over 400 species, but by 2010, it had been narrowed to about 150.\nThe family has traditionally been considered closely related to the Verbenaceae; in the 1990s, phylogenetic studies suggested that many genera classified in the Verbenaceae should be classified in the Lamiaceae or to other families in the order Lamiales.\nThe alternate family name Labiatae refers to the fact that the flowers typically have petals fused into an upper lip and a lower lip (labia in Latin). The flowers are bilaterally symmetrical with five united petals and five united sepals. They are usually bisexual and verticillastrate (a flower cluster that looks like a whorl of flowers, but actually consists of two crowded clusters). Although this is still considered an acceptable alternative name, most botanists now use the name Lamiaceae in referring to this family. The leaves emerge oppositely, each pair at right angles to the previous one (decussate) or whorled. The stems are frequently square in cross section, but this is not found in all members of the family, and is sometimes found in other plant families.",
-    type: "Flower",
     isAlcoholic: false,
     abv: 0,
   },
@@ -2251,13 +2236,6 @@ export const ingredients: Ingredient[] = [
       'Schnapps (/ʃnɑːps/ or /ʃnæps/) or schnaps is a type of alcoholic beverage that may take several forms, including distilled fruit brandies, herbal liqueurs, infusions, and "flavored liqueurs" made by adding fruit syrups, spices, or artificial flavorings to neutral grain spirits.\n\nThe English loanword "schnapps" is derived from the colloquial German word Schnaps [ʃnaps] (About this sound listen) (plural: Schnäpse) which is used in reference to spirit drinks. The word Schnaps stems from Low German language and is related to the German term "schnappen", which refers to the fact that the spirit or liquor drink is usually consumed in a quick slug from a small glass (i.e., a shot glass). In British English, a corresponding term is "dram" [of liquor].',
     type: "Liquor",
     isAlcoholic: true,
-    abv: 0,
-  },
-  {
-    name: "Pepsi Cola",
-    description: "",
-    type: "Soft Drink",
-    isAlcoholic: false,
     abv: 0,
   },
   {
@@ -2635,7 +2613,7 @@ export const ingredients: Ingredient[] = [
     name: "Sour Mix",
     description:
       "Sour mix (also known as sweet and sour mix) is a mixer that is yellow-green in color and is used in many cocktails. It is made from approximately equal parts lemon and/or lime juice and simple syrup and shaken vigorously with ice. This produces a pearly-white liquid with a pronounced flavor.\n\nOptionally, egg-whites may be added to make the liquid slightly foamy.\n\nSour mix can be mixed with liquor(s) to make a sour drink; most common are vodka sour (vodka) and whiskey sour (whiskey).\n\nPre-mixed versions are available, and are in use in many bars. These typically consist of a powder which must be rehydrated by adding water prior to use.",
-    type: "Soft Drink",
+    type: "Mix",
     isAlcoholic: false,
     abv: 0,
   },
@@ -2852,7 +2830,7 @@ export const ingredients: Ingredient[] = [
     name: "Tomato Juice",
     description:
       "Tomato juice is a juice made from tomatoes, usually used as a beverage, either plain or in cocktails such as a Bloody Mary or Michelada.\n\nIn Canada, tomato juice is unconcentrated and pasteurized, made from fine tomato pulp from ripe and whole tomatoes. The stems and skins must be removed without adding water to the final juice product. It may also contain a sweetening agent, citric acid and salt.",
-    type: "Soft Drink",
+    type: "Juice",
     isAlcoholic: false,
     abv: 0,
   },
@@ -3211,7 +3189,7 @@ export const ingredients: Ingredient[] = [
     abv: 0,
   },
   {
-    name: "Fresh Mint",
+    name: "Mint",
     description:
       "Lamiaceae (/ˌleɪmiˈeɪsiˌaɪ/ or /ˌleɪmiˈeɪsiiː) or Labiatae is a family of flowering plants commonly known as the mint or deadnettle family. Many of the plants are aromatic in all parts and include widely used culinary herbs, such as basil, mint, rosemary, sage, savory, marjoram, oregano, hyssop, thyme, lavender, and perilla. Some species are shrubs, trees (such as teak), or, rarely, vines. Many members of the family are widely cultivated, not only for their aromatic qualities but also their ease of cultivation, since they are readily propagated by stem cuttings.[citation needed] Besides those grown for their edible leaves, some are grown for decorative foliage, such as Coleus. Others are grown for seed, such as Salvia hispanica (chia), or for their edible tubers, such as Plectranthus edulis, Plectranthus esculentus, Plectranthus rotundifolius, and Stachys affinis (Chinese artichoke).\n\nThe family has a cosmopolitan distribution. The enlarged Lamiaceae contains about 236 genera[5] and has been stated to contain 6,900 to 7,200 species, but the World Checklist lists 7,534. The largest genera are Salvia (900), Scutellaria (360), Stachys (300), Plectranthus (300), Hyptis (280), Teucrium (250), Vitex (250), Thymus (220), and Nepeta (200). Clerodendrum was once a genus of over 400 species, but by 2010, it had been narrowed to about 150.\n\nThe family has traditionally been considered closely related to the Verbenaceae; in the 1990s, phylogenetic studies suggested that many genera classified in the Verbenaceae should be classified in the Lamiaceae [8][9] or to other families in the order Lamiales.",
     type: "Garnish",

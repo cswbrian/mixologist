@@ -11540,7 +11540,7 @@ export const cocktails: Cocktail[] = [
         unit: "",
       },
       {
-        name: "Pepsi Cola",
+        name: "Cola",
         amount: "750 ml",
         unit: "",
       },
@@ -13191,7 +13191,7 @@ export const cocktails: Cocktail[] = [
         unit: "",
       },
       {
-        name: "Pepsi Cola",
+        name: "Cola",
         amount: "1/3 part",
         unit: "",
       },
@@ -14693,7 +14693,7 @@ export const cocktails: Cocktail[] = [
         unit: "",
       },
       {
-        name: "Fresh Lemon Juice",
+        name: "Lemon Juice",
         amount: "1/8 shot",
         unit: "",
       },
