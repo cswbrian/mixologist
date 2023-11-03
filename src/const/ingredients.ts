@@ -108,21 +108,21 @@ export const ingredients: Ingredient[] = [
   {
     name: "Allspice",
     description: "",
-    type: "",
+    type: "Fridge / Pantry",
     isAlcoholic: false,
     abv: 0,
   },
   {
     name: "Almond Flavoring",
     description: "",
-    type: "",
+    type: "Fridge / Pantry",
     isAlcoholic: false,
     abv: 0,
   },
   {
     name: "Almond",
     description: "",
-    type: "",
+    type: "Fridge / Pantry",
     isAlcoholic: false,
     abv: 0,
   },
@@ -137,7 +137,7 @@ export const ingredients: Ingredient[] = [
   {
     name: "Angelica Root",
     description: "",
-    type: "",
+    type: "Fridge / Pantry",
     isAlcoholic: false,
     abv: 0,
   },
@@ -152,21 +152,21 @@ export const ingredients: Ingredient[] = [
   {
     name: "Anis",
     description: "",
-    type: "",
+    type: "Fridge / Pantry",
     isAlcoholic: false,
     abv: 0,
   },
   {
     name: "Anise",
     description: "",
-    type: "",
+    type: "Fridge / Pantry",
     isAlcoholic: false,
     abv: 0,
   },
   {
     name: "Anisette",
     description: "",
-    type: "",
+    type: "Liqueur",
     isAlcoholic: false,
     abv: 0,
   },
@@ -180,7 +180,7 @@ export const ingredients: Ingredient[] = [
   {
     name: "Apfelkorn",
     description: "",
-    type: "",
+    type: "Liqueur",
     isAlcoholic: true,
     abv: 18,
   },
@@ -201,7 +201,7 @@ export const ingredients: Ingredient[] = [
   {
     name: "Apple Juice",
     description: "",
-    type: "",
+    type: "Juice",
     isAlcoholic: false,
     abv: 0,
   },
@@ -216,7 +216,7 @@ export const ingredients: Ingredient[] = [
   {
     name: "Apple",
     description: "",
-    type: "",
+    type: "Fruit",
     isAlcoholic: false,
     abv: 0,
   },
@@ -238,28 +238,28 @@ export const ingredients: Ingredient[] = [
   {
     name: "Apricot Nectar",
     description: "",
-    type: "",
+    type: "Liqueur",
     isAlcoholic: false,
     abv: 0,
   },
   {
     name: "Apricot",
     description: "",
-    type: "",
+    type: "Fruit",
     isAlcoholic: false,
     abv: 0,
   },
   {
     name: "Aquavit",
     description: "",
-    type: "",
+    type: "Vodka",
     isAlcoholic: false,
     abv: 0,
   },
   {
     name: "Asafoetida",
     description: "",
-    type: "",
+    type: "Fridge / Pantry",
     isAlcoholic: false,
     abv: 0,
   },
@@ -319,14 +319,14 @@ export const ingredients: Ingredient[] = [
   {
     name: "Banana",
     description: "",
-    type: "",
+    type: "Syrup",
     isAlcoholic: false,
     abv: 0,
   },
   {
     name: "Barenjager",
     description: "",
-    type: "",
+    type: "Liqueur",
     isAlcoholic: false,
     abv: 0,
   },
@@ -335,13 +335,6 @@ export const ingredients: Ingredient[] = [
     description:
       'Basil, also called great basil, is a culinary herb of the family Lamiaceae (mints). It is a tender plant, and is used in cuisines worldwide. In Western cuisine, the generic term "basil" refers to the variety also known as sweet basil or Genovese basil.',
     type: "Garnish",
-    isAlcoholic: false,
-    abv: 0,
-  },
-  {
-    name: "Beef Stock",
-    description: "",
-    type: "",
     isAlcoholic: false,
     abv: 0,
   },
@@ -363,7 +356,7 @@ export const ingredients: Ingredient[] = [
   {
     name: "Berries",
     description: "",
-    type: "",
+    type: "Fruit",
     isAlcoholic: false,
     abv: 0,
   },
@@ -405,7 +398,7 @@ export const ingredients: Ingredient[] = [
   {
     name: "Blackberries",
     description: "",
-    type: "",
+    type: "Fruit",
     isAlcoholic: false,
     abv: 0,
   },
@@ -471,7 +464,7 @@ export const ingredients: Ingredient[] = [
   {
     name: "Blueberries",
     description: "",
-    type: "",
+    type: "Fruit",
     isAlcoholic: false,
     abv: 0,
   },
@@ -625,16 +618,9 @@ export const ingredients: Ingredient[] = [
     name: "Champagne",
     description:
       "Champagne (French: [ʃɑ̃.paɲ]) is a sparkling wine and type of alcoholic drink produced from grapes grown in the Champagne region of France following rules that demand, among other things, secondary fermentation of the wine in the bottle to create carbonation, specific vineyard practices, sourcing of grapes exclusively from specific parcels in the Champagne appellation and specific pressing regimes unique to the region.[1] It contains the drug alcohol (also known formally as ethanol), and is used recreationally. Some use the term Champagne as a generic term for sparkling wine, but in many countries, it is illegal to label any product Champagne unless it both comes from the Champagne region and is produced under the rules of the appellation.\n\nThe primary grapes used in the production of Champagne are black Pinot noir and Pinot Meunier but also white Chardonnay. Champagne appellation law only allows grapes grown according to appellation rules in specifically designated plots within the appellation to be used in the production of champagne.\n\nChampagne became associated with royalty in the 17th, 18th, and 19th centuries. The leading manufacturers made efforts to associate their Champagnes with nobility and royalty through advertising and packaging, which led to popularity among the emerging middle class.",
-    type: "Wine",
+    type: "Wine / Vermouth",
     isAlcoholic: true,
     abv: 13,
-  },
-  {
-    name: "Cherries",
-    description: "",
-    type: "",
-    isAlcoholic: false,
-    abv: 0,
   },
   {
     name: "Cherry Brandy",
@@ -667,7 +653,7 @@ export const ingredients: Ingredient[] = [
   {
     name: "Cherry Juice",
     description: "",
-    type: "",
+    type: "Juice",
     isAlcoholic: false,
     abv: 0,
   },
@@ -1061,7 +1047,7 @@ export const ingredients: Ingredient[] = [
   {
     name: "Daiquiri Mix",
     description: "",
-    type: "Mix",
+    type: "Mixer",
     isAlcoholic: false,
     abv: 0,
   },
@@ -1434,7 +1420,7 @@ export const ingredients: Ingredient[] = [
   {
     name: "Green Ginger Wine",
     description: "",
-    type: "Wine",
+    type: "Wine / Vermouth",
     isAlcoholic: true,
     abv: 0,
   },
@@ -1894,7 +1880,7 @@ export const ingredients: Ingredient[] = [
   {
     name: "Margarita Mix",
     description: "",
-    type: "Mix",
+    type: "Mixer",
     isAlcoholic: false,
     abv: 0,
   },
@@ -2131,7 +2117,7 @@ export const ingredients: Ingredient[] = [
   {
     name: "Passion Fruit Juice",
     description: "",
-    type: "",
+    type: "Juice",
     isAlcoholic: false,
     abv: 0,
   },
@@ -2255,7 +2241,7 @@ export const ingredients: Ingredient[] = [
   {
     name: "Pina Colada Mix",
     description: "",
-    type: "Mix",
+    type: "Mixer",
     isAlcoholic: false,
     abv: 0,
   },
@@ -2442,7 +2428,7 @@ export const ingredients: Ingredient[] = [
     name: "Red Wine",
     description:
       "Wine (from Latin vinum) is an alcoholic beverage made from grapes, generally Vitis vinifera, fermented without the addition of sugars, acids, enzymes, water, or other nutrients.\n\nYeast consumes the sugar in the grapes and converts it to ethanol and carbon dioxide. Different varieties of grapes and strains of yeasts produce different styles of wine. These variations result from the complex interactions between the biochemical development of the grape, the reactions involved in fermentation, the terroir, and the production process. Many countries enact legal appellations intended to define styles and qualities of wine. These typically restrict the geographical origin and permitted varieties of grapes, as well as other aspects of wine production. Wines not made from grapes include rice wine and fruit wines such as plum, cherry, pomegranate and elderberry.\n\nWine has been produced for thousands of years. The earliest known traces of wine are from China (c. 7000 BC), Georgia (c. 6000 BC), Iran (c. 5000 BC), and Sicily (c. 4000 BC). The earliest known winery is the 6,100-year-old Areni-1 winery in Armenia. Wine reached the Balkans by 4500 BC and was consumed and celebrated in ancient Greece, Thrace and Rome. Throughout history, wine has been consumed for its intoxicating effects.\n\nWine has long played an important role in religion. Red wine was associated with blood by the ancient Egyptians and was used by both the Greek cult of Dionysus and the Romans in their Bacchanalia; Judaism also incorporates it in the Kiddush and Christianity in the Eucharist.",
-    type: "Wine",
+    type: "Wine / Vermouth",
     isAlcoholic: true,
     abv: 14,
   },
@@ -2487,7 +2473,7 @@ export const ingredients: Ingredient[] = [
   {
     name: "Roses Sweetened Lime Juice",
     description: "",
-    type: "",
+    type: "Juice",
     isAlcoholic: false,
     abv: 0,
   },
@@ -2613,7 +2599,7 @@ export const ingredients: Ingredient[] = [
     name: "Sour Mix",
     description:
       "Sour mix (also known as sweet and sour mix) is a mixer that is yellow-green in color and is used in many cocktails. It is made from approximately equal parts lemon and/or lime juice and simple syrup and shaken vigorously with ice. This produces a pearly-white liquid with a pronounced flavor.\n\nOptionally, egg-whites may be added to make the liquid slightly foamy.\n\nSour mix can be mixed with liquor(s) to make a sour drink; most common are vodka sour (vodka) and whiskey sour (whiskey).\n\nPre-mixed versions are available, and are in use in many bars. These typically consist of a powder which must be rehydrated by adding water prior to use.",
-    type: "Mix",
+    type: "Mixer",
     isAlcoholic: false,
     abv: 0,
   },
@@ -2922,7 +2908,7 @@ export const ingredients: Ingredient[] = [
     abv: 0,
   },
   {
-    name: "Vermouth",
+    name: "Wine / Vermouth",
     description:
       "Vermouth (/vərˈmuːθ/ ver-MOOTH; also UK: /ˈvɜːrməθ/;[1][2]) is an aromatized, fortified wine flavored with various botanicals (roots, barks, flowers, seeds, herbs, and spices).\n\nThe modern versions of the beverage were first produced in the mid to late 18th century in Turin, Italy. While vermouth was traditionally used for medicinal purposes, its true claim to fame is as an aperitif, with fashionable cafes in Turin serving it to guests around the clock. However, in the late 19th century it became popular with bartenders as a key ingredient in many classic cocktails that have survived to date, such as the Martini, the Manhattan, the Rob Roy, and the Negroni. In addition to being consumed as an aperitif or cocktail ingredient, vermouth is sometimes used as an alternative white wine in cooking.\n\nHistorically, there have been two main types of vermouth: sweet and dry. Responding to demand and competition, vermouth manufacturers have created additional styles, including extra-dry white, sweet white (bianco), red, amber (ambre or rosso), and rosé. Vermouth is produced by starting with a base of a neutral grape wine or unfermented wine must. Each manufacturer adds additional alcohol and a proprietary mixture of dry ingredients, consisting of aromatic herbs, roots, and barks, to the base wine, base wine plus spirit or spirit only – which may be redistilled before adding to the wine or unfermented wine must. After the wine is aromatized and fortified, the vermouth is sweetened with either cane sugar or caramelized sugar, depending on the style. Italian and French companies produce most of the vermouth consumed throughout the world, although the United States and the United Kingdom are also producers.",
     type: "Fortified Wine",
@@ -3018,7 +3004,7 @@ export const ingredients: Ingredient[] = [
     name: "White Wine",
     description:
       "Wine (from Latin vinum) is an alcoholic beverage made from grapes, generally Vitis vinifera, fermented without the addition of sugars, acids, enzymes, water, or other nutrients.\n\nYeast consumes the sugar in the grapes and converts it to ethanol and carbon dioxide. Different varieties of grapes and strains of yeasts produce different styles of wine. These variations result from the complex interactions between the biochemical development of the grape, the reactions involved in fermentation, the terroir, and the production process. Many countries enact legal appellations intended to define styles and qualities of wine. These typically restrict the geographical origin and permitted varieties of grapes, as well as other aspects of wine production. Wines not made from grapes include rice wine and fruit wines such as plum, cherry, pomegranate and elderberry.\n\nWine has been produced for thousands of years. The earliest known traces of wine are from China (c. 7000 BC), Georgia (c. 6000 BC), Iran (c. 5000 BC), and Sicily (c. 4000 BC). The earliest known winery is the 6,100-year-old Areni-1 winery in Armenia. Wine reached the Balkans by 4500 BC and was consumed and celebrated in ancient Greece, Thrace and Rome. Throughout history, wine has been consumed for its intoxicating effects.\n\nWine has long played an important role in religion. Red wine was associated with blood by the ancient Egyptians and was used by both the Greek cult of Dionysus and the Romans in their Bacchanalia; Judaism also incorporates it in the Kiddush and Christianity in the Eucharist.",
-    type: "Wine",
+    type: "Wine / Vermouth",
     isAlcoholic: true,
     abv: 0,
   },
@@ -3039,10 +3025,10 @@ export const ingredients: Ingredient[] = [
     abv: 0,
   },
   {
-    name: "Wine",
+    name: "Wine / Vermouth",
     description:
       "Wine (from Latin vinum) is an alcoholic beverage made from grapes, generally Vitis vinifera, fermented without the addition of sugars, acids, enzymes, water, or other nutrients.\n\nYeast consumes the sugar in the grapes and converts it to ethanol and carbon dioxide. Different varieties of grapes and strains of yeasts produce different styles of wine. These variations result from the complex interactions between the biochemical development of the grape, the reactions involved in fermentation, the terroir, and the production process. Many countries enact legal appellations intended to define styles and qualities of wine. These typically restrict the geographical origin and permitted varieties of grapes, as well as other aspects of wine production. Wines not made from grapes include rice wine and fruit wines such as plum, cherry, pomegranate and elderberry.\n\nWine has been produced for thousands of years. The earliest known traces of wine are from China (c. 7000 BC), Georgia (c. 6000 BC), Iran (c. 5000 BC), and Sicily (c. 4000 BC). The earliest known winery is the 6,100-year-old Areni-1 winery in Armenia. Wine reached the Balkans by 4500 BC and was consumed and celebrated in ancient Greece, Thrace and Rome. Throughout history, wine has been consumed for its intoxicating effects.\n\nWine has long played an important role in religion. Red wine was associated with blood by the ancient Egyptians and was used by both the Greek cult of Dionysus and the Romans in their Bacchanalia; Judaism also incorporates it in the Kiddush and Christianity in the Eucharist.",
-    type: "Wine",
+    type: "Wine / Vermouth",
     isAlcoholic: true,
     abv: 14,
   },
@@ -3144,7 +3130,7 @@ export const ingredients: Ingredient[] = [
     name: "Prosecco",
     description:
       'Prosecco (/prəˈsɛkoʊ, proʊ-/, Italian: [proˈsekko]) is an Italian white wine. Prosecco DOC can be spumante ("sparkling wine"), frizzante ("semi-sparkling wine"), or tranquillo ("still wine"). It is made from Glera grapes, formerly known also as Prosecco, but other grape varieties may be included. The following varieties are traditionally used with Glera up to a maximum of 15% of the total: Verdiso, Bianchetta Trevigiana, Perera, Glera lunga, Chardonnay, Pinot Bianco, Pinot Grigio and Pinot Nero.\n\nThe name is derived from that of the Italian village of Prosecco near Trieste, where the grape and wine originated from.\n\nProsecco DOC is produced in nine provinces spanning the Veneto and Friuli Venezia Giulia regions. Prosecco Superiore DOCG comes in two varieties: Prosecco Conegliano Valdobbiadene Superiore DOCG, which can only be made in the Treviso province of Veneto on the hills between the towns of Conegliano and Valdobbiadene (north of Treviso), and the smaller Asolo Prosecco Superiore DOCG, produced near the town of Asolo.\n\nProsecco is the main ingredient of the Bellini cocktail and can be a less expensive substitute for Champagne. It is also a key ingredient of spritz, a cocktail popular in northern Italy.',
-    type: "Wine",
+    type: "Wine / Vermouth",
     isAlcoholic: true,
     abv: 0,
   },
@@ -3160,7 +3146,7 @@ export const ingredients: Ingredient[] = [
     name: "Martini Rosso",
     description:
       "Martini is a brand of Italian vermouth, named after the Martini & Rossi Distilleria Nazionale di Spirito di Vino, in Turin.\n\nClemente Michel, Carlo Re, Carlo Agnelli and Eligio Baudino started the company in 1847, as a vermouth bottling plant in Pessione. A few years later Alessandro Martini joined the team, becoming the director in 1863 along with Teofilo Sola and Luigi Rossi (who was the inventor of a vermouth). In 1863 they changed the company name to Martini, Sola & Cia. They started exporting bottles of vermouth around the world. New York city was given its first crates in 1867. At the time the firm was awarded several prizes, which are still recorded on the bottles: Dublin (1865), Paris (1867 and 1878), Vienna (1873) and Philadelphia (1876). Just thirty years after its creation, Martini was available in the United States, Brazil, Argentina, Greece, Portugal, Belgium, Egypt and other countries. In 1879 the Sola family sold its interests to the remaining partners, who renamed the company Martini & Rossi, as it stands today.\n\nThe brand may have given the American martini vermouth and gin cocktail its name (an early recipe for which is known from 1888), though other speculations on the cocktail's etymology exist.\n\nIn 1892 the business was taken over by Rossi's four sons; control passed to his grandsons in 1930. In 1929 the Martini Ball & Bar logo was registered for the first time. Restructuring was carried out in 1977 resulting in the creation of the General Beverage Corporation. In 1992 Martini & Rossi merged with Bacardi. “Martini is the world's fourth most powerful ‘spirit’ brand” according to a survey of the market in 2006.\n\nIn 1970 and 1971 Martini together with Rossi supported the so-called \"Ladies Football World Championships\". These tournaments were entirely independent from FIFA and the common national soccer associations. They were held in Rome and in Mexico.",
-    type: "Vermouth",
+    type: "Wine / Vermouth",
     isAlcoholic: true,
     abv: 0,
   },
@@ -3168,7 +3154,7 @@ export const ingredients: Ingredient[] = [
     name: "Martini Bianco",
     description:
       "Martini is a brand of Italian vermouth, named after the Martini & Rossi Distilleria Nazionale di Spirito di Vino, in Turin.\n\nClemente Michel, Carlo Re, Carlo Agnelli and Eligio Baudino started the company in 1847, as a vermouth bottling plant in Pessione. A few years later Alessandro Martini joined the team, becoming the director in 1863 along with Teofilo Sola and Luigi Rossi (who was the inventor of a vermouth). In 1863 they changed the company name to Martini, Sola & Cia. They started exporting bottles of vermouth around the world. New York city was given its first crates in 1867. At the time the firm was awarded several prizes, which are still recorded on the bottles: Dublin (1865), Paris (1867 and 1878), Vienna (1873) and Philadelphia (1876). Just thirty years after its creation, Martini was available in the United States, Brazil, Argentina, Greece, Portugal, Belgium, Egypt and other countries. In 1879 the Sola family sold its interests to the remaining partners, who renamed the company Martini & Rossi, as it stands today.\n\nThe brand may have given the American martini vermouth and gin cocktail its name (an early recipe for which is known from 1888), though other speculations on the cocktail's etymology exist.\n\nIn 1892 the business was taken over by Rossi's four sons; control passed to his grandsons in 1930. In 1929 the Martini Ball & Bar logo was registered for the first time. Restructuring was carried out in 1977 resulting in the creation of the General Beverage Corporation. In 1992 Martini & Rossi merged with Bacardi. “Martini is the world's fourth most powerful ‘spirit’ brand” according to a survey of the market in 2006.\n\nIn 1970 and 1971 Martini together with Rossi supported the so-called \"Ladies Football World Championships\". These tournaments were entirely independent from FIFA and the common national soccer associations. They were held in Rome and in Mexico.",
-    type: "Vermouth",
+    type: "Wine / Vermouth",
     isAlcoholic: true,
     abv: 0,
   },
@@ -3176,7 +3162,7 @@ export const ingredients: Ingredient[] = [
     name: "Martini Extra Dry",
     description:
       "Martini is a brand of Italian vermouth, named after the Martini & Rossi Distilleria Nazionale di Spirito di Vino, in Turin.\n\nClemente Michel, Carlo Re, Carlo Agnelli and Eligio Baudino started the company in 1847, as a vermouth bottling plant in Pessione. A few years later Alessandro Martini joined the team, becoming the director in 1863 along with Teofilo Sola and Luigi Rossi (who was the inventor of a vermouth). In 1863 they changed the company name to Martini, Sola & Cia. They started exporting bottles of vermouth around the world. New York city was given its first crates in 1867. At the time the firm was awarded several prizes, which are still recorded on the bottles: Dublin (1865), Paris (1867 and 1878), Vienna (1873) and Philadelphia (1876). Just thirty years after its creation, Martini was available in the United States, Brazil, Argentina, Greece, Portugal, Belgium, Egypt and other countries. In 1879 the Sola family sold its interests to the remaining partners, who renamed the company Martini & Rossi, as it stands today.\n\nThe brand may have given the American martini vermouth and gin cocktail its name (an early recipe for which is known from 1888), though other speculations on the cocktail's etymology exist.\n\nIn 1892 the business was taken over by Rossi's four sons; control passed to his grandsons in 1930. In 1929 the Martini Ball & Bar logo was registered for the first time. Restructuring was carried out in 1977 resulting in the creation of the General Beverage Corporation. In 1992 Martini & Rossi merged with Bacardi. “Martini is the world's fourth most powerful ‘spirit’ brand” according to a survey of the market in 2006.\n\nIn 1970 and 1971 Martini together with Rossi supported the so-called \"Ladies Football World Championships\". These tournaments were entirely independent from FIFA and the common national soccer associations. They were held in Rome and in Mexico.",
-    type: "Vermouth",
+    type: "Wine / Vermouth",
     isAlcoholic: true,
     abv: 0,
   },
@@ -3184,7 +3170,7 @@ export const ingredients: Ingredient[] = [
     name: "Lime Juice",
     description:
       'A lime (from French lime, from Arabic līma, from Persian līmū, "lemon") is a hybrid citrus fruit, which is typically round, lime green, 3–6 centimetres (1.2–2.4 in) in diameter, and contains acidic juice vesicles.\nThere are several species of citrus trees whose fruits are called limes, including the Key lime (Citrus aurantifolia), Persian lime, kaffir lime, and desert lime. Limes are a rich source of vitamin C, and are often used to accent the flavours of foods and beverages. They are grown year-round. Plants with fruit called "limes" have diverse genetic origins; limes do not form a monophyletic group.',
-    type: "Fruit",
+    type: "Juice",
     isAlcoholic: false,
     abv: 0,
   },
@@ -3551,7 +3537,7 @@ export const ingredients: Ingredient[] = [
     name: "Ruby Port",
     description:
       "Ruby Port is the most extensively produced and widely available style of port wine. In fact, for many people it serves as an introduction to fortified wines in general. Unlike Vintage Port, most Ruby Port is a blend of young wines from multiple vintages. ... Until the 1960s, it simply indicated a bulk-produced port.",
-    type: "Wine",
+    type: "Wine / Vermouth",
     isAlcoholic: true,
     abv: 19,
   },
@@ -3559,7 +3545,7 @@ export const ingredients: Ingredient[] = [
     name: "Rose",
     description:
       'A rosé (from French, rosé [ʁoze]) is a type of wine that incorporates some of the color from the grape skins, but not enough to qualify it as a red wine. It may be the oldest known type of wine, as it is the most straightforward to make with the skin contact method. The pink color can range from a pale "onion-skin" orange to a vivid near-purple, depending on the grape varieties used and winemaking techniques. Usually, the wine is labelled rosé in French, Portuguese, and English-speaking countries, rosado in Spanish, or rosato in Italian.\n\nThere are three major ways to produce rosé wine: skin contact, saignée, and blending. Rosé wines can be made still, semi-sparkling or sparkling and with a wide range of sweetness levels from highly dry Provençal rosé to sweet White Zinfandels and blushes. Rosé wines are made from a wide variety of grapes and can be found all around the globe.\n\nWhen rosé wine is the primary product, it is produced with the skin contact method. Black-skinned grapes are crushed and the skins are allowed to remain in contact with the juice for a short period, typically two to twenty hours.[3] The grape must is then pressed and the skins discarded, rather than left in contact throughout fermentation (as with red wine making). The longer the skins are left in contact with the juice, the more intense the color of the final wine.\n\nWhen a winemaker desires to impart more tannin and color to red wine, some of the pink juice from the must can be removed at an early stage in what is known as the Saignée (from French bleeding) method. The red wine remaining in the vats is intensified as a result of the bleeding, because the volume of juice in the must is reduced, and the must involved in the maceration becomes more concentrated. The pink juice that is removed can be fermented separately to produce rosé.\n\nThe simple mixing of red wine into white wine to impart color is uncommon and is discouraged in most wine growing regions, especially in France, where it is forbidden by law, except for Champagne. Even in Champagne, several high-end producers do not use this method but rather the saignée method.',
-    type: "Wine",
+    type: "Wine / Vermouth",
     isAlcoholic: true,
     abv: 14,
   },

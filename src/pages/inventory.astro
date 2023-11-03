@@ -29,12 +29,8 @@ const groupByType = (ingredients) => {
 const groupedIngredients = groupByType(ingredients);
 ---
 
-
-
 <Layout title="Inventory">
 	<div class="flex flex-col mx-auto px-4 mb-16">
 		<Inventory client:load groupedIngredients={groupedIngredients} />
 	</div>
 </Layout>
-
-../const/ingredients

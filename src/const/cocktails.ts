@@ -10610,7 +10610,7 @@ export const cocktails: Cocktail[] = [
         unit: "",
       },
       {
-        name: "Cherries",
+        name: "Cherry",
         amount: "",
         unit: "",
       },
