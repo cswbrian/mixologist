@@ -8,28 +8,44 @@ export const cocktails: Cocktail[] = [
     ingredients: [
       {
         name: "Light Rum",
-        amount: "2-3 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+          ml: "60",
+          cl: "6",
+          shot: "2",
+        },
       },
       {
-        name: "Lime",
-        amount: "Juice of 1",
-        unit: "",
+        name: "Lime Juice",
+        amount: {
+          oz: "1/2",
+          ml: "15",
+          cl: " 1 1/2",
+          shot: "1/2",
+        },
       },
       {
-        name: "Sugar",
-        amount: "2 tsp",
-        unit: "",
+        name: "Simple Syrup",
+        amount: {
+          oz: "1/3",
+          ml: "10",
+          cl: "1",
+          shot: "1/2",
+        },
       },
+      {
+        name: "Club soda",
+        amount: {
+          custom: "to top",
+        },
+      },
+    ],
+    garnishes: [
       {
         name: "Mint",
-        amount: "2-4",
-        unit: "",
-      },
-      {
-        name: "Soda Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "14 fresh",
+        },
       },
     ],
     preparation: "",
@@ -41,23 +57,32 @@ export const cocktails: Cocktail[] = [
     ingredients: [
       {
         name: "Bourbon",
-        amount: "4.5 cL",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+          ml: "45",
+          cl: "4 1/2",
+          shot: "1",
+        },
       },
       {
         name: "Angostura Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 cube",
-        unit: "",
+        amount: {
+          custom: "1 Cube",
+        },
       },
+    ],
+    garnishes: [
       {
-        name: "Water",
-        amount: "dash",
-        unit: "",
+        name: "Orange",
+        amount: {
+          custom: "1 Twist",
+        },
       },
     ],
     preparation: "",
@@ -66,15808 +91,18056 @@ export const cocktails: Cocktail[] = [
     name: "Long Island Tea",
     timing: "",
     tastes: ["Sour", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Light Rum",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Gin",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Tequila",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Cola",
-        amount: "1 splash",
-        unit: "",
+        amount: {
+          custom: "1 splash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Negroni",
     timing: "",
     tastes: ["Bitter sweet", "Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Campari",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sweet Vermouth",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Whiskey Sour",
     timing: "",
     tastes: ["Sour", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Blended Whiskey",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Lemon",
-        amount: "1/2 slice",
-        unit: "",
+        amount: {
+          custom: "1/2 slice",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Dry Martini",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 2/3 oz",
-        unit: "",
+        amount: {
+          oz: "1 2/3",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "1/3 oz",
-        unit: "",
+        amount: {
+          oz: "1/3",
+        },
       },
       {
         name: "Olive",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Daiquiri",
     timing: "",
     tastes: ["Sour", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Lime",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Margarita",
     timing: "",
     tastes: ["Sour", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Tequila",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Salt",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Manhattan",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Sweet Vermouth",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Bourbon",
-        amount: "2 1/2 oz Blended",
-        unit: "",
+        amount: {
+          custom: "2 1/2 oz blended",
+        },
       },
       {
         name: "Angostura Bitters",
-        amount: "dash",
-        unit: "",
+        amount: {
+          custom: "dash",
+        },
       },
       {
         name: "Ice",
-        amount: "2 or 3",
-        unit: "",
+        amount: {
+          custom: "2 or 3",
+        },
       },
       {
         name: "Maraschino Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Orange Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Moscow Mule",
     timing: "",
     tastes: ["Sour", "Spicy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Ginger Ale",
-        amount: "8 oz",
-        unit: "",
+        amount: {
+          oz: "8",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "After Dinner Cocktail",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Apricot Brandy",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lime",
-        amount: "Juice of 1",
-        unit: "",
+        amount: {
+          custom: "juice of 1",
+        },
       },
       {
         name: "Lime",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "After Supper Cocktail",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Triple Sec",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Apricot Brandy",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Alabama Slammer",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Southern Comfort",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Amaretto",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sloe Gin",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Alaska Cocktail",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Orange Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Yellow Chartreuse",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "Twist of",
-        unit: "",
+        amount: {
+          custom: "twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Alexander",
     timing: "",
     tastes: ["Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Creme De Cacao",
-        amount: "1/2 oz white",
-        unit: "",
+        amount: {
+          custom: "1/2 oz white",
+        },
       },
       {
         name: "Light Cream",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Nutmeg",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Brandy Alexander",
     timing: "",
     tastes: ["Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Brandy",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Creme De Cacao",
-        amount: "1 oz white",
-        unit: "",
+        amount: {
+          custom: "1 oz white",
+        },
       },
       {
         name: "Light Cream",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Nutmeg",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Alfie Cocktail",
     timing: "",
     tastes: ["Fresh", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Lemon Vodka",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Algonquin",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Blended Whiskey",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Allegheny",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Dry Vermouth",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Bourbon",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Blackberry Brandy",
-        amount: "1 1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1 1/2 tsp",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1 1/2 tsp",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Allies Cocktail",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Dry Vermouth",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Gin",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Kummel",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Almeria",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Dark Rum",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Kahlua",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Egg White",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Almond Joy",
     timing: "",
     tastes: ["Nutty", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Creme De Cacao",
-        amount: "1/2 oz white",
-        unit: "",
+        amount: {
+          custom: "1/2 oz white",
+        },
       },
       {
         name: "Light Cream",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Amaretto and Cream",
     timing: "",
     tastes: ["Creamy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Light Cream",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Amaretto Mist",
     timing: "",
     tastes: ["Nutty"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Lime",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Amaretto Rose",
     timing: "",
     tastes: ["Nutty", "Floral"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Club Soda",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Amaretto Stinger",
     timing: "",
     tastes: ["Nutty"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "White Creme De Menthe",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Amaretto Tea",
     timing: "",
     tastes: ["Nutty"],
+    preparation: "",
     ingredients: [
       {
         name: "Tea",
-        amount: "6 oz hot",
-        unit: "",
+        amount: {
+          custom: "6 oz hot",
+        },
       },
       {
         name: "Amaretto",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Whipped Cream",
-        amount: "Chilled",
-        unit: "",
+        amount: {
+          custom: "chilled",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Angel Face",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Apricot Brandy",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Apple Brandy",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Gin",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Applecar",
     timing: "",
     tastes: ["Fresh", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Applejack",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Apricot Lady",
     timing: "",
     tastes: ["Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Apricot Brandy",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Egg White",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Orange",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Archbishop",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Wine",
-        amount: "1 oz Green Ginger",
-        unit: "",
+        amount: {
+          custom: "1 oz green ginger",
+        },
       },
       {
         name: "Benedictine",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Lime",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Arise My Love",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Champagne",
-        amount: "Chilled",
-        unit: "",
+        amount: {
+          custom: "chilled",
+        },
       },
       {
         name: "Green Creme De Menthe",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Arthur Tompkins",
     timing: "",
     tastes: ["Fresh", "Sour", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Grand Marnier",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Artillery",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Sweet Vermouth",
-        amount: "1 1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1 1/2 tsp",
+        },
       },
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Balmoral",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Scotch",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Sweet Vermouth",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Banana Daiquiri",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Banana",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bermuda Highball",
     timing: "",
     tastes: ["Fresh", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Brandy",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Gin",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Carbonated Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Black Russian",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Coffee Liqueur",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Blackthorn",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Sweet Vermouth",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sloe Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bloody Maria",
     timing: "",
     tastes: ["Spicy"],
+    preparation: "",
     ingredients: [
       {
         name: "Tequila",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Tomato Juice",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Tabasco Sauce",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Celery Salt",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Lemon",
-        amount: "1 slice",
-        unit: "",
+        amount: {
+          custom: "1 slice",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bloody Mary",
     timing: "",
     tastes: ["Spicy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Tomato Juice",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Worcestershire Sauce",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Tabasco Sauce",
-        amount: "2-3 drops",
-        unit: "",
+        amount: {
+          custom: "2-3 drops",
+        },
       },
       {
         name: "Lime",
-        amount: "1 wedge",
-        unit: "",
+        amount: {
+          custom: "1 wedge",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Blue Lagoon",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Blue Curacao",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lemonade",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Cherry",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Blue Margarita",
     timing: "",
     tastes: ["Sour", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Tequila",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Blue Curacao",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Salt",
-        amount: "Coarse",
-        unit: "",
+        amount: {
+          custom: "coarse",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Blue Mountain",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Añejo Rum",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Tia Maria",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Vodka",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bluebird",
     timing: "",
     tastes: ["Fresh", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Blue Curacao",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
       {
         name: "Maraschino Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bobby Burns Cocktail",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Sweet Vermouth",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Scotch",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Benedictine",
-        amount: "1 1/4 tsp",
-        unit: "",
+        amount: {
+          custom: "1 1/4 tsp",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Boomerang",
     timing: "",
     tastes: ["Fresh", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
       {
         name: "Maraschino Liqueur",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Maraschino Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Boston Sidecar",
     timing: "",
     tastes: ["Fresh", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Brandy",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Lime",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Boston Sour",
     timing: "",
     tastes: ["Fresh", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Blended Whiskey",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Egg White",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Lemon",
-        amount: "1 slice",
-        unit: "",
+        amount: {
+          custom: "1 slice",
+        },
       },
       {
         name: "Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Classic Old-fashioned",
     timing: "",
     tastes: ["Bitter sweet", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Bitters",
-        amount: "3 dashes",
-        unit: "",
+        amount: {
+          custom: "3 dashes",
+        },
       },
       {
         name: "Water",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Sugar",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Bourbon",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Orange",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Maraschino Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bourbon Sling",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Sugar",
-        amount: "1 tsp superfine",
-        unit: "",
+        amount: {
+          custom: "1 tsp superfine",
+        },
       },
       {
         name: "Water",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Bourbon",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bourbon Sour",
     timing: "",
     tastes: ["Sour", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Bourbon",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sugar",
-        amount: "1/2 tsp superfine",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp superfine",
+        },
       },
       {
         name: "Orange",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Maraschino Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Boxcar",
     timing: "",
     tastes: ["Fresh", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Egg White",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Brandy Cobbler",
     timing: "",
     tastes: ["Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Sugar",
-        amount: "1 tsp superfine",
-        unit: "",
+        amount: {
+          custom: "1 tsp superfine",
+        },
       },
       {
         name: "Club Soda",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Lemon",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Brandy",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Maraschino Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Orange",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Brandy Flip",
     timing: "",
     tastes: ["Creamy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Brandy",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Egg",
-        amount: "1 whole",
-        unit: "",
+        amount: {
+          custom: "1 whole",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 tsp superfine",
-        unit: "",
+        amount: {
+          custom: "1 tsp superfine",
+        },
       },
       {
         name: "Light Cream",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Nutmeg",
-        amount: "1/8 tsp grated",
-        unit: "",
+        amount: {
+          custom: "1/8 tsp grated",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Brandy Sour",
     timing: "",
     tastes: ["Sour", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Brandy",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Lemon",
-        amount: "1/2 slice",
-        unit: "",
+        amount: {
+          custom: "1/2 slice",
+        },
       },
       {
         name: "Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Caipirinha",
     timing: "",
     tastes: ["Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Sugar",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Lime",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Cachaca",
-        amount: "2 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "2 1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "California Lemonade",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Blended Whiskey",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1",
-        unit: "",
+        amount: {
+          custom: "juice of 1",
+        },
       },
       {
         name: "Lime",
-        amount: "Juice of 1",
-        unit: "",
+        amount: {
+          custom: "juice of 1",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1/4 tsp",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp",
+        },
       },
       {
         name: "Carbonated Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Casa Blanca",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1 1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1 1/2 tsp",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1 1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1 1/2 tsp",
+        },
       },
       {
         name: "Maraschino Liqueur",
-        amount: "1 1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1 1/2 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Casino Royale",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Maraschino Liqueur",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Orange Bitters",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Egg Yolk",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Champagne Cocktail",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Champagne",
-        amount: "Chilled",
-        unit: "",
+        amount: {
+          custom: "chilled",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 piece",
-        unit: "",
+        amount: {
+          custom: "1 piece",
+        },
       },
       {
         name: "Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
       {
         name: "Cognac",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Cherry Rum",
     timing: "",
     tastes: ["Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 1/4 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/4",
+        },
       },
       {
         name: "Cherry Brandy",
-        amount: "1 1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1 1/2 tsp",
+        },
       },
       {
         name: "Light Cream",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Chicago Fizz",
     timing: "",
     tastes: ["Fresh", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Port",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Egg White",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Carbonated Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Chocolate Black Russian",
     timing: "",
     tastes: ["Boozy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Kahlua",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Vodka",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Chocolate Ice-cream",
-        amount: "5 oz",
-        unit: "",
+        amount: {
+          oz: "5",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "City Slicker",
     timing: "",
     tastes: ["Fresh", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Brandy",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Clove Cocktail",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Sweet Vermouth",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sloe Gin",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Wine",
-        amount: "1/2 oz Muscatel",
-        unit: "",
+        amount: {
+          custom: "1/2 oz muscatel",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Cuba Libre",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lime",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Cola",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Dragonfly",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Ginger Ale",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
       {
         name: "Lime",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Dry Rob Roy",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Scotch",
-        amount: "2 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "2 1/2",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "1 1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1 1/2 tsp",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Dubonnet Cocktail",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Dubonnet Rouge",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Gin",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Bitters",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "English Highball",
     timing: "",
     tastes: ["Fresh", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Brandy",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Gin",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Sweet Vermouth",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Carbonated Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "English Rose Cocktail",
     timing: "",
     tastes: ["Floral"],
+    preparation: "",
     ingredients: [
       {
         name: "Apricot Brandy",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1/4 tsp",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp",
+        },
       },
       {
         name: "Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Flying Dutchman",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Flying Scotchman",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Scotch",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sweet Vermouth",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Bitters",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Sugar Syrup",
-        amount: "1/4 tsp",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Foxy Lady",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Creme De Cacao",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Light Cream",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Frisco Sour",
     timing: "",
     tastes: ["Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Blended Whiskey",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Benedictine",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/4",
-        unit: "",
+        amount: {
+          custom: "juice of 1/4",
+        },
       },
       {
         name: "Lime",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Lemon",
-        amount: "1 slice",
-        unit: "",
+        amount: {
+          custom: "1 slice",
+        },
       },
       {
         name: "Lime",
-        amount: "1 slice",
-        unit: "",
+        amount: {
+          custom: "1 slice",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Frozen Daiquiri",
     timing: "",
     tastes: ["Sour", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Ice",
-        amount: "1 cup crushed",
-        unit: "",
+        amount: {
+          custom: "1 cup crushed",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Frozen Mint Daiquiri",
     timing: "",
     tastes: ["Sour", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Mint",
-        amount: 6,
-        unit: "",
+        amount: {
+          custom: 6,
+        },
       },
       {
         name: "Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Frozen Pineapple Daiquiri",
     timing: "",
     tastes: ["Sour", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Pineapple",
-        amount: "4 chunks",
-        unit: "",
+        amount: {
+          custom: "4 chunks",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Sugar",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Gentleman's Club",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Brandy",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sweet Vermouth",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Club Soda",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Gin and Tonic",
     timing: "",
     tastes: ["Fresh", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Tonic Water",
-        amount: "5 oz",
-        unit: "",
+        amount: {
+          oz: "5",
+        },
       },
       {
         name: "Lime",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Gin Cooler",
     timing: "",
     tastes: ["Fresh"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Carbonated Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Orange Spiral",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Gin Daisy",
     timing: "",
     tastes: ["Fresh"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sugar",
-        amount: "1/2 tsp superfine",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp superfine",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Maraschino Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Orange",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Gin Fizz",
     timing: "",
     tastes: ["Fresh", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Carbonated Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Gin Sling",
     timing: "",
     tastes: ["Fresh", "Sour", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Water",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Orange Peel",
-        amount: "Twist of",
-        unit: "",
+        amount: {
+          custom: "twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Gin Smash",
     timing: "",
     tastes: ["Fresh", "Herbal", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Carbonated Water",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 cube",
-        unit: "",
+        amount: {
+          custom: "1 cube",
+        },
       },
       {
         name: "Mint",
-        amount: 4,
-        unit: "",
+        amount: {
+          custom: 4,
+        },
       },
       {
         name: "Orange",
-        amount: "1 slice",
-        unit: "",
+        amount: {
+          custom: "1 slice",
+        },
       },
       {
         name: "Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Gin Sour",
     timing: "",
     tastes: ["Sour", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sugar",
-        amount: "1/2 tsp superfine",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp superfine",
+        },
       },
       {
         name: "Orange",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Maraschino Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Gin Squirt",
     timing: "",
     tastes: ["Fresh", "Sour", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Pineapple",
-        amount: "3 chunks",
-        unit: "",
+        amount: {
+          custom: "3 chunks",
+        },
       },
       {
         name: "Strawberries",
-        amount: 2,
-        unit: "",
+        amount: {
+          custom: 2,
+        },
       },
       {
         name: "Carbonated Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Gin Swizzle",
     timing: "",
     tastes: ["Fresh", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Lime Juice",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 tsp superfine",
-        unit: "",
+        amount: {
+          custom: "1 tsp superfine",
+        },
       },
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Bitters",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Club Soda",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Gin Toddy",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Water",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Godchild",
     timing: "",
     tastes: ["Creamy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Amaretto",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Heavy Cream",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Godfather",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Scotch",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Amaretto",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Godmother",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Amaretto",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Grass Skirt",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Pineapple",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Harvey Wallbanger",
     timing: "",
     tastes: ["Sour", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Galliano",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Havana Cocktail",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Hawaiian Cocktail",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Highland Fling Cocktail",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Scotch",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Sweet Vermouth",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Orange Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
       {
         name: "Olive",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Imperial Fizz",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Blended Whiskey",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Carbonated Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Irish Spring",
     timing: "",
     tastes: ["Herbal", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Irish Whiskey",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Peach Brandy",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sweet and Sour",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Orange",
-        amount: "1 slice",
-        unit: "",
+        amount: {
+          custom: "1 slice",
+        },
       },
       {
         name: "Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Jack Rose Cocktail",
     timing: "",
     tastes: ["Herbal", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Apple Brandy",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Lime",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Japanese Fizz",
     timing: "",
     tastes: ["Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Blended Whiskey",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Port",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Egg White",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Carbonated Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Jewel of the Nile",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Green Chartreuse",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Yellow Chartreuse",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "John Collins",
     timing: "",
     tastes: ["Fresh", "Sour", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Bourbon",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 tsp superfine",
-        unit: "",
+        amount: {
+          custom: "1 tsp superfine",
+        },
       },
       {
         name: "Club Soda",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Maraschino Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Orange",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Kamikaze",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Kentucky B and B",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Bourbon",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Benedictine",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Kentucky Colonel",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Bourbon",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Benedictine",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Lady Love Fizz",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Light Cream",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Egg White",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Carbonated Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Loch Lomond",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Scotch",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Drambuie",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "London Town",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Maraschino Liqueur",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Orange Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Lone Tree Cocktail",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Sweet Vermouth",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Lone Tree Cooler",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Carbonated Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Gin",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Orange Spiral",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Lord and Lady",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Dark Rum",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Tia Maria",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Mai Tai",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Orgeat Syrup",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Sweet and Sour",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Martinez Cocktail",
     timing: "",
     tastes: ["Boozy", "Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1/4 tsp",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp",
+        },
       },
       {
         name: "Orange Bitters",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Martini",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 2/3 oz",
-        unit: "",
+        amount: {
+          oz: "1 2/3",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "1/3 oz",
-        unit: "",
+        amount: {
+          oz: "1/3",
+        },
       },
       {
         name: "Olive",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Midnight Cowboy",
     timing: "",
     tastes: ["Boozy", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Bourbon",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Dark Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Heavy Cream",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Mississippi Planters Punch",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Brandy",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Light Rum",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Bourbon",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Carbonated Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Monkey Wrench",
     timing: "",
     tastes: ["Boozy", "Spicy"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Grapefruit Juice",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Bitters",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "New York Sour",
     timing: "",
     tastes: ["Sour", "Fresh"],
+    preparation: "",
     ingredients: [
       {
         name: "Blended Whiskey",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Red Wine",
-        amount: "(Claret)",
-        unit: "",
+        amount: {
+          custom: "(claret)",
+        },
       },
       {
         name: "Lemon",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Cherry",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Orange Oasis",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Cherry Brandy",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
       {
         name: "Ginger Ale",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Orgasm",
     timing: "",
     tastes: ["Creamy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Creme De Cacao",
-        amount: "1/2 oz white",
-        unit: "",
+        amount: {
+          custom: "1/2 oz white",
+        },
       },
       {
         name: "Amaretto",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Vodka",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Light Cream",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Pink Gin",
     timing: "",
     tastes: ["Herbal", "Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Bitters",
-        amount: "3 dashes",
-        unit: "",
+        amount: {
+          custom: "3 dashes",
+        },
       },
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Pink Lady",
     timing: "",
     tastes: ["Creamy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Light Cream",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Egg White",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Poppy Cocktail",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Creme De Cacao",
-        amount: "3/4 oz white",
-        unit: "",
+        amount: {
+          custom: "3/4 oz white",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Port and Starboard",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Grenadine",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Green Creme De Menthe",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Port Wine Cocktail",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Port",
-        amount: "2 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "2 1/2",
+        },
       },
       {
         name: "Brandy",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Port Wine Flip",
     timing: "",
     tastes: ["Boozy", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Port",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Light Cream",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Egg",
-        amount: "1 whole",
-        unit: "",
+        amount: {
+          custom: "1 whole",
+        },
       },
       {
         name: "Nutmeg",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Quaker's Cocktail",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Brandy",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/4",
-        unit: "",
+        amount: {
+          custom: "juice of 1/4",
+        },
       },
       {
         name: "Raspberry Syrup",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Quarter Deck Cocktail",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 1/2",
-        unit: "",
+        amount: {
+          custom: "1 1/2",
+        },
       },
       {
         name: "Sherry",
-        amount: "1/3 oz cream",
-        unit: "",
+        amount: {
+          custom: "1/3 oz cream",
+        },
       },
       {
         name: "Lime",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Queen Bee",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Coffee Brandy",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lime Vodka",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Sherry",
-        amount: "1/2 oz cream",
-        unit: "",
+        amount: {
+          custom: "1/2 oz cream",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Queen Charlotte",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Red Wine",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lemon-lime Soda",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Queen Elizabeth",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Dry Vermouth",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Benedictine",
-        amount: "1 1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1 1/2 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Quentin",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Dark Rum",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Kahlua",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Light Cream",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Nutmeg",
-        amount: "1/8 tsp grated",
-        unit: "",
+        amount: {
+          custom: "1/8 tsp grated",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Royal Fizz",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sweet and Sour",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Egg",
-        amount: "1 whole",
-        unit: "",
+        amount: {
+          custom: "1 whole",
+        },
       },
       {
         name: "Cola",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Royal Gin Fizz",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Egg",
-        amount: "1 whole",
-        unit: "",
+        amount: {
+          custom: "1 whole",
+        },
       },
       {
         name: "Carbonated Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Rum Cobbler",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Sugar",
-        amount: "1 tsp superfine",
-        unit: "",
+        amount: {
+          custom: "1 tsp superfine",
+        },
       },
       {
         name: "Club Soda",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Lemon",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Dark Rum",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Maraschino Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Orange",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Rum Cooler",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Rum",
-        amount: "2 oz light or dark",
-        unit: "",
+        amount: {
+          custom: "2 oz light or dark",
+        },
       },
       {
         name: "Lemon-lime Soda",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
       {
         name: "Lemon",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Rum Milk Punch",
     timing: "",
     tastes: ["Creamy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Milk",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Nutmeg",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Rum Old-fashioned",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "151 Proof Rum",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Bitters",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Water",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Lime Peel",
-        amount: "Twist of",
-        unit: "",
+        amount: {
+          custom: "twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Rum Screwdriver",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "5 oz",
-        unit: "",
+        amount: {
+          oz: "5",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Rum Sour",
     timing: "",
     tastes: ["Sour", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sugar",
-        amount: "1/2 tsp superfine",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp superfine",
+        },
       },
       {
         name: "Orange",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Maraschino Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Rum Toddy",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Rum",
-        amount: "2 oz light or dark",
-        unit: "",
+        amount: {
+          custom: "2 oz light or dark",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
       {
         name: "Water",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Rusty Nail",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Scotch",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Drambuie",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Salty Dog",
     timing: "",
     tastes: ["Salty"],
+    preparation: "",
     ingredients: [
       {
         name: "Grapefruit Juice",
-        amount: "5 oz",
-        unit: "",
+        amount: {
+          oz: "5",
+        },
       },
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Salt",
-        amount: "1/4 tsp",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Sazerac",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Ricard",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Sugar",
-        amount: "1/2 tsp superfine",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp superfine",
+        },
       },
       {
         name: "Peychaud Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
       {
         name: "Water",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Bourbon",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Scooter",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Brandy",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Amaretto",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Light Cream",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Scotch Cobbler",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Scotch",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Brandy",
-        amount: "4 dashes",
-        unit: "",
+        amount: {
+          custom: "4 dashes",
+        },
       },
       {
         name: "Curacao",
-        amount: "4 dashes",
-        unit: "",
+        amount: {
+          custom: "4 dashes",
+        },
       },
       {
         name: "Orange",
-        amount: "1 slice",
-        unit: "",
+        amount: {
+          custom: "1 slice",
+        },
       },
       {
         name: "Mint",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Scotch Sour",
     timing: "",
     tastes: ["Sour", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Scotch",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Lime",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Lemon",
-        amount: "1/2 slice",
-        unit: "",
+        amount: {
+          custom: "1/2 slice",
+        },
       },
       {
         name: "Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Screwdriver",
     timing: "",
     tastes: ["Fresh", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Shanghai Cocktail",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 oz Jamaican",
-        unit: "",
+        amount: {
+          custom: "1 oz jamaican",
+        },
       },
       {
         name: "Anisette",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/4",
-        unit: "",
+        amount: {
+          custom: "juice of 1/4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Sherry Eggnog",
     timing: "",
     tastes: ["Creamy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Sherry",
-        amount: "2 oz cream",
-        unit: "",
+        amount: {
+          custom: "2 oz cream",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Egg",
-        amount: "1 whole",
-        unit: "",
+        amount: {
+          custom: "1 whole",
+        },
       },
       {
         name: "Milk",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Nutmeg",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Sherry Flip",
     timing: "",
     tastes: ["Creamy", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Sherry",
-        amount: "1 1/2 oz cream",
-        unit: "",
+        amount: {
+          custom: "1 1/2 oz cream",
+        },
       },
       {
         name: "Light Cream",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Egg",
-        amount: "1 whole",
-        unit: "",
+        amount: {
+          custom: "1 whole",
+        },
       },
       {
         name: "Nutmeg",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Sidecar",
     timing: "",
     tastes: ["Sour", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Cognac",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Cointreau",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Sidecar Cocktail",
     timing: "",
     tastes: ["Sour", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Brandy",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/4",
-        unit: "",
+        amount: {
+          custom: "juice of 1/4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Singapore Sling",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Cherry Brandy",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Gin",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sweet and Sour",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Carbonated Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Cherry",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Sloe Gin Cocktail",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Sloe Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "1/4 tsp",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp",
+        },
       },
       {
         name: "Orange Bitters",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Sol Y Sombra",
     timing: "",
     tastes: ["Boozy", "Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Brandy",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Anisette",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Stone Sour",
     timing: "",
     tastes: ["Sour", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Apricot Brandy",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sweet and Sour",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Strawberry Daiquiri",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Strawberry Schnapps",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Light Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Strawberries",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Strawberry Margarita",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Strawberry Schnapps",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Tequila",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Strawberries",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Salt",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Tequila Fizz",
     timing: "",
     tastes: ["Fresh", "Sour", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Tequila",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Grenadine",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Egg White",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Ginger Ale",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Tequila Sour",
     timing: "",
     tastes: ["Sour", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Tequila",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Lemon",
-        amount: "1/2 slice",
-        unit: "",
+        amount: {
+          custom: "1/2 slice",
+        },
       },
       {
         name: "Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Thriller",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Scotch",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Wine",
-        amount: "1 oz Green Ginger",
-        unit: "",
+        amount: {
+          custom: "1 oz green ginger",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Tom Collins",
     timing: "",
     tastes: ["Fresh", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 tsp superfine",
-        unit: "",
+        amount: {
+          custom: "1 tsp superfine",
+        },
       },
       {
         name: "Club Soda",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Maraschino Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Orange",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Turf Cocktail",
     timing: "",
     tastes: ["Sweet", "Herbal", "Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Dry Vermouth",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Gin",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Anis",
-        amount: "1/4 tsp",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp",
+        },
       },
       {
         name: "Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
       {
         name: "Orange Peel",
-        amount: "Twist of",
-        unit: "",
+        amount: {
+          custom: "twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Tuxedo Cocktail",
     timing: "",
     tastes: ["Herbal", "Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Dry Vermouth",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Maraschino Liqueur",
-        amount: "1/4 tsp",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp",
+        },
       },
       {
         name: "Anis",
-        amount: "1/4 tsp",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp",
+        },
       },
       {
         name: "Orange Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
       {
         name: "Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Valencia Cocktail",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Apricot Brandy",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Orange Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Van Vleet",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Maple Syrup",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Vermouth Cassis",
     timing: "",
     tastes: ["Herbal", "Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Dry Vermouth",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Creme De Cassis",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Carbonated Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Vesuvio",
     timing: "",
     tastes: ["Herbal", "Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sweet Vermouth",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Egg White",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Veteran",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Dark Rum",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Cherry Brandy",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Victor",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Sweet Vermouth",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Brandy",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Victory Collins",
     timing: "",
     tastes: ["Fresh", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Grape Juice",
-        amount: "3 oz unsweetened",
-        unit: "",
+        amount: {
+          custom: "3 oz unsweetened",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Orange",
-        amount: "1 slice",
-        unit: "",
+        amount: {
+          custom: "1 slice",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Vodka and Tonic",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Tonic Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Waikiki Beachcomber",
     timing: "",
     tastes: ["Fresh", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Triple Sec",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Gin",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Whiskey Mac",
     timing: "",
     tastes: ["Boozy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Scotch",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Wine",
-        amount: "1 oz Green Ginger",
-        unit: "",
+        amount: {
+          custom: "1 oz green ginger",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "White Russian",
     timing: "",
     tastes: ["Creamy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Coffee Liqueur",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Light Cream",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Afterglow",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Grenadine",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "4 parts",
-        unit: "",
+        amount: {
+          custom: "4 parts",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "4 parts",
-        unit: "",
+        amount: {
+          custom: "4 parts",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Alice Cocktail",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Grenadine",
-        amount: "1 cl",
-        unit: "",
+        amount: {
+          cl: "1",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 cl",
-        unit: "",
+        amount: {
+          cl: "1",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "2 cl",
-        unit: "",
+        amount: {
+          cl: "2",
+        },
       },
       {
         name: "Cream",
-        amount: "4 cl",
-        unit: "",
+        amount: {
+          cl: "4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Apple Karate",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Apple Juice",
-        amount: "2 cups",
-        unit: "",
+        amount: {
+          custom: "2 cups",
+        },
       },
       {
         name: "Carrot",
-        amount: "1 large",
-        unit: "",
+        amount: {
+          custom: "1 large",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bora Bora",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Pineapple Juice",
-        amount: "10 cl",
-        unit: "",
+        amount: {
+          cl: "10",
+        },
       },
       {
         name: "Passion Fruit Juice",
-        amount: "6 cl",
-        unit: "",
+        amount: {
+          cl: "6",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 cl",
-        unit: "",
+        amount: {
+          cl: "1",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1 cl",
-        unit: "",
+        amount: {
+          cl: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Orangeade",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Lemon Juice",
-        amount: "5 cl",
-        unit: "",
+        amount: {
+          cl: "5",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "15 cl",
-        unit: "",
+        amount: {
+          cl: "15",
+        },
       },
       {
         name: "Sugar Syrup",
-        amount: "2-3 cl",
-        unit: "",
+        amount: {
+          cl: "2-3",
+        },
       },
       {
         name: "Soda Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Rail Splitter",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Sugar Syrup",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Ginger Ale",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Banana Milk Shake",
     timing: "",
     tastes: ["Creamy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Milk",
-        amount: "10 cl cold",
-        unit: "",
+        amount: {
+          custom: "10 cl cold",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "4 cl",
-        unit: "",
+        amount: {
+          cl: "4",
+        },
       },
       {
         name: "Sugar Syrup",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Banana",
-        amount: "1/2",
-        unit: "",
+        amount: {
+          custom: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Banana Strawberry Shake",
     timing: "",
     tastes: ["Creamy", "Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Strawberries",
-        amount: "1/2 lb frozen",
-        unit: "",
+        amount: {
+          custom: "1/2 lb frozen",
+        },
       },
       {
         name: "Banana",
-        amount: "1 frozen",
-        unit: "",
+        amount: {
+          custom: "1 frozen",
+        },
       },
       {
         name: "Yoghurt",
-        amount: "1 cup plain",
-        unit: "",
+        amount: {
+          custom: "1 cup plain",
+        },
       },
       {
         name: "Milk",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Honey",
-        amount: "to taste",
-        unit: "",
+        amount: {
+          custom: "to taste",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Banana Strawberry Shake Daiquiri",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Strawberries",
-        amount: "1/2 lb frozen",
-        unit: "",
+        amount: {
+          custom: "1/2 lb frozen",
+        },
       },
       {
         name: "Banana",
-        amount: "1 frozen",
-        unit: "",
+        amount: {
+          custom: "1 frozen",
+        },
       },
       {
         name: "Apple Juice",
-        amount: "2 cups fresh",
-        unit: "",
+        amount: {
+          custom: "2 cups fresh",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Egg Cream",
     timing: "",
     tastes: ["Creamy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Chocolate Syrup",
-        amount: "2 tblsp",
-        unit: "",
+        amount: {
+          custom: "2 tblsp",
+        },
       },
       {
         name: "Milk",
-        amount: "6 oz whole",
-        unit: "",
+        amount: {
+          custom: "6 oz whole",
+        },
       },
       {
         name: "Soda Water",
-        amount: "6 oz",
-        unit: "",
+        amount: {
+          oz: "6",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Fruit Cooler",
     timing: "",
     tastes: ["Fresh", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Apple Juice",
-        amount: "1 can frozen",
-        unit: "",
+        amount: {
+          custom: "1 can frozen",
+        },
       },
       {
         name: "Strawberries",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Sugar",
-        amount: "2 tblsp",
-        unit: "",
+        amount: {
+          custom: "2 tblsp",
+        },
       },
       {
         name: "Lemon",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Apple",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Soda Water",
-        amount: "1 L",
-        unit: "",
+        amount: {
+          custom: "1 l",
+        },
       },
       {
         name: "Ice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Fruit Flip-flop",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Yoghurt",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Fruit Juice",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Fruit Shake",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Yoghurt",
-        amount: "1 cup fruit",
-        unit: "",
+        amount: {
+          custom: "1 cup fruit",
+        },
       },
       {
         name: "Banana",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Orange Juice",
-        amount: "4 oz frozen",
-        unit: "",
+        amount: {
+          custom: "4 oz frozen",
+        },
       },
       {
         name: "Fruit",
-        amount: "1/2 piece textural",
-        unit: "",
+        amount: {
+          custom: "1/2 piece textural",
+        },
       },
       {
         name: "Ice",
-        amount: 6,
-        unit: "",
+        amount: {
+          custom: 6,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Just A Moonmint",
     timing: "",
     tastes: ["Fresh", "Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Milk",
-        amount: "2 cups",
-        unit: "",
+        amount: {
+          custom: "2 cups",
+        },
       },
       {
         name: "Chocolate Syrup",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Mint Syrup",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Lassi - A South Indian Drink",
     timing: "",
     tastes: ["Creamy", "Tart"],
+    preparation: "",
     ingredients: [
       {
         name: "Yoghurt",
-        amount: "1/2 cup plain",
-        unit: "",
+        amount: {
+          custom: "1/2 cup plain",
+        },
       },
       {
         name: "Water",
-        amount: "1 1/4 cup cold",
-        unit: "",
+        amount: {
+          custom: "1 1/4 cup cold",
+        },
       },
       {
         name: "Cumin Seed",
-        amount: "1/2 tsp ground roasted",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp ground roasted",
+        },
       },
       {
         name: "Salt",
-        amount: "1/4 tsp",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp",
+        },
       },
       {
         name: "Mint",
-        amount: "1/4 tsp dried",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp dried",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Lassi Khara",
     timing: "",
     tastes: ["Creamy", "Tart"],
+    preparation: "",
     ingredients: [
       {
         name: "Yoghurt",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Water",
-        amount: "2 cups cold",
-        unit: "",
+        amount: {
+          custom: "2 cups cold",
+        },
       },
       {
         name: "Salt",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Asafoetida",
-        amount: "1 pinch",
-        unit: "",
+        amount: {
+          custom: "1 pinch",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Lassi Raita",
     timing: "",
     tastes: ["Creamy", "Tart"],
+    preparation: "",
     ingredients: [
       {
         name: "Yoghurt",
-        amount: "2 cups",
-        unit: "",
+        amount: {
+          custom: "2 cups",
+        },
       },
       {
         name: "Ice",
-        amount: "4-6",
-        unit: "",
+        amount: {
+          custom: "4-6",
+        },
       },
       {
         name: "Sugar",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Lime",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Salt",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Lassi - Sweet",
     timing: "",
     tastes: ["Creamy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Yoghurt",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Water",
-        amount: "2 cups cold",
-        unit: "",
+        amount: {
+          custom: "2 cups cold",
+        },
       },
       {
         name: "Sugar",
-        amount: "4 tblsp",
-        unit: "",
+        amount: {
+          custom: "4 tblsp",
+        },
       },
       {
         name: "Salt",
-        amount: "pinch",
-        unit: "",
+        amount: {
+          custom: "pinch",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "2 tblsp",
-        unit: "",
+        amount: {
+          custom: "2 tblsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Lassi - Mango",
     timing: "",
     tastes: ["Creamy", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Mango",
-        amount: 2,
-        unit: "",
+        amount: {
+          custom: 2,
+        },
       },
       {
         name: "Yoghurt",
-        amount: "2 cups",
-        unit: "",
+        amount: {
+          custom: "2 cups",
+        },
       },
       {
         name: "Sugar",
-        amount: "1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1/2 cup",
+        },
       },
       {
         name: "Water",
-        amount: "1 cup iced",
-        unit: "",
+        amount: {
+          custom: "1 cup iced",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Lemouroudji",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Ginger",
-        amount: "2 pieces",
-        unit: "",
+        amount: {
+          custom: "2 pieces",
+        },
       },
       {
         name: "Water",
-        amount: "1 gal",
-        unit: "",
+        amount: {
+          custom: "1 gal",
+        },
       },
       {
         name: "Lemon",
-        amount: "1 lb",
-        unit: "",
+        amount: {
+          custom: "1 lb",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Cayenne Pepper",
-        amount: "ground",
-        unit: "",
+        amount: {
+          custom: "ground",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Limeade",
     timing: "",
     tastes: ["Fresh", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Lime",
-        amount: "Juice of 1",
-        unit: "",
+        amount: {
+          custom: "juice of 1",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Soda Water",
-        amount: "(seltzer water)",
-        unit: "",
+        amount: {
+          custom: "(seltzer water)",
+        },
       },
       {
         name: "Lime Peel",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Imperial Cocktail",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Lime Juice",
-        amount: "4 cl",
-        unit: "",
+        amount: {
+          cl: "4",
+        },
       },
       {
         name: "Gin",
-        amount: "2 cl",
-        unit: "",
+        amount: {
+          cl: "2",
+        },
       },
       {
         name: "Aperol",
-        amount: "4 cl",
-        unit: "",
+        amount: {
+          cl: "4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Banana Cantaloupe Smoothie",
     timing: "",
     tastes: ["Creamy", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Cantaloupe",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Banana",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Apple Berry Smoothie",
     timing: "",
     tastes: ["Creamy", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Berries",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Apple",
-        amount: 2,
-        unit: "",
+        amount: {
+          custom: 2,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Grape Lemon Pineapple Smoothie",
     timing: "",
     tastes: ["Fruity", "Tart"],
+    preparation: "",
     ingredients: [
       {
         name: "Grapes",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Lemon",
-        amount: "1/4",
-        unit: "",
+        amount: {
+          custom: "1/4",
+        },
       },
       {
         name: "Pineapple",
-        amount: "1/2",
-        unit: "",
+        amount: {
+          custom: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Kiwi Papaya Smoothie",
     timing: "",
     tastes: ["Creamy", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Kiwi",
-        amount: 3,
-        unit: "",
+        amount: {
+          custom: 3,
+        },
       },
       {
         name: "Papaya",
-        amount: "1/2",
-        unit: "",
+        amount: {
+          custom: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Mango Orange Smoothie",
     timing: "",
     tastes: ["Creamy", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Mango",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Orange",
-        amount: 2,
-        unit: "",
+        amount: {
+          custom: 2,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Pineapple Gingerale Smoothie",
     timing: "",
     tastes: ["Creamy", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Ginger",
-        amount: "1/4 inch",
-        unit: "",
+        amount: {
+          custom: "1/4 inch",
+        },
       },
       {
         name: "Pineapple",
-        amount: "1/2",
-        unit: "",
+        amount: {
+          custom: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Kill the Cold Smoothie",
     timing: "",
     tastes: ["Fresh"],
+    preparation: "",
     ingredients: [
       {
         name: "Ginger",
-        amount: "1 inch",
-        unit: "",
+        amount: {
+          custom: "1 inch",
+        },
       },
       {
         name: "Lemon",
-        amount: "1/4",
-        unit: "",
+        amount: {
+          custom: "1/4",
+        },
       },
       {
         name: "Water",
-        amount: "1 cup hot",
-        unit: "",
+        amount: {
+          custom: "1 cup hot",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Strawberry Shivers",
     timing: "",
     tastes: ["Creamy", "Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Strawberries",
-        amount: "1 1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1 1/2 cup",
+        },
       },
       {
         name: "Honey",
-        amount: "4 tsp",
-        unit: "",
+        amount: {
+          custom: "4 tsp",
+        },
       },
       {
         name: "Water",
-        amount: "1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1/2 cup",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Sweet Bananas",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Milk",
-        amount: "2 cups",
-        unit: "",
+        amount: {
+          custom: "2 cups",
+        },
       },
       {
         name: "Banana",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Honey",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Tomato Tang",
     timing: "",
     tastes: ["Fresh", "Tart"],
+    preparation: "",
     ingredients: [
       {
         name: "Tomato Juice",
-        amount: "2 cups",
-        unit: "",
+        amount: {
+          custom: "2 cups",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1-2 tblsp",
-        unit: "",
+        amount: {
+          custom: "1-2 tblsp",
+        },
       },
       {
         name: "Celery Salt",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Yoghurt Cooler",
     timing: "",
     tastes: ["Creamy", "Tart"],
+    preparation: "",
     ingredients: [
       {
         name: "Yoghurt",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Fruit",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Ice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Castillian Hot Chocolate",
     timing: "",
     tastes: ["Creamy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Cocoa Powder",
-        amount: "1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1/2 cup",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Cornstarch",
-        amount: "7 tsp",
-        unit: "",
+        amount: {
+          custom: "7 tsp",
+        },
       },
       {
         name: "Water",
-        amount: "1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1/2 cup",
+        },
       },
       {
         name: "Milk",
-        amount: "1 qt",
-        unit: "",
+        amount: {
+          custom: "1 qt",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Chocolate Beverage",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Milk",
-        amount: "6 cups",
-        unit: "",
+        amount: {
+          custom: "6 cups",
+        },
       },
       {
         name: "Chocolate",
-        amount: "3 oz Mexican",
-        unit: "",
+        amount: {
+          custom: "3 oz mexican",
+        },
       },
       {
         name: "Cinnamon",
-        amount: "1 tsp powdered",
-        unit: "",
+        amount: {
+          custom: "1 tsp powdered",
+        },
       },
       {
         name: "Egg",
-        amount: 3,
-        unit: "",
+        amount: {
+          custom: 3,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Chocolate Drink",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Chocolate",
-        amount: "125 gr",
-        unit: "",
+        amount: {
+          custom: "125 gr",
+        },
       },
       {
         name: "Milk",
-        amount: "3/4 L",
-        unit: "",
+        amount: {
+          custom: "3/4 l",
+        },
       },
       {
         name: "Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Drinking Chocolate",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Heavy Cream",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Milk",
-        amount: "6-8 oz",
-        unit: "",
+        amount: {
+          oz: "6-8",
+        },
       },
       {
         name: "Cinnamon",
-        amount: "1 stick",
-        unit: "",
+        amount: {
+          custom: "1 stick",
+        },
       },
       {
         name: "Vanilla",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Chocolate",
-        amount: "2 oz finely chopped dark",
-        unit: "",
+        amount: {
+          custom: "2 oz finely chopped dark",
+        },
       },
       {
         name: "Whipped Cream",
-        amount: "Fresh",
-        unit: "",
+        amount: {
+          custom: "fresh",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Hot Chocolate To Die For",
     timing: "",
     tastes: ["Creamy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Chocolate",
-        amount: "12 oz fine",
-        unit: "",
+        amount: {
+          custom: "12 oz fine",
+        },
       },
       {
         name: "Butter",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Vanilla Extract",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Half-and-half",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Marshmallows",
-        amount: "mini",
-        unit: "",
+        amount: {
+          custom: "mini",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Microwave Hot Cocoa",
     timing: "",
     tastes: ["Creamy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Sugar",
-        amount: "5 tblsp",
-        unit: "",
+        amount: {
+          custom: "5 tblsp",
+        },
       },
       {
         name: "Cocoa Powder",
-        amount: "3 tblsp",
-        unit: "",
+        amount: {
+          custom: "3 tblsp",
+        },
       },
       {
         name: "Salt",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Water",
-        amount: "3 tblsp hot",
-        unit: "",
+        amount: {
+          custom: "3 tblsp hot",
+        },
       },
       {
         name: "Milk",
-        amount: "2 cups",
-        unit: "",
+        amount: {
+          custom: "2 cups",
+        },
       },
       {
         name: "Vanilla Extract",
-        amount: "1/4 tsp",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Nuked Hot Chocolate",
     timing: "",
     tastes: ["Creamy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Cocoa Powder",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Vanilla Extract",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Milk",
-        amount: "12 oz",
-        unit: "",
+        amount: {
+          oz: "12",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Orange Scented Hot Chocolate",
     timing: "",
     tastes: ["Creamy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Milk",
-        amount: "2 cups",
-        unit: "",
+        amount: {
+          custom: "2 cups",
+        },
       },
       {
         name: "Chocolate",
-        amount: "4 oz chopped bittersweet or semi-sweet",
-        unit: "",
+        amount: {
+          custom: "4 oz chopped bittersweet or semi-sweet",
+        },
       },
       {
         name: "Orange Peel",
-        amount: "3 2-inch strips",
-        unit: "",
+        amount: {
+          custom: "3 2-inch strips",
+        },
       },
       {
         name: "Espresso",
-        amount: "1/2 tsp instant",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp instant",
+        },
       },
       {
         name: "Nutmeg",
-        amount: "1/8 tsp ground",
-        unit: "",
+        amount: {
+          custom: "1/8 tsp ground",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Spanish Chocolate",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Milk",
-        amount: "2 cups",
-        unit: "",
+        amount: {
+          custom: "2 cups",
+        },
       },
       {
         name: "Chocolate",
-        amount: "2 oz sweet",
-        unit: "",
+        amount: {
+          custom: "2 oz sweet",
+        },
       },
       {
         name: "Cinnamon",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Egg Yolk",
-        amount: "2 beaten",
-        unit: "",
+        amount: {
+          custom: "2 beaten",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Lemon Shot",
     timing: "",
     tastes: ["Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Galliano",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Absolut Citron",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lemon",
-        amount: "wedge",
-        unit: "",
+        amount: {
+          custom: "wedge",
+        },
       },
       {
         name: "Sugar",
-        amount: "Bacardi",
-        unit: "",
+        amount: {
+          custom: "bacardi",
+        },
       },
       {
         name: "151 Proof Rum",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Sex On the Beach",
     timing: "",
     tastes: ["Fruity", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Peach Schnapps",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Autodafé",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "4 cl",
-        unit: "",
+        amount: {
+          cl: "4",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Soda Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Gagliardo",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Peach Vodka",
-        amount: "5 parts",
-        unit: "",
+        amount: {
+          custom: "5 parts",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "3 parts",
-        unit: "",
+        amount: {
+          custom: "3 parts",
+        },
       },
       {
         name: "Galliano",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Sirup of Roses",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Surf City Lifesaver",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Ouzo",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Baileys Irish Cream",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Gin",
-        amount: "2 parts",
-        unit: "",
+        amount: {
+          custom: "2 parts",
+        },
       },
       {
         name: "Grand Marnier",
-        amount: "1/2 part",
-        unit: "",
+        amount: {
+          custom: "1/2 part",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Grizzly Bear",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Jägermeister",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Kahlua",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Milk",
-        amount: "2 1/2 parts",
-        unit: "",
+        amount: {
+          custom: "2 1/2 parts",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Karsk",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Coffee",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Grain Alcohol",
-        amount: "2 parts",
-        unit: "",
+        amount: {
+          custom: "2 parts",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Happy Skipper",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Spiced Rum",
-        amount: "1 1/2 cl",
-        unit: "",
+        amount: {
+          cl: "1 1/2",
+        },
       },
       {
         name: "Ginger Ale",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Lime",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Ice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Frappé",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Coffee",
-        amount: "1/2 cup black",
-        unit: "",
+        amount: {
+          custom: "1/2 cup black",
+        },
       },
       {
         name: "Milk",
-        amount: "1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1/2 cup",
+        },
       },
       {
         name: "Sugar",
-        amount: "1-2 tsp",
-        unit: "",
+        amount: {
+          custom: "1-2 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Iced Coffee",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Coffee",
-        amount: "1/4 cup instant",
-        unit: "",
+        amount: {
+          custom: "1/4 cup instant",
+        },
       },
       {
         name: "Sugar",
-        amount: "1/4 cup",
-        unit: "",
+        amount: {
+          custom: "1/4 cup",
+        },
       },
       {
         name: "Water",
-        amount: "1/4 cup hot",
-        unit: "",
+        amount: {
+          custom: "1/4 cup hot",
+        },
       },
       {
         name: "Milk",
-        amount: "4 cups cold",
-        unit: "",
+        amount: {
+          custom: "4 cups cold",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Iced Coffee Fillip",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Kahlua",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Coffee",
-        amount: "Strong cold",
-        unit: "",
+        amount: {
+          custom: "strong cold",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Masala Chai",
     timing: "",
     tastes: ["Spicy"],
+    preparation: "",
     ingredients: [
       {
         name: "Water",
-        amount: "2 cups",
-        unit: "",
+        amount: {
+          custom: "2 cups",
+        },
       },
       {
         name: "Tea",
-        amount: "3-4 tsp",
-        unit: "",
+        amount: {
+          custom: "3-4 tsp",
+        },
       },
       {
         name: "Ginger",
-        amount: "1 chunk dried",
-        unit: "",
+        amount: {
+          custom: "1 chunk dried",
+        },
       },
       {
         name: "Cardamom",
-        amount: "3-4 crushed",
-        unit: "",
+        amount: {
+          custom: "3-4 crushed",
+        },
       },
       {
         name: "Cloves",
-        amount: 3,
-        unit: "",
+        amount: {
+          custom: 3,
+        },
       },
       {
         name: "Cinnamon",
-        amount: "1 piece",
-        unit: "",
+        amount: {
+          custom: "1 piece",
+        },
       },
       {
         name: "Black Pepper",
-        amount: "1-2 whole",
-        unit: "",
+        amount: {
+          custom: "1-2 whole",
+        },
       },
       {
         name: "Sugar",
-        amount: "to taste",
-        unit: "",
+        amount: {
+          custom: "to taste",
+        },
       },
       {
         name: "Milk",
-        amount: "to taste",
-        unit: "",
+        amount: {
+          custom: "to taste",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Melya",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Espresso",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Honey",
-        amount: "Unsweetened",
-        unit: "",
+        amount: {
+          custom: "unsweetened",
+        },
       },
       {
         name: "Cocoa Powder",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Spiking Coffee",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Coffee",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Cinnamon",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Thai Coffee",
     timing: "",
     tastes: ["Spicy", "Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Coffee",
-        amount: "6 tblsp ground",
-        unit: "",
+        amount: {
+          custom: "6 tblsp ground",
+        },
       },
       {
         name: "Coriander",
-        amount: "1/4 tsp",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp",
+        },
       },
       {
         name: "Cardamom",
-        amount: "4-5 whole green",
-        unit: "",
+        amount: {
+          custom: "4-5 whole green",
+        },
       },
       {
         name: "Sugar",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Whipping Cream",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Ice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Thai Iced Coffee",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Coffee",
-        amount: "black",
-        unit: "",
+        amount: {
+          custom: "black",
+        },
       },
       {
         name: "Sugar",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Cream",
-        amount: "pods",
-        unit: "",
+        amount: {
+          custom: "pods",
+        },
       },
       {
         name: "Cardamom",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Thai Iced Tea",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Tea",
-        amount: "1/4 cup Thai",
-        unit: "",
+        amount: {
+          custom: "1/4 cup thai",
+        },
       },
       {
         name: "Water",
-        amount: "1/2 cup boiling",
-        unit: "",
+        amount: {
+          custom: "1/2 cup boiling",
+        },
       },
       {
         name: "Condensed Milk",
-        amount: "2 tsp sweetened",
-        unit: "",
+        amount: {
+          custom: "2 tsp sweetened",
+        },
       },
       {
         name: "Ice",
-        amount: "cubes",
-        unit: "",
+        amount: {
+          custom: "cubes",
+        },
       },
       {
         name: "Mint",
-        amount: "garnish",
-        unit: "",
+        amount: {
+          custom: "garnish",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Absinthe #2",
     timing: "",
     tastes: ["Bitter sweet", "Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 bottle",
-        unit: "",
+        amount: {
+          custom: "1 bottle",
+        },
       },
       {
         name: "Sugar",
-        amount: "50 gr",
-        unit: "",
+        amount: {
+          custom: "50 gr",
+        },
       },
       {
         name: "Anise",
-        amount: "50 ml pure",
-        unit: "",
+        amount: {
+          custom: "50 ml pure",
+        },
       },
       {
         name: "Licorice Root",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Wormwood",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Amaretto Liqueur",
     timing: "",
     tastes: ["Sweet", "Nutty"],
+    preparation: "",
     ingredients: [
       {
         name: "Sugar",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Water",
-        amount: "3/4 cup",
-        unit: "",
+        amount: {
+          custom: "3/4 cup",
+        },
       },
       {
         name: "Apricot",
-        amount: 2,
-        unit: "",
+        amount: {
+          custom: 2,
+        },
       },
       {
         name: "Almond Flavoring",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Grain Alcohol",
-        amount: "1/2 cup pure",
-        unit: "",
+        amount: {
+          custom: "1/2 cup pure",
+        },
       },
       {
         name: "Water",
-        amount: "1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1/2 cup",
+        },
       },
       {
         name: "Brandy",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Food Coloring",
-        amount: "3 drops yellow",
-        unit: "",
+        amount: {
+          custom: "3 drops yellow",
+        },
       },
       {
         name: "Food Coloring",
-        amount: "6 drops red",
-        unit: "",
+        amount: {
+          custom: "6 drops red",
+        },
       },
       {
         name: "Food Coloring",
-        amount: "2 drops blue",
-        unit: "",
+        amount: {
+          custom: "2 drops blue",
+        },
       },
       {
         name: "Glycerine",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Angelica Liqueur",
     timing: "",
     tastes: ["Herbal", "Floral"],
+    preparation: "",
     ingredients: [
       {
         name: "Angelica Root",
-        amount: "3 tblsp chopped",
-        unit: "",
+        amount: {
+          custom: "3 tblsp chopped",
+        },
       },
       {
         name: "Almond",
-        amount: "1 tblsp chopped",
-        unit: "",
+        amount: {
+          custom: "1 tblsp chopped",
+        },
       },
       {
         name: "Allspice",
-        amount: "1 cracked",
-        unit: "",
+        amount: {
+          custom: "1 cracked",
+        },
       },
       {
         name: "Cinnamon",
-        amount: "1 one-inch",
-        unit: "",
+        amount: {
+          custom: "1 one-inch",
+        },
       },
       {
         name: "Anise",
-        amount: "3-6 crushed",
-        unit: "",
+        amount: {
+          custom: "3-6 crushed",
+        },
       },
       {
         name: "Coriander",
-        amount: "1/8 tsp powdered",
-        unit: "",
+        amount: {
+          custom: "1/8 tsp powdered",
+        },
       },
       {
         name: "Marjoram Leaves",
-        amount: "1 tblsp fresh chopped",
-        unit: "",
+        amount: {
+          custom: "1 tblsp fresh chopped",
+        },
       },
       {
         name: "Vodka",
-        amount: "1.5 cup",
-        unit: "",
+        amount: {
+          custom: "1.5 cup",
+        },
       },
       {
         name: "Sugar",
-        amount: "1/2 cup granulated",
-        unit: "",
+        amount: {
+          custom: "1/2 cup granulated",
+        },
       },
       {
         name: "Water",
-        amount: "1/4 cup",
-        unit: "",
+        amount: {
+          custom: "1/4 cup",
+        },
       },
       {
         name: "Food Coloring",
-        amount: "1 drop yellow",
-        unit: "",
+        amount: {
+          custom: "1 drop yellow",
+        },
       },
       {
         name: "Food Coloring",
-        amount: "1 drop green",
-        unit: "",
+        amount: {
+          custom: "1 drop green",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Caribbean Orange Liqueur",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Orange",
-        amount: "3 large",
-        unit: "",
+        amount: {
+          custom: "3 large",
+        },
       },
       {
         name: "Vodka",
-        amount: "3 cups",
-        unit: "",
+        amount: {
+          custom: "3 cups",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 1/3 cup superfine",
-        unit: "",
+        amount: {
+          custom: "1 1/3 cup superfine",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Coffee Liqueur",
     timing: "",
     tastes: ["Sweet", "Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Coffee",
-        amount: "10 tblsp instant",
-        unit: "",
+        amount: {
+          custom: "10 tblsp instant",
+        },
       },
       {
         name: "Vanilla Extract",
-        amount: "4 tblsp",
-        unit: "",
+        amount: {
+          custom: "4 tblsp",
+        },
       },
       {
         name: "Sugar",
-        amount: "2 1/2 cups",
-        unit: "",
+        amount: {
+          custom: "2 1/2 cups",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 qt",
-        unit: "",
+        amount: {
+          custom: "1 qt",
+        },
       },
       {
         name: "Water",
-        amount: "2 1/2 cups",
-        unit: "",
+        amount: {
+          custom: "2 1/2 cups",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Coffee-vodka",
     timing: "",
     tastes: ["Sweet", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Water",
-        amount: "2 cups",
-        unit: "",
+        amount: {
+          custom: "2 cups",
+        },
       },
       {
         name: "Sugar",
-        amount: "2 cups white",
-        unit: "",
+        amount: {
+          custom: "2 cups white",
+        },
       },
       {
         name: "Coffee",
-        amount: "1/2 cup instant",
-        unit: "",
+        amount: {
+          custom: "1/2 cup instant",
+        },
       },
       {
         name: "Vanilla",
-        amount: "1/2",
-        unit: "",
+        amount: {
+          custom: "1/2",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1 1/2 cup",
+        },
       },
       {
         name: "Caramel Coloring",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Cranberry Cordial",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Cranberries",
-        amount: "1/2 kg chopped",
-        unit: "",
+        amount: {
+          custom: "1/2 kg chopped",
+        },
       },
       {
         name: "Sugar",
-        amount: "3/4 L",
-        unit: "",
+        amount: {
+          custom: "3/4 l",
+        },
       },
       {
         name: "Light Rum",
-        amount: "1/2 L",
-        unit: "",
+        amount: {
+          custom: "1/2 l",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Creme De Menthe",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Sugar",
-        amount: "8 cups",
-        unit: "",
+        amount: {
+          custom: "8 cups",
+        },
       },
       {
         name: "Water",
-        amount: "6 cups",
-        unit: "",
+        amount: {
+          custom: "6 cups",
+        },
       },
       {
         name: "Grain Alcohol",
-        amount: "1 pint",
-        unit: "",
+        amount: {
+          custom: "1 pint",
+        },
       },
       {
         name: "Peppermint Extract",
-        amount: "1 oz pure",
-        unit: "",
+        amount: {
+          custom: "1 oz pure",
+        },
       },
       {
         name: "Food Coloring",
-        amount: "1 tblsp green",
-        unit: "",
+        amount: {
+          custom: "1 tblsp green",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Irish Cream",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Scotch",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Half-and-half",
-        amount: "1 1/4 cup",
-        unit: "",
+        amount: {
+          custom: "1 1/4 cup",
+        },
       },
       {
         name: "Condensed Milk",
-        amount: "1 can sweetened",
-        unit: "",
+        amount: {
+          custom: "1 can sweetened",
+        },
       },
       {
         name: "Coconut Syrup",
-        amount: "3 drops",
-        unit: "",
+        amount: {
+          custom: "3 drops",
+        },
       },
       {
         name: "Chocolate Syrup",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Scottish Highland Liqueur",
     timing: "",
     tastes: ["Sweet", "Nutty"],
+    preparation: "",
     ingredients: [
       {
         name: "Johnnie Walker",
-        amount: "1 fifth",
-        unit: "",
+        amount: {
+          custom: "1 fifth",
+        },
       },
       {
         name: "Honey",
-        amount: "1 1/2 cup mild",
-        unit: "",
+        amount: {
+          custom: "1 1/2 cup mild",
+        },
       },
       {
         name: "Angelica Root",
-        amount: "2 tsp dried and chopped",
-        unit: "",
+        amount: {
+          custom: "2 tsp dried and chopped",
+        },
       },
       {
         name: "Fennel Seeds",
-        amount: "1/4 tsp crushed",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp crushed",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "2 2 inch strips",
-        unit: "",
+        amount: {
+          custom: "2 2 inch strips",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Tia-maria",
     timing: "",
     tastes: ["Sweet", "Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Water",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Brown Sugar",
-        amount: "3/4-1 cup",
-        unit: "",
+        amount: {
+          custom: "3/4-1 cup",
+        },
       },
       {
         name: "Coffee",
-        amount: "4 tsp",
-        unit: "",
+        amount: {
+          custom: "4 tsp",
+        },
       },
       {
         name: "Rum",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Vanilla Extract",
-        amount: "4 tsp",
-        unit: "",
+        amount: {
+          custom: "4 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Aloha Fruit Punch",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Water",
-        amount: "3/4 cup",
-        unit: "",
+        amount: {
+          custom: "3/4 cup",
+        },
       },
       {
         name: "Ginger",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Guava Juice",
-        amount: "2 cups",
-        unit: "",
+        amount: {
+          custom: "2 cups",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 1/2 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 1/2 tblsp",
+        },
       },
       {
         name: "Pineapple",
-        amount: "1 1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1 1/2 cup",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "3-4 cups",
-        unit: "",
+        amount: {
+          custom: "3-4 cups",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Apple Cider Punch",
     timing: "",
     tastes: ["Sweet", "Tart"],
+    preparation: "",
     ingredients: [
       {
         name: "Apple Cider",
-        amount: "4 qt",
-        unit: "",
+        amount: {
+          custom: "4 qt",
+        },
       },
       {
         name: "Brown Sugar",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Lemonade",
-        amount: "6 oz frozen",
-        unit: "",
+        amount: {
+          custom: "6 oz frozen",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "6 oz frozen",
-        unit: "",
+        amount: {
+          custom: "6 oz frozen",
+        },
       },
       {
         name: "Cloves",
-        amount: "6 whole",
-        unit: "",
+        amount: {
+          custom: "6 whole",
+        },
       },
       {
         name: "Allspice",
-        amount: "6 whole",
-        unit: "",
+        amount: {
+          custom: "6 whole",
+        },
       },
       {
         name: "Nutmeg",
-        amount: "1 tsp ground",
-        unit: "",
+        amount: {
+          custom: "1 tsp ground",
+        },
       },
       {
         name: "Cinnamon",
-        amount: "3 sticks",
-        unit: "",
+        amount: {
+          custom: "3 sticks",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Artillery Punch",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Tea",
-        amount: "1 quart black",
-        unit: "",
+        amount: {
+          custom: "1 quart black",
+        },
       },
       {
         name: "Rye Whiskey",
-        amount: "1 quart",
-        unit: "",
+        amount: {
+          custom: "1 quart",
+        },
       },
       {
         name: "Red Wine",
-        amount: "1 fifth",
-        unit: "",
+        amount: {
+          custom: "1 fifth",
+        },
       },
       {
         name: "Rum",
-        amount: "1 pint Jamaican",
-        unit: "",
+        amount: {
+          custom: "1 pint jamaican",
+        },
       },
       {
         name: "Brandy",
-        amount: "1/2 pint",
-        unit: "",
+        amount: {
+          custom: "1/2 pint",
+        },
       },
       {
         name: "Benedictine",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 pint",
-        unit: "",
+        amount: {
+          custom: "1 pint",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1/2 pint",
-        unit: "",
+        amount: {
+          custom: "1/2 pint",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Berry Deadly",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Everclear",
-        amount: "2 pint",
-        unit: "",
+        amount: {
+          custom: "2 pint",
+        },
       },
       {
         name: "Wine",
-        amount: "1 bottle Boone Strawberry Hill",
-        unit: "",
+        amount: {
+          custom: "1 bottle boone strawberry hill",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1/2 gal",
-        unit: "",
+        amount: {
+          custom: "1/2 gal",
+        },
       },
       {
         name: "Kool-aid",
-        amount: "1 gal Tropical Berry",
-        unit: "",
+        amount: {
+          custom: "1 gal tropical berry",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Cranberry Punch",
     timing: "",
     tastes: ["Sweet", "Tart"],
+    preparation: "",
     ingredients: [
       {
         name: "Cranberry Juice",
-        amount: "4 cups",
-        unit: "",
+        amount: {
+          custom: "4 cups",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1 1/2 cup",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "4 cups",
-        unit: "",
+        amount: {
+          custom: "4 cups",
+        },
       },
       {
         name: "Almond Flavoring",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Ginger Ale",
-        amount: "2 qt",
-        unit: "",
+        amount: {
+          custom: "2 qt",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Egg Nog #4",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Egg Yolk",
-        amount: 6,
-        unit: "",
+        amount: {
+          custom: 6,
+        },
       },
       {
         name: "Sugar",
-        amount: "1/4 cup",
-        unit: "",
+        amount: {
+          custom: "1/4 cup",
+        },
       },
       {
         name: "Milk",
-        amount: "2 cups",
-        unit: "",
+        amount: {
+          custom: "2 cups",
+        },
       },
       {
         name: "Light Rum",
-        amount: "1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1/2 cup",
+        },
       },
       {
         name: "Bourbon",
-        amount: "1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1/2 cup",
+        },
       },
       {
         name: "Vanilla Extract",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Salt",
-        amount: "1/4 tsp",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp",
+        },
       },
       {
         name: "Whipping Cream",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Egg White",
-        amount: 6,
-        unit: "",
+        amount: {
+          custom: 6,
+        },
       },
       {
         name: "Sugar",
-        amount: "1/4 cup",
-        unit: "",
+        amount: {
+          custom: "1/4 cup",
+        },
       },
       {
         name: "Nutmeg",
-        amount: "Ground",
-        unit: "",
+        amount: {
+          custom: "ground",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Egg-nog - Classic Cooked",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Egg",
-        amount: 6,
-        unit: "",
+        amount: {
+          custom: 6,
+        },
       },
       {
         name: "Sugar",
-        amount: "1/4 cup",
-        unit: "",
+        amount: {
+          custom: "1/4 cup",
+        },
       },
       {
         name: "Salt",
-        amount: "1/4 tsp",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp",
+        },
       },
       {
         name: "Milk",
-        amount: "1 qt",
-        unit: "",
+        amount: {
+          custom: "1 qt",
+        },
       },
       {
         name: "Vanilla Extract",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Egg Nog - Healthy",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Egg",
-        amount: "1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1/2 cup",
+        },
       },
       {
         name: "Sugar",
-        amount: "3 tblsp",
-        unit: "",
+        amount: {
+          custom: "3 tblsp",
+        },
       },
       {
         name: "Condensed Milk",
-        amount: "13 oz skimmed",
-        unit: "",
+        amount: {
+          custom: "13 oz skimmed",
+        },
       },
       {
         name: "Milk",
-        amount: "3/4 cup skimmed",
-        unit: "",
+        amount: {
+          custom: "3/4 cup skimmed",
+        },
       },
       {
         name: "Vanilla Extract",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Rum",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Nutmeg",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Gluehwein",
     timing: "",
     tastes: ["Sweet", "Spicy"],
+    preparation: "",
     ingredients: [
       {
         name: "Red Wine",
-        amount: "1 L",
-        unit: "",
+        amount: {
+          custom: "1 l",
+        },
       },
       {
         name: "Water",
-        amount: "125 ml",
-        unit: "",
+        amount: {
+          ml: "125",
+        },
       },
       {
         name: "Sugar",
-        amount: "60 gr",
-        unit: "",
+        amount: {
+          custom: "60 gr",
+        },
       },
       {
         name: "Cinnamon",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Cloves",
-        amount: 3,
-        unit: "",
+        amount: {
+          custom: 3,
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Holloween Punch",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Grape Juice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Carbonated Soft Drink",
-        amount: ", orange",
-        unit: "",
+        amount: {
+          custom: ", orange",
+        },
       },
       {
         name: "Sherbet",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Sherbet",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Mulled Wine",
     timing: "",
     tastes: ["Sweet", "Spicy"],
+    preparation: "",
     ingredients: [
       {
         name: "Water",
-        amount: "3 cups",
-        unit: "",
+        amount: {
+          custom: "3 cups",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Cloves",
-        amount: 12,
-        unit: "",
+        amount: {
+          custom: 12,
+        },
       },
       {
         name: "Cinnamon",
-        amount: 2,
-        unit: "",
+        amount: {
+          custom: 2,
+        },
       },
       {
         name: "Lemon Peel",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Red Wine",
-        amount: "750 ml",
-        unit: "",
+        amount: {
+          ml: "750",
+        },
       },
       {
         name: "Brandy",
-        amount: "1/4 cup",
-        unit: "",
+        amount: {
+          custom: "1/4 cup",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Sangria",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Red Wine",
-        amount: "1 bottle",
-        unit: "",
+        amount: {
+          custom: "1 bottle",
+        },
       },
       {
         name: "Sugar",
-        amount: "1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1/2 cup",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Cloves",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Cinnamon",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Sweet Sangria",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Red Wine",
-        amount: "2 bottles",
-        unit: "",
+        amount: {
+          custom: "2 bottles",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Water",
-        amount: "2 cups hot",
-        unit: "",
+        amount: {
+          custom: "2 cups hot",
+        },
       },
       {
         name: "Apple",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Orange",
-        amount: "wedges",
-        unit: "",
+        amount: {
+          custom: "wedges",
+        },
       },
       {
         name: "Lime",
-        amount: "wedges",
-        unit: "",
+        amount: {
+          custom: "wedges",
+        },
       },
       {
         name: "Lemon",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Fresca",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Sangria the Best",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Red Wine",
-        amount: "1 1/2 L",
-        unit: "",
+        amount: {
+          custom: "1 1/2 l",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Lemon",
-        amount: "1 large",
-        unit: "",
+        amount: {
+          custom: "1 large",
+        },
       },
       {
         name: "Orange",
-        amount: "1 large",
-        unit: "",
+        amount: {
+          custom: "1 large",
+        },
       },
       {
         name: "Apple",
-        amount: "1 large",
-        unit: "",
+        amount: {
+          custom: "1 large",
+        },
       },
       {
         name: "Brandy",
-        amount: "3-4 oz plain",
-        unit: "",
+        amount: {
+          custom: "3-4 oz plain",
+        },
       },
       {
         name: "Soda Water",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Spiced Peach Punch",
     timing: "",
     tastes: ["Sweet", "Spicy", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Peach Nectar",
-        amount: "46 oz",
-        unit: "",
+        amount: {
+          oz: "46",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "20 oz",
-        unit: "",
+        amount: {
+          oz: "20",
+        },
       },
       {
         name: "Brown Sugar",
-        amount: "1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1/2 cup",
+        },
       },
       {
         name: "Cinnamon",
-        amount: "3 3-inch",
-        unit: "",
+        amount: {
+          custom: "3 3-inch",
+        },
       },
       {
         name: "Cloves",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "2 tblsp",
-        unit: "",
+        amount: {
+          custom: "2 tblsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Strawberry Lemonade",
     timing: "",
     tastes: ["Sweet", "Tart", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Lemon",
-        amount: "Juice of 1",
-        unit: "",
+        amount: {
+          custom: "juice of 1",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Strawberries",
-        amount: "8-10 ripe",
-        unit: "",
+        amount: {
+          custom: "8-10 ripe",
+        },
       },
       {
         name: "Water",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Sunny Holiday Punch",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Pineapple Juice",
-        amount: "46 oz chilled",
-        unit: "",
+        amount: {
+          custom: "46 oz chilled",
+        },
       },
       {
         name: "Club Soda",
-        amount: "28 oz",
-        unit: "",
+        amount: {
+          oz: "28",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "6 oz frozen",
-        unit: "",
+        amount: {
+          custom: "6 oz frozen",
+        },
       },
       {
         name: "Lemon",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Berries",
-        amount: "2 cups",
-        unit: "",
+        amount: {
+          custom: "2 cups",
+        },
       },
       {
         name: "Champagne",
-        amount: "1 bottle",
-        unit: "",
+        amount: {
+          custom: "1 bottle",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Wine Cooler",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Red Wine",
-        amount: "2 oz white or",
-        unit: "",
+        amount: {
+          custom: "2 oz white or",
+        },
       },
       {
         name: "Lemon-lime Soda",
-        amount: "5 oz",
-        unit: "",
+        amount: {
+          oz: "5",
+        },
       },
       {
         name: "Ice",
-        amount: "cubes",
-        unit: "",
+        amount: {
+          custom: "cubes",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Wine Punch",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Red Wine",
-        amount: "1 bottle",
-        unit: "",
+        amount: {
+          custom: "1 bottle",
+        },
       },
       {
         name: "Lemon",
-        amount: 2,
-        unit: "",
+        amount: {
+          custom: 2,
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Orange",
-        amount: 3,
-        unit: "",
+        amount: {
+          custom: 3,
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bruce's Puce",
     timing: "",
     tastes: ["Sweet", "Spicy"],
+    preparation: "",
     ingredients: [
       {
         name: "Grenadine",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Kahlua",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Baileys Irish Cream",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Brave Bull Shooter",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Tequila",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Tabasco Sauce",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Fahrenheit 5000",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Firewater",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Absolut Peppar",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Tabasco Sauce",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Popped Cherry",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Cherry Liqueur",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Atomic Lokade",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Lemonade",
-        amount: "5 oz",
-        unit: "",
+        amount: {
+          oz: "5",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Blue Curacao",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Sugar",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Ice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Diesel",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Lager",
-        amount: "1/2 pint",
-        unit: "",
+        amount: {
+          custom: "1/2 pint",
+        },
       },
       {
         name: "Cider",
-        amount: "1/2 pint",
-        unit: "",
+        amount: {
+          custom: "1/2 pint",
+        },
       },
       {
         name: "Blackcurrant Cordial",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Afternoon",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Kahlua",
-        amount: "1 cl",
-        unit: "",
+        amount: {
+          cl: "1",
+        },
       },
       {
         name: "Baileys Irish Cream",
-        amount: "1 cl",
-        unit: "",
+        amount: {
+          cl: "1",
+        },
       },
       {
         name: "Frangelico",
-        amount: "1 1/2",
-        unit: "",
+        amount: {
+          custom: "1 1/2",
+        },
       },
       {
         name: "Coffee",
-        amount: "4 cl hot",
-        unit: "",
+        amount: {
+          custom: "4 cl hot",
+        },
       },
       {
         name: "Cream",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Kool-aid Shot",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Amaretto",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Sloe Gin",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "National Aquarium",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Rum",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Vodka",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Gin",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Blue Curacao",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Sour Mix",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon-lime Soda",
-        amount: "1 splash",
-        unit: "",
+        amount: {
+          custom: "1 splash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Damned If You Do",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Whiskey",
-        amount: "0.75 oz",
-        unit: "",
+        amount: {
+          oz: "0.75",
+        },
       },
       {
         name: "Hot Damn",
-        amount: "0.25 oz",
-        unit: "",
+        amount: {
+          oz: "0.25",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Long Vodka",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "5 cl",
-        unit: "",
+        amount: {
+          cl: "5",
+        },
       },
       {
         name: "Lime",
-        amount: "1/2",
-        unit: "",
+        amount: {
+          custom: "1/2",
+        },
       },
       {
         name: "Angostura Bitters",
-        amount: "4 dashes",
-        unit: "",
+        amount: {
+          custom: "4 dashes",
+        },
       },
       {
         name: "Tonic Water",
-        amount: "1 dl Schweppes",
-        unit: "",
+        amount: {
+          custom: "1 dl schweppes",
+        },
       },
       {
         name: "Ice",
-        amount: 4,
-        unit: "",
+        amount: {
+          custom: 4,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Quick F**k",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Kahlua",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Midori Melon Liqueur",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Baileys Irish Cream",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Owen's Grandmother's Revenge",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Whiskey",
-        amount: "12 oz",
-        unit: "",
+        amount: {
+          oz: "12",
+        },
       },
       {
         name: "Beer",
-        amount: "12 oz",
-        unit: "",
+        amount: {
+          oz: "12",
+        },
       },
       {
         name: "Lemonade",
-        amount: "12 oz frozen",
-        unit: "",
+        amount: {
+          custom: "12 oz frozen",
+        },
       },
       {
         name: "Ice",
-        amount: "1 cup crushed",
-        unit: "",
+        amount: {
+          custom: "1 cup crushed",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Flaming Dr. Pepper",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "151 Proof Rum",
-        amount: "1 oz Bacardi",
-        unit: "",
+        amount: {
+          custom: "1 oz bacardi",
+        },
       },
       {
         name: "Dr. Pepper",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Beer",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "New York Lemonade",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Absolut Citron",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Grand Marnier",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "2 oz sweetened",
-        unit: "",
+        amount: {
+          custom: "2 oz sweetened",
+        },
       },
       {
         name: "Club Soda",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Caipirissima",
     timing: "",
     tastes: ["Boozy", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Lime",
-        amount: 2,
-        unit: "",
+        amount: {
+          custom: 2,
+        },
       },
       {
         name: "Sugar",
-        amount: "2 tblsp",
-        unit: "",
+        amount: {
+          custom: "2 tblsp",
+        },
       },
       {
         name: "White Rum",
-        amount: "2-3 oz",
-        unit: "",
+        amount: {
+          oz: "2-3",
+        },
       },
       {
         name: "Ice",
-        amount: "crushed",
-        unit: "",
+        amount: {
+          custom: "crushed",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Pisco Sour",
     timing: "",
     tastes: ["Sour", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Pisco",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sugar",
-        amount: "1-2 tblsp",
-        unit: "",
+        amount: {
+          custom: "1-2 tblsp",
+        },
       },
       {
         name: "Ice",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Egg White",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Big Red",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Irish Cream",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Goldschlager",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Black & Tan",
     timing: "",
     tastes: ["Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Ale",
-        amount: "1 part Bass pale",
-        unit: "",
+        amount: {
+          custom: "1 part bass pale",
+        },
       },
       {
         name: "Guinness Stout",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Chocolate Milk",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Chocolate Liqueur",
-        amount: "1/2 shot",
-        unit: "",
+        amount: {
+          shot: "1/2",
+        },
       },
       {
         name: "Milk",
-        amount: "1/2 shot",
-        unit: "",
+        amount: {
+          shot: "1/2",
+        },
       },
       {
         name: "Amaretto",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "B-53",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Kahlua",
-        amount: "1/3 shot",
-        unit: "",
+        amount: {
+          shot: "1/3",
+        },
       },
       {
         name: "Sambuca",
-        amount: "1/3 shot",
-        unit: "",
+        amount: {
+          shot: "1/3",
+        },
       },
       {
         name: "Grand Marnier",
-        amount: "1/3 shot",
-        unit: "",
+        amount: {
+          shot: "1/3",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Sea Breeze",
     timing: "",
     tastes: ["Fresh", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
       {
         name: "Grapefruit Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Snake Bite (uk)",
     timing: "",
     tastes: ["Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Lager",
-        amount: "1/2 pint",
-        unit: "",
+        amount: {
+          custom: "1/2 pint",
+        },
       },
       {
         name: "Cider",
-        amount: "1/2 pint sweet or dry",
-        unit: "",
+        amount: {
+          custom: "1/2 pint sweet or dry",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bob Marley",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Midori Melon Liqueur",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Jägermeister",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Goldschlager",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Brainteaser",
     timing: "",
     tastes: ["Sweet", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Sambuca",
-        amount: "30 ml white",
-        unit: "",
+        amount: {
+          custom: "30 ml white",
+        },
       },
       {
         name: "Erin Cream",
-        amount: "30 ml",
-        unit: "",
+        amount: {
+          ml: "30",
+        },
       },
       {
         name: "Advocaat",
-        amount: "5 ml",
-        unit: "",
+        amount: {
+          ml: "5",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Atlantic Sun",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "2 cl Smirnoff",
-        unit: "",
+        amount: {
+          custom: "2 cl smirnoff",
+        },
       },
       {
         name: "Southern Comfort",
-        amount: "2 cl",
-        unit: "",
+        amount: {
+          cl: "2",
+        },
       },
       {
         name: "Passion Fruit Syrup",
-        amount: "2 cl",
-        unit: "",
+        amount: {
+          cl: "2",
+        },
       },
       {
         name: "Sweet and Sour",
-        amount: "6 cl",
-        unit: "",
+        amount: {
+          cl: "6",
+        },
       },
       {
         name: "Club Soda",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Green Goblin",
     timing: "",
     tastes: ["Sweet", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Cider",
-        amount: "1/2 pint hard",
-        unit: "",
+        amount: {
+          custom: "1/2 pint hard",
+        },
       },
       {
         name: "Lager",
-        amount: "1/2 pint",
-        unit: "",
+        amount: {
+          custom: "1/2 pint",
+        },
       },
       {
         name: "Blue Curacao",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Oreo Mudslide",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Kahlua",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Baileys Irish Cream",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Vanilla Ice-cream",
-        amount: "2 scoops",
-        unit: "",
+        amount: {
+          custom: "2 scoops",
+        },
       },
       {
         name: "Oreo Cookie",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Abc",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "1/3",
-        unit: "",
+        amount: {
+          custom: "1/3",
+        },
       },
       {
         name: "Baileys Irish Cream",
-        amount: "1/3",
-        unit: "",
+        amount: {
+          custom: "1/3",
+        },
       },
       {
         name: "Cognac",
-        amount: "1/3",
-        unit: "",
+        amount: {
+          custom: "1/3",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Pink Panty Pulldowns",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Sprite",
-        amount: "1 L",
-        unit: "",
+        amount: {
+          custom: "1 l",
+        },
       },
       {
         name: "Pink Lemonade",
-        amount: "2 cups",
-        unit: "",
+        amount: {
+          custom: "2 cups",
+        },
       },
       {
         name: "Vodka",
-        amount: "2 cups",
-        unit: "",
+        amount: {
+          custom: "2 cups",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Ice Pick",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Iced Tea",
-        amount: "6 oz",
-        unit: "",
+        amount: {
+          oz: "6",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "to taste",
-        unit: "",
+        amount: {
+          custom: "to taste",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "410 Gone",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Peach Vodka",
-        amount: "2-3 oz",
-        unit: "",
+        amount: {
+          oz: "2-3",
+        },
       },
       {
         name: "Cola",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Tequila Sunrise",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Tequila",
-        amount: "2 measures",
-        unit: "",
+        amount: {
+          custom: "2 measures",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Grenadine",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Screaming Orgasm",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Baileys Irish Cream",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Kahlua",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Flander's Flake-out",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Sambuca",
-        amount: "1/4 glass",
-        unit: "",
+        amount: {
+          custom: "1/4 glass",
+        },
       },
       {
         name: "Sarsaparilla",
-        amount: "3/4 glass",
-        unit: "",
+        amount: {
+          custom: "3/4 glass",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Apple Slammer",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "7-up",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Apple Schnapps",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Amaretto Sour",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Sour Mix",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Cuba Libra",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Dark Rum",
-        amount: "1-2 shot",
-        unit: "",
+        amount: {
+          shot: "1-2",
+        },
       },
       {
         name: "Lime",
-        amount: "Squeeze",
-        unit: "",
+        amount: {
+          custom: "squeeze",
+        },
       },
       {
         name: "Cola",
-        amount: "Fill with",
-        unit: "",
+        amount: {
+          custom: "fill with",
+        },
       },
       {
         name: "Ice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Jelly Bean",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Blackberry Brandy",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Anis",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "After Five",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Peppermint Schnapps",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Kahlua",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Baileys Irish Cream",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Midnight Manx",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Kahlua",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Baileys Irish Cream",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Goldschlager",
-        amount: "dash",
-        unit: "",
+        amount: {
+          custom: "dash",
+        },
       },
       {
         name: "Heavy Cream",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Coffee",
-        amount: "2 oz Hazlenut",
-        unit: "",
+        amount: {
+          custom: "2 oz hazlenut",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Kir Royale",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Creme De Cassis",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Champagne",
-        amount: "5 parts",
-        unit: "",
+        amount: {
+          custom: "5 parts",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Jackhammer",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Jack Daniels",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Amaretto",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Nutty Irishman",
     timing: "",
     tastes: ["Sweet", "Nutty"],
+    preparation: "",
     ingredients: [
       {
         name: "Baileys Irish Cream",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Frangelico",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Milk",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "3 Wise Men",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Jack Daniels",
-        amount: "1/3 oz",
-        unit: "",
+        amount: {
+          oz: "1/3",
+        },
       },
       {
         name: "Johnnie Walker",
-        amount: "1/3 oz",
-        unit: "",
+        amount: {
+          oz: "1/3",
+        },
       },
       {
         name: "Jim Beam",
-        amount: "1/3 oz",
-        unit: "",
+        amount: {
+          oz: "1/3",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Miami Vice",
     timing: "",
     tastes: ["Sweet", "Creamy", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "151 Proof Rum",
-        amount: "5 oz Bacardi",
-        unit: "",
+        amount: {
+          custom: "5 oz bacardi",
+        },
       },
       {
         name: "Pina Colada Mix",
-        amount: "frozen",
-        unit: "",
+        amount: {
+          custom: "frozen",
+        },
       },
       {
         name: "Daiquiri Mix",
-        amount: "frozen",
-        unit: "",
+        amount: {
+          custom: "frozen",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "At&t",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Absolut Vodka",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Gin",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Tonic Water",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "69 Special",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz dry",
-        unit: "",
+        amount: {
+          custom: "2 oz dry",
+        },
       },
       {
         name: "7-up",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "0.75 oz",
-        unit: "",
+        amount: {
+          oz: "0.75",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Irish Coffee",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Irish Whiskey",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Coffee",
-        amount: "8 oz",
-        unit: "",
+        amount: {
+          oz: "8",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Whipped Cream",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "57 Chevy With A White License Plate",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Creme De Cacao",
-        amount: "1 oz white",
-        unit: "",
+        amount: {
+          custom: "1 oz white",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Mother's Milk",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Goldschlager",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Butterscotch Schnapps",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Milk",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Zippy's Revenge",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Rum",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Kool-aid",
-        amount: "4 oz Grape",
-        unit: "",
+        amount: {
+          custom: "4 oz grape",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Belgian Blue",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "2 cl",
-        unit: "",
+        amount: {
+          cl: "2",
+        },
       },
       {
         name: "Coconut Liqueur",
-        amount: "1 cl",
-        unit: "",
+        amount: {
+          cl: "1",
+        },
       },
       {
         name: "Blue Curacao",
-        amount: "1 cl",
-        unit: "",
+        amount: {
+          cl: "1",
+        },
       },
       {
         name: "Sprite",
-        amount: "Fill with",
-        unit: "",
+        amount: {
+          custom: "fill with",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Red Snapper",
     timing: "",
     tastes: ["Sour", "Spicy"],
+    preparation: "",
     ingredients: [
       {
         name: "Crown Royal",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Amaretto",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Jamaica Kiss",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Coffee Liqueur",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Light Rum",
-        amount: "1 shot Jamaican",
-        unit: "",
+        amount: {
+          custom: "1 shot jamaican",
+        },
       },
       {
         name: "Ice",
-        amount: "cubes",
-        unit: "",
+        amount: {
+          custom: "cubes",
+        },
       },
       {
         name: "Milk",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Absolut Summertime",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Absolut Citron",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Sweet and Sour",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Sprite",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Soda Water",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Lemon",
-        amount: "1 slice",
-        unit: "",
+        amount: {
+          custom: "1 slice",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Cosmopolitan Martini",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Cointreau",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lime",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "1 splash",
-        unit: "",
+        amount: {
+          custom: "1 splash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Ziemes Martini Apfelsaft",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Vermouth",
-        amount: "4 cl",
-        unit: "",
+        amount: {
+          cl: "4",
+        },
       },
       {
         name: "Apple Juice",
-        amount: "16 cl",
-        unit: "",
+        amount: {
+          cl: "16",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Vodka Martini",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Olive",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Cafe Savoy",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Coffee",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Milk",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Brandy",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Snowball",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Advocaat",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Lemonade",
-        amount: "8-10 oz cold",
-        unit: "",
+        amount: {
+          custom: "8-10 oz cold",
+        },
       },
       {
         name: "Lemon",
-        amount: "1 slice",
-        unit: "",
+        amount: {
+          custom: "1 slice",
+        },
       },
       {
         name: "Ice",
-        amount: "cubes",
-        unit: "",
+        amount: {
+          custom: "cubes",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Mocha-berry",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Coffee",
-        amount: "6 oz",
-        unit: "",
+        amount: {
+          oz: "6",
+        },
       },
       {
         name: "Chambord Raspberry Liqueur",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Cocoa Powder",
-        amount: "2 tblsp",
-        unit: "",
+        amount: {
+          custom: "2 tblsp",
+        },
       },
       {
         name: "Whipped Cream",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "747",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Kahlua",
-        amount: "1/3 part",
-        unit: "",
+        amount: {
+          custom: "1/3 part",
+        },
       },
       {
         name: "Baileys Irish Cream",
-        amount: "1/3 part",
-        unit: "",
+        amount: {
+          custom: "1/3 part",
+        },
       },
       {
         name: "Frangelico",
-        amount: "1/3 part",
-        unit: "",
+        amount: {
+          custom: "1/3 part",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Addison Special",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "Fill with",
-        unit: "",
+        amount: {
+          custom: "fill with",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "California Root Beer",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Kahlua",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Galliano",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Soda Water",
-        amount: "Fill with",
-        unit: "",
+        amount: {
+          custom: "fill with",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Amaretto Stone Sour",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Sour Mix",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Blind Russian",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Baileys Irish Cream",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Godiva Liqueur",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Kahlua",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Butterscotch Schnapps",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Milk",
-        amount: "to fill",
-        unit: "",
+        amount: {
+          custom: "to fill",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Absolut Sex",
     timing: "",
     tastes: ["Sweet", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Absolut Kurant",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Midori Melon Liqueur",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sprite",
-        amount: "1 splash",
-        unit: "",
+        amount: {
+          custom: "1 splash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Aztec Punch",
     timing: "",
     tastes: ["Sweet", "Spicy", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Lemonade",
-        amount: "1 can",
-        unit: "",
+        amount: {
+          custom: "1 can",
+        },
       },
       {
         name: "Vodka",
-        amount: "5 oz",
-        unit: "",
+        amount: {
+          oz: "5",
+        },
       },
       {
         name: "Rum",
-        amount: "7 oz",
-        unit: "",
+        amount: {
+          oz: "7",
+        },
       },
       {
         name: "Ginger Ale",
-        amount: "About 1 bottle",
-        unit: "",
+        amount: {
+          custom: "about 1 bottle",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Lemon Drop",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 1/2 shot",
-        unit: "",
+        amount: {
+          shot: "1 1/2",
+        },
       },
       {
         name: "Cointreau",
-        amount: "1 1/2 shot",
-        unit: "",
+        amount: {
+          shot: "1 1/2",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1 wedge",
-        unit: "",
+        amount: {
+          custom: "juice of 1 wedge",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Absolut Limousine",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Absolut Citron",
-        amount: "2/3",
-        unit: "",
+        amount: {
+          custom: "2/3",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1/3",
-        unit: "",
+        amount: {
+          custom: "1/3",
+        },
       },
       {
         name: "Ice",
-        amount: "Fill with",
-        unit: "",
+        amount: {
+          custom: "fill with",
+        },
       },
       {
         name: "Tonic Water",
-        amount: "Top it up with",
-        unit: "",
+        amount: {
+          custom: "top it up with",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Absolut Evergreen",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Absolut Citron",
-        amount: "2/3 part",
-        unit: "",
+        amount: {
+          custom: "2/3 part",
+        },
       },
       {
         name: "Pisang Ambon",
-        amount: "1/3 part",
-        unit: "",
+        amount: {
+          custom: "1/3 part",
+        },
       },
       {
         name: "Ice",
-        amount: "cubes",
-        unit: "",
+        amount: {
+          custom: "cubes",
+        },
       },
       {
         name: "Bitter Lemon",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Lunch Box",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Beer",
-        amount: "3/4 bottle",
-        unit: "",
+        amount: {
+          custom: "3/4 bottle",
+        },
       },
       {
         name: "Amaretto",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Kool-aid Slammer",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Kool-aid",
-        amount: "1/2 oz Grape",
-        unit: "",
+        amount: {
+          custom: "1/2 oz grape",
+        },
       },
       {
         name: "Vodka",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Kurant Tea",
     timing: "",
     tastes: ["Sweet", "Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Absolut Kurant",
-        amount: "4 cl",
-        unit: "",
+        amount: {
+          cl: "4",
+        },
       },
       {
         name: "Tea",
-        amount: "Turkish apple",
-        unit: "",
+        amount: {
+          custom: "turkish apple",
+        },
       },
       {
         name: "Sugar",
-        amount: "(if needed)",
-        unit: "",
+        amount: {
+          custom: "(if needed)",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Dirty Nipple",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Kahlua",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Sambuca",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Baileys Irish Cream",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Darkwood Sling",
     timing: "",
     tastes: ["Sweet", "Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Cherry Heering",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Soda Water",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Ice",
-        amount: "cubes",
-        unit: "",
+        amount: {
+          custom: "cubes",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bailey's Dream Shake",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Baileys Irish Cream",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Vanilla Ice-cream",
-        amount: "2 scoops",
-        unit: "",
+        amount: {
+          custom: "2 scoops",
+        },
       },
       {
         name: "Cream",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bumble Bee",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Baileys Irish Cream",
-        amount: "1/3 oz",
-        unit: "",
+        amount: {
+          oz: "1/3",
+        },
       },
       {
         name: "Kahlua",
-        amount: "1/3 oz",
-        unit: "",
+        amount: {
+          oz: "1/3",
+        },
       },
       {
         name: "Sambuca",
-        amount: "1/3 oz",
-        unit: "",
+        amount: {
+          oz: "1/3",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "A.d.m. (after Dinner Mint)",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "White Creme De Menthe",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Southern Comfort",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Vodka",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Hot Chocolate",
-        amount: "Fill with",
-        unit: "",
+        amount: {
+          custom: "fill with",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "A Splash of Nash",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Cranberry Juice",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Soda Water",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Midori Melon Liqueur",
-        amount: "0.5 oz",
-        unit: "",
+        amount: {
+          oz: "0.5",
+        },
       },
       {
         name: "Creme De Banane",
-        amount: "0.5 oz",
-        unit: "",
+        amount: {
+          oz: "0.5",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Amaretto Sunrise",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "1 cl",
-        unit: "",
+        amount: {
+          cl: "1",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1/4 cl",
-        unit: "",
+        amount: {
+          cl: "1/4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Arizona Stingers",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Absolut Vodka",
-        amount: "2 shots",
-        unit: "",
+        amount: {
+          shots: "2",
+        },
       },
       {
         name: "Iced Tea",
-        amount: "12 oz lemon",
-        unit: "",
+        amount: {
+          custom: "12 oz lemon",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Orange Push-up",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Spiced Rum",
-        amount: "1.5 oz",
-        unit: "",
+        amount: {
+          oz: "1.5",
+        },
       },
       {
         name: "Grenadine",
-        amount: "0.5 oz",
-        unit: "",
+        amount: {
+          oz: "0.5",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
       {
         name: "Sour Mix",
-        amount: "1 splash",
-        unit: "",
+        amount: {
+          custom: "1 splash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "151 Florida Bushwacker",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Malibu Rum",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Light Rum",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "151 Proof Rum",
-        amount: "1/2 oz Bacardi",
-        unit: "",
+        amount: {
+          custom: "1/2 oz bacardi",
+        },
       },
       {
         name: "Dark Creme De Cacao",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Cointreau",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Milk",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Coconut Liqueur",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Vanilla Ice-cream",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Zizi Coin-coin",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Cointreau",
-        amount: "5 cl",
-        unit: "",
+        amount: {
+          cl: "5",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "2 cl",
-        unit: "",
+        amount: {
+          cl: "2",
+        },
       },
       {
         name: "Ice",
-        amount: "cubes",
-        unit: "",
+        amount: {
+          custom: "cubes",
+        },
       },
       {
         name: "Lemon",
-        amount: "or lime",
-        unit: "",
+        amount: {
+          custom: "or lime",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "50/50",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Vanilla Vodka",
-        amount: "2 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "2 1/2",
+        },
       },
       {
         name: "Grand Marnier",
-        amount: "1 splash",
-        unit: "",
+        amount: {
+          custom: "1 splash",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "Fill with",
-        unit: "",
+        amount: {
+          custom: "fill with",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Tequila Surprise",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Tequila",
-        amount: "full glass",
-        unit: "",
+        amount: {
+          custom: "full glass",
+        },
       },
       {
         name: "Tabasco Sauce",
-        amount: "About 8 drops",
-        unit: "",
+        amount: {
+          custom: "about 8 drops",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Cream Soda",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Spiced Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Ginger Ale",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Acid",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "151 Proof Rum",
-        amount: "1 oz Bacardi",
-        unit: "",
+        amount: {
+          custom: "1 oz bacardi",
+        },
       },
       {
         name: "Wild Turkey",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Arctic Fish",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1/3 part",
-        unit: "",
+        amount: {
+          custom: "1/3 part",
+        },
       },
       {
         name: "Grape Soda",
-        amount: "1/3 part",
-        unit: "",
+        amount: {
+          custom: "1/3 part",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1/3 part",
-        unit: "",
+        amount: {
+          custom: "1/3 part",
+        },
       },
       {
         name: "Ice",
-        amount: "lots",
-        unit: "",
+        amount: {
+          custom: "lots",
+        },
       },
       {
         name: "Candy",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Grim Reaper",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Kahlua",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "151 Proof Rum",
-        amount: "1 oz Bacardi",
-        unit: "",
+        amount: {
+          custom: "1 oz bacardi",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Freddy Kruger",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Jägermeister",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Sambuca",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Vodka",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bubble Gum",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1/4",
-        unit: "",
+        amount: {
+          custom: "1/4",
+        },
       },
       {
         name: "Banana Liqueur",
-        amount: "1/4",
-        unit: "",
+        amount: {
+          custom: "1/4",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1/4",
-        unit: "",
+        amount: {
+          custom: "1/4",
+        },
       },
       {
         name: "Peach Schnapps",
-        amount: "1/4",
-        unit: "",
+        amount: {
+          custom: "1/4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Kiwi Lemon",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Kiwi Liqueur",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Bitter Lemon",
-        amount: "2 parts",
-        unit: "",
+        amount: {
+          custom: "2 parts",
+        },
       },
       {
         name: "Ice",
-        amount: "cubes",
-        unit: "",
+        amount: {
+          custom: "cubes",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Hot Creamy Bush",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Irish Whiskey",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Baileys Irish Cream",
-        amount: "3/4 shot",
-        unit: "",
+        amount: {
+          shot: "3/4",
+        },
       },
       {
         name: "Coffee",
-        amount: "6 oz hot",
-        unit: "",
+        amount: {
+          custom: "6 oz hot",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Midnight Mint",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Baileys Irish Cream",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "White Creme De Menthe",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Cream",
-        amount: "3/4 oz double",
-        unit: "",
+        amount: {
+          custom: "3/4 oz double",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Talos Coffee",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Grand Marnier",
-        amount: "3 parts",
-        unit: "",
+        amount: {
+          custom: "3 parts",
+        },
       },
       {
         name: "Coffee",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Zinger",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Peachtree Schnapps",
-        amount: "4 shots",
-        unit: "",
+        amount: {
+          shots: "4",
+        },
       },
       {
         name: "Surge",
-        amount: "4 shots",
-        unit: "",
+        amount: {
+          shots: "4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Jello Shots",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "2 cups",
-        unit: "",
+        amount: {
+          custom: "2 cups",
+        },
       },
       {
         name: "Jello",
-        amount: "3 packages",
-        unit: "",
+        amount: {
+          custom: "3 packages",
+        },
       },
       {
         name: "Water",
-        amount: "3 cups",
-        unit: "",
+        amount: {
+          custom: "3 cups",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Rum Punch",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Rum",
-        amount: "mikey bottle",
-        unit: "",
+        amount: {
+          custom: "mikey bottle",
+        },
       },
       {
         name: "Ginger Ale",
-        amount: "large bottle",
-        unit: "",
+        amount: {
+          custom: "large bottle",
+        },
       },
       {
         name: "Fruit Punch",
-        amount: "355 ml frozen",
-        unit: "",
+        amount: {
+          custom: "355 ml frozen",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "355 ml frozen",
-        unit: "",
+        amount: {
+          custom: "355 ml frozen",
+        },
       },
       {
         name: "Ice",
-        amount: "crushed",
-        unit: "",
+        amount: {
+          custom: "crushed",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Turkeyball",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Wild Turkey",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Amaretto",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "1 splash",
-        unit: "",
+        amount: {
+          custom: "1 splash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Absolutely Cranberry Smash",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Absolut Vodka",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
       {
         name: "Ginger Ale",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Ice",
-        amount: "Add",
-        unit: "",
+        amount: {
+          custom: "add",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Kiss Me Quick",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Cranberry Vodka",
-        amount: "4 cl",
-        unit: "",
+        amount: {
+          cl: "4",
+        },
       },
       {
         name: "Apfelkorn",
-        amount: "2 cl",
-        unit: "",
+        amount: {
+          cl: "2",
+        },
       },
       {
         name: "Schweppes Russchian",
-        amount: "7 cl",
-        unit: "",
+        amount: {
+          cl: "7",
+        },
       },
       {
         name: "Apple Juice",
-        amount: "8 cl",
-        unit: "",
+        amount: {
+          cl: "8",
+        },
       },
       {
         name: "Ice",
-        amount: "cubes",
-        unit: "",
+        amount: {
+          custom: "cubes",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Royal Flush",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Crown Royal",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Peach Schnapps",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Chambord Raspberry Liqueur",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Limona Corona",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Corona",
-        amount: "1 bottle",
-        unit: "",
+        amount: {
+          custom: "1 bottle",
+        },
       },
       {
         name: "Bacardi Limon",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Pysch Vitamin Light",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Orange Juice",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Apple Juice",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Ice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Apello",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Orange Juice",
-        amount: "4 cl",
-        unit: "",
+        amount: {
+          cl: "4",
+        },
       },
       {
         name: "Grapefruit Juice",
-        amount: "3 cl",
-        unit: "",
+        amount: {
+          cl: "3",
+        },
       },
       {
         name: "Apple Juice",
-        amount: "1 cl",
-        unit: "",
+        amount: {
+          cl: "1",
+        },
       },
       {
         name: "Maraschino Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Texas Rattlesnake",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Yukon Jack",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Cherry Brandy",
-        amount: "1/2 part",
-        unit: "",
+        amount: {
+          custom: "1/2 part",
+        },
       },
       {
         name: "Southern Comfort",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Sweet and Sour",
-        amount: "1 splash",
-        unit: "",
+        amount: {
+          custom: "1 splash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "After Sex",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "2 cl",
-        unit: "",
+        amount: {
+          cl: "2",
+        },
       },
       {
         name: "Creme De Banane",
-        amount: "1 cl",
-        unit: "",
+        amount: {
+          cl: "1",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "San Francisco",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "2 cl",
-        unit: "",
+        amount: {
+          cl: "2",
+        },
       },
       {
         name: "Creme De Banane",
-        amount: "2 cl",
-        unit: "",
+        amount: {
+          cl: "2",
+        },
       },
       {
         name: "Grenadine",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Amaretto Shake",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Chocolate Ice-cream",
-        amount: "2 scoops",
-        unit: "",
+        amount: {
+          custom: "2 scoops",
+        },
       },
       {
         name: "Brandy",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Amaretto",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "A Day At the Beach",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Coconut Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Amaretto",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Malibu Twister",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Malibu Rum",
-        amount: "2 parts",
-        unit: "",
+        amount: {
+          custom: "2 parts",
+        },
       },
       {
         name: "Tropicana",
-        amount: "2 parts",
-        unit: "",
+        amount: {
+          custom: "2 parts",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Space Odyssey",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "151 Proof Rum",
-        amount: "1 shot Bacardi",
-        unit: "",
+        amount: {
+          custom: "1 shot bacardi",
+        },
       },
       {
         name: "Malibu Rum",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Grenadine",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Cherry",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Zenmeister",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Jägermeister",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Root Beer",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Avalon",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "3 parts",
-        unit: "",
+        amount: {
+          custom: "3 parts",
+        },
       },
       {
         name: "Pisang Ambon",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Apple Juice",
-        amount: "6 parts",
-        unit: "",
+        amount: {
+          custom: "6 parts",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 1/2 part",
-        unit: "",
+        amount: {
+          custom: "1 1/2 part",
+        },
       },
       {
         name: "Lemonade",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "252",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "151 Proof Rum",
-        amount: "1/2 shot Bacardi",
-        unit: "",
+        amount: {
+          custom: "1/2 shot bacardi",
+        },
       },
       {
         name: "Wild Turkey",
-        amount: "1/2 shot",
-        unit: "",
+        amount: {
+          shot: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "3-mile Long Island Iced Tea",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Light Rum",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Tequila",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Vodka",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Cola",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Sweet and Sour",
-        amount: "1-2 dash",
-        unit: "",
+        amount: {
+          custom: "1-2 dash",
+        },
       },
       {
         name: "Bitters",
-        amount: "1 wedge",
-        unit: "",
+        amount: {
+          custom: "1 wedge",
+        },
       },
       {
         name: "Lemon",
-        amount: "Garnish with",
-        unit: "",
+        amount: {
+          custom: "garnish with",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Zorro",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Sambuca",
-        amount: "2 cl",
-        unit: "",
+        amount: {
+          cl: "2",
+        },
       },
       {
         name: "Baileys Irish Cream",
-        amount: "2 cl",
-        unit: "",
+        amount: {
+          cl: "2",
+        },
       },
       {
         name: "White Creme De Menthe",
-        amount: "2 cl",
-        unit: "",
+        amount: {
+          cl: "2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Orange Crush",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "155 Belmont",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Dark Rum",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Light Rum",
-        amount: "2 shots",
-        unit: "",
+        amount: {
+          shots: "2",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Vodka Russian",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Schweppes Russchian",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Danbooka",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Coffee",
-        amount: "3 parts",
-        unit: "",
+        amount: {
+          custom: "3 parts",
+        },
       },
       {
         name: "Everclear",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "110 In the Shade",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Lager",
-        amount: "16 oz",
-        unit: "",
+        amount: {
+          oz: "16",
+        },
       },
       {
         name: "Tequila",
-        amount: "1.5 oz",
-        unit: "",
+        amount: {
+          oz: "1.5",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Grand Blue",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Malibu Rum",
-        amount: "1 1/2 cl",
-        unit: "",
+        amount: {
+          cl: "1 1/2",
+        },
       },
       {
         name: "Peach Schnapps",
-        amount: "1 1/2 cl",
-        unit: "",
+        amount: {
+          cl: "1 1/2",
+        },
       },
       {
         name: "Blue Curacao",
-        amount: "1 1/2 cl",
-        unit: "",
+        amount: {
+          cl: "1 1/2",
+        },
       },
       {
         name: "Sweet and Sour",
-        amount: "3 cl",
-        unit: "",
+        amount: {
+          cl: "3",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Baby Eskimo",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Kahlua",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Milk",
-        amount: "8 oz",
-        unit: "",
+        amount: {
+          oz: "8",
+        },
       },
       {
         name: "Vanilla Ice-cream",
-        amount: "2 scoops",
-        unit: "",
+        amount: {
+          custom: "2 scoops",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Tennesee Mud",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Coffee",
-        amount: "8 oz",
-        unit: "",
+        amount: {
+          oz: "8",
+        },
       },
       {
         name: "Jack Daniels",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
       {
         name: "Amaretto",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
       {
         name: "Whipped Cream",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Swedish Coffee",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Coffee",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Aquavit",
-        amount: "4 cl",
-        unit: "",
+        amount: {
+          cl: "4",
+        },
       },
       {
         name: "Sugar",
-        amount: "By taste",
-        unit: "",
+        amount: {
+          custom: "by taste",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Adam Sunrise",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1/2",
-        unit: "",
+        amount: {
+          custom: "1/2",
+        },
       },
       {
         name: "Lemonade",
-        amount: "1/2 can",
-        unit: "",
+        amount: {
+          custom: "1/2 can",
+        },
       },
       {
         name: "Water",
-        amount: "1/2",
-        unit: "",
+        amount: {
+          custom: "1/2",
+        },
       },
       {
         name: "Sugar",
-        amount: "10 tsp",
-        unit: "",
+        amount: {
+          custom: "10 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Absolut Stress #2",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Absolut Vodka",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Peach Schnapps",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Coconut Liqueur",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Chocolate Monkey",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Banana Liqueur",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Creme De Cacao",
-        amount: "2 shots",
-        unit: "",
+        amount: {
+          shots: "2",
+        },
       },
       {
         name: "Chocolate Ice-cream",
-        amount: "2 scoops",
-        unit: "",
+        amount: {
+          custom: "2 scoops",
+        },
       },
       {
         name: "Chocolate Syrup",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Chocolate Milk",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
       {
         name: "Whipped Cream",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Banana",
-        amount: "1 piece",
-        unit: "",
+        amount: {
+          custom: "1 piece",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Texas Sling",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Kahlua",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Irish Cream",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Amaretto",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "151 Proof Rum",
-        amount: "1/2 oz Bacardi",
-        unit: "",
+        amount: {
+          custom: "1/2 oz bacardi",
+        },
       },
       {
         name: "Cream",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "A Midsummernight Dream",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Kirschwasser",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Strawberry Liqueur",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Strawberries",
-        amount: 5,
-        unit: "",
+        amount: {
+          custom: 5,
+        },
       },
       {
         name: "Schweppes Russchian",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Zoksel",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Beer",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Root Beer",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Lemonade",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Cola",
-        amount: "slice",
-        unit: "",
+        amount: {
+          custom: "slice",
+        },
       },
       {
         name: "7-up",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Creme De Cassis",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Lemon",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Fuzzy Asshole",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Coffee",
-        amount: "1/2",
-        unit: "",
+        amount: {
+          custom: "1/2",
+        },
       },
       {
         name: "Peach Schnapps",
-        amount: "1/2",
-        unit: "",
+        amount: {
+          custom: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Quick-sand",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Black Sambuca",
-        amount: "25 ml",
-        unit: "",
+        amount: {
+          ml: "25",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "Add 250 ml",
-        unit: "",
+        amount: {
+          ml: "add 250",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Snakebite and Black",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Lager",
-        amount: "1/2 pint",
-        unit: "",
+        amount: {
+          custom: "1/2 pint",
+        },
       },
       {
         name: "Cider",
-        amount: "1/2 pint",
-        unit: "",
+        amount: {
+          custom: "1/2 pint",
+        },
       },
       {
         name: "Blackcurrant Squash",
-        amount: "A little bit of",
-        unit: "",
+        amount: {
+          custom: "a little bit of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Zimadori Zinger",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Midori Melon Liqueur",
-        amount: "1.5 oz",
-        unit: "",
+        amount: {
+          oz: "1.5",
+        },
       },
       {
         name: "Zima",
-        amount: "12 oz",
-        unit: "",
+        amount: {
+          oz: "12",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Herbal Flame",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Hot Damn",
-        amount: "5 shots",
-        unit: "",
+        amount: {
+          shots: "5",
+        },
       },
       {
         name: "Tea",
-        amount: "very sweet",
-        unit: "",
+        amount: {
+          custom: "very sweet",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Jamaican Coffee",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Rum",
-        amount: "1/6 glass",
-        unit: "",
+        amount: {
+          custom: "1/6 glass",
+        },
       },
       {
         name: "Coffee",
-        amount: "1/6 glass strong black",
-        unit: "",
+        amount: {
+          custom: "1/6 glass strong black",
+        },
       },
       {
         name: "Water",
-        amount: "1/2 glass cold",
-        unit: "",
+        amount: {
+          custom: "1/2 glass cold",
+        },
       },
       {
         name: "Whipped Cream",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Mojito Extra",
     timing: "",
     tastes: ["Sweet", "Sour", "Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Mint",
-        amount: "1/2 handful",
-        unit: "",
+        amount: {
+          custom: "1/2 handful",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "3 cl",
-        unit: "",
+        amount: {
+          cl: "3",
+        },
       },
       {
         name: "Dark Rum",
-        amount: "1/8 L Jamaican",
-        unit: "",
+        amount: {
+          custom: "1/8 l jamaican",
+        },
       },
       {
         name: "Club Soda",
-        amount: "1/8 L",
-        unit: "",
+        amount: {
+          custom: "1/8 l",
+        },
       },
       {
         name: "Angostura Bitters",
-        amount: "8 drops",
-        unit: "",
+        amount: {
+          custom: "8 drops",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Apricot Punch",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Apricot Brandy",
-        amount: "1 qt",
-        unit: "",
+        amount: {
+          custom: "1 qt",
+        },
       },
       {
         name: "Champagne",
-        amount: "4 fifth",
-        unit: "",
+        amount: {
+          custom: "4 fifth",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 fifth",
-        unit: "",
+        amount: {
+          custom: "1 fifth",
+        },
       },
       {
         name: "7-up",
-        amount: "4 L",
-        unit: "",
+        amount: {
+          custom: "4 l",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1/2 gal",
-        unit: "",
+        amount: {
+          custom: "1/2 gal",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "B-52",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Baileys Irish Cream",
-        amount: "1/3",
-        unit: "",
+        amount: {
+          custom: "1/3",
+        },
       },
       {
         name: "Grand Marnier",
-        amount: "1/3",
-        unit: "",
+        amount: {
+          custom: "1/3",
+        },
       },
       {
         name: "Kahlua",
-        amount: "1/4",
-        unit: "",
+        amount: {
+          custom: "1/4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Zambeer",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Sambuca",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Root Beer",
-        amount: "Add 10 oz",
-        unit: "",
+        amount: {
+          oz: "add 10",
+        },
       },
       {
         name: "Ice",
-        amount: "cubes",
-        unit: "",
+        amount: {
+          custom: "cubes",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Americano",
     timing: "",
     tastes: ["Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Campari",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sweet Vermouth",
-        amount: "1 oz red",
-        unit: "",
+        amount: {
+          custom: "1 oz red",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "Twist of",
-        unit: "",
+        amount: {
+          custom: "twist of",
+        },
       },
       {
         name: "Orange Peel",
-        amount: "Twist of",
-        unit: "",
+        amount: {
+          custom: "twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Black Forest Shake",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Ice",
-        amount: "cubes",
-        unit: "",
+        amount: {
+          custom: "cubes",
+        },
       },
       {
         name: "Chocolate Syrup",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Cherry Brandy",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Vodka",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Milk",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Gg",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Galliano",
-        amount: "2 1/2 shots",
-        unit: "",
+        amount: {
+          shots: "2 1/2",
+        },
       },
       {
         name: "Ginger Ale",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Ice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Radler",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Beer",
-        amount: "12 oz",
-        unit: "",
+        amount: {
+          oz: "12",
+        },
       },
       {
         name: "7-up",
-        amount: "12 oz",
-        unit: "",
+        amount: {
+          oz: "12",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Mudslinger",
     timing: "",
     tastes: ["Sweet", "Nutty"],
+    preparation: "",
     ingredients: [
       {
         name: "Southern Comfort",
-        amount: "750 ml",
-        unit: "",
+        amount: {
+          ml: "750",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 L",
-        unit: "",
+        amount: {
+          custom: "1 l",
+        },
       },
       {
         name: "Cola",
-        amount: "750 ml",
-        unit: "",
+        amount: {
+          ml: "750",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Campari Beer",
     timing: "",
     tastes: ["Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Lager",
-        amount: "1 bottle",
-        unit: "",
+        amount: {
+          custom: "1 bottle",
+        },
       },
       {
         name: "Campari",
-        amount: "1 1/2 cl",
-        unit: "",
+        amount: {
+          cl: "1 1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Almond Chocolate Coffee",
     timing: "",
     tastes: ["Sweet", "Nutty"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Dark Creme De Cacao",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Coffee",
-        amount: "8 oz",
-        unit: "",
+        amount: {
+          oz: "8",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Amaretto Stone Sour Alternative",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Sour Mix",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Amaretto",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Tequila",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "Add splash",
-        unit: "",
+        amount: {
+          custom: "add splash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "9 1/2 Weeks",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Absolut Citron",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Orange Curacao",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Strawberry Liqueur",
-        amount: "1 splash",
-        unit: "",
+        amount: {
+          custom: "1 splash",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Absolutly Screwed Up",
     timing: "",
     tastes: ["Sweet", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Absolut Citron",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Ginger Ale",
-        amount: "Fill to top",
-        unit: "",
+        amount: {
+          custom: "fill to top",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Whitecap Margarita",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Ice",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Tequila",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Cream of Coconut",
-        amount: "1/4 cup",
-        unit: "",
+        amount: {
+          custom: "1/4 cup",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "3 tblsp fresh",
-        unit: "",
+        amount: {
+          custom: "3 tblsp fresh",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bellini Martini",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Ice",
-        amount: "8 cubes",
-        unit: "",
+        amount: {
+          custom: "8 cubes",
+        },
       },
       {
         name: "Vodka",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Peach Nectar",
-        amount: "1.5 oz",
-        unit: "",
+        amount: {
+          oz: "1.5",
+        },
       },
       {
         name: "Peach Schnapps",
-        amount: "1.5 oz",
-        unit: "",
+        amount: {
+          oz: "1.5",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Jitterbug",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 jiggers",
-        unit: "",
+        amount: {
+          custom: "2 jiggers",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 jigger",
-        unit: "",
+        amount: {
+          custom: "1 jigger",
+        },
       },
       {
         name: "Grenadine",
-        amount: "3 dashes",
-        unit: "",
+        amount: {
+          custom: "3 dashes",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Sugar",
-        amount: "Around rim put 1 pinch",
-        unit: "",
+        amount: {
+          custom: "around rim put 1 pinch",
+        },
       },
       {
         name: "Sugar Syrup",
-        amount: "3 dashes",
-        unit: "",
+        amount: {
+          custom: "3 dashes",
+        },
       },
       {
         name: "Soda Water",
-        amount: "Fill to top with",
-        unit: "",
+        amount: {
+          custom: "fill to top with",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Moranguito",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Absinthe",
-        amount: "2/5",
-        unit: "",
+        amount: {
+          custom: "2/5",
+        },
       },
       {
         name: "Tequila",
-        amount: "2/5",
-        unit: "",
+        amount: {
+          custom: "2/5",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1/5",
-        unit: "",
+        amount: {
+          custom: "1/5",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Amaretto Sweet & Sour",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Sweet and Sour",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Midori Melon Liqueur",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Rum Runner",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Malibu Rum",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Blackberry Brandy",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "3-4 oz",
-        unit: "",
+        amount: {
+          oz: "3-4",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "3-4 oz",
-        unit: "",
+        amount: {
+          oz: "3-4",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "3-4 oz",
-        unit: "",
+        amount: {
+          oz: "3-4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "H.d.",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Whiskey",
-        amount: "4 cl",
-        unit: "",
+        amount: {
+          cl: "4",
+        },
       },
       {
         name: "Baileys Irish Cream",
-        amount: "8 cl",
-        unit: "",
+        amount: {
+          cl: "8",
+        },
       },
       {
         name: "Coffee",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "The Evil Blue Thing",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Creme De Cacao",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Blue Curacao",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Light Rum",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Shark Attack",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Lemonade",
-        amount: "1 can",
-        unit: "",
+        amount: {
+          custom: "1 can",
+        },
       },
       {
         name: "Water",
-        amount: "3 cans",
-        unit: "",
+        amount: {
+          custom: "3 cans",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1 1/2 cup",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Jack's Vanilla Coke",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Ice",
-        amount: "4-5",
-        unit: "",
+        amount: {
+          custom: "4-5",
+        },
       },
       {
         name: "Tennessee Whiskey",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Vanilla Extract",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Cola",
-        amount: "10-12 oz",
-        unit: "",
+        amount: {
+          oz: "10-12",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Apple Grande",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Tequila",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Apple Cider",
-        amount: "12 oz",
-        unit: "",
+        amount: {
+          oz: "12",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bleeding Surgeon",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Dark Rum",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Orange",
-        amount: "1 slice",
-        unit: "",
+        amount: {
+          custom: "1 slice",
+        },
       },
       {
         name: "Surge",
-        amount: "1/2 glass",
-        unit: "",
+        amount: {
+          custom: "1/2 glass",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "1/2 glass",
-        unit: "",
+        amount: {
+          custom: "1/2 glass",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Applejack",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Jack Daniels",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Midori Melon Liqueur",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Sour Mix",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Adam Bomb",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Rum",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Tequila",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1/2 part",
-        unit: "",
+        amount: {
+          custom: "1/2 part",
+        },
       },
       {
         name: "Fruit",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Ice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Salt",
-        amount: "1-3 pint",
-        unit: "",
+        amount: {
+          custom: "1-3 pint",
+        },
       },
       {
         name: "Fruit Juice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Arizona Antifreeze",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1/3 oz",
-        unit: "",
+        amount: {
+          oz: "1/3",
+        },
       },
       {
         name: "Midori Melon Liqueur",
-        amount: "1/3 oz",
-        unit: "",
+        amount: {
+          oz: "1/3",
+        },
       },
       {
         name: "Sweet and Sour",
-        amount: "1/3 oz",
-        unit: "",
+        amount: {
+          oz: "1/3",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Black and Brown",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Guinness Stout",
-        amount: "1/2",
-        unit: "",
+        amount: {
+          custom: "1/2",
+        },
       },
       {
         name: "Root Beer",
-        amount: "1/2",
-        unit: "",
+        amount: {
+          custom: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "A Piece of Ass",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Southern Comfort",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Ice",
-        amount: "cubes",
-        unit: "",
+        amount: {
+          custom: "cubes",
+        },
       },
       {
         name: "Sour Mix",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Avalanche",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Crown Royal",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Kahlua",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Cream",
-        amount: "Fill with",
-        unit: "",
+        amount: {
+          custom: "fill with",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Brandon and Will's Coke Float",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Vanilla Ice-cream",
-        amount: "2 scoops",
-        unit: "",
+        amount: {
+          custom: "2 scoops",
+        },
       },
       {
         name: "Cola",
-        amount: "1 can",
-        unit: "",
+        amount: {
+          custom: "1 can",
+        },
       },
       {
         name: "Bourbon",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Flaming Lamborghini",
     timing: "",
     tastes: ["Sweet", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Kahlua",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sambuca",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Blue Curacao",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Baileys Irish Cream",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Zipperhead",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Chambord Raspberry Liqueur",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Soda Water",
-        amount: "Fill with",
-        unit: "",
+        amount: {
+          custom: "fill with",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "A Gilligan's Island",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Peach Schnapps",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Kioki Coffee",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Kahlua",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Brandy",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Coffee",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Apple Pie With A Crust",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Apple Juice",
-        amount: "3 parts",
-        unit: "",
+        amount: {
+          custom: "3 parts",
+        },
       },
       {
         name: "Malibu Rum",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Cinnamon",
-        amount: "3 dashes",
-        unit: "",
+        amount: {
+          custom: "3 dashes",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Zorbatini",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 1/4 oz Stoli",
-        unit: "",
+        amount: {
+          custom: "1 1/4 oz stoli",
+        },
       },
       {
         name: "Ouzo",
-        amount: "1/4 oz",
-        unit: "",
+        amount: {
+          oz: "1/4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Vodka Fizz",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Half-and-half",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Limeade",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Ice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Nutmeg",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Radioactive Long Island Iced Tea",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Tequila",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Gin",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Chambord Raspberry Liqueur",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Midori Melon Liqueur",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Malibu Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Shot-gun",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Jim Beam",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Jack Daniels",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Wild Turkey",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bible Belt",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Southern Comfort",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lime",
-        amount: "2 wedges",
-        unit: "",
+        amount: {
+          custom: "2 wedges",
+        },
       },
       {
         name: "Sour Mix",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Irish Curdling Cow",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Baileys Irish Cream",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Bourbon",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Vodka",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "2-3 oz",
-        unit: "",
+        amount: {
+          oz: "2-3",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Sweet Tooth",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Godiva Liqueur",
-        amount: "2 shots",
-        unit: "",
+        amount: {
+          shots: "2",
+        },
       },
       {
         name: "Milk",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Downshift",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Fruit Punch",
-        amount: "2 part",
-        unit: "",
+        amount: {
+          custom: "2 part",
+        },
       },
       {
         name: "Sprite",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Tequila",
-        amount: "2 shots",
-        unit: "",
+        amount: {
+          shots: "2",
+        },
       },
       {
         name: "151 Proof Rum",
-        amount: "Float Bacardi",
-        unit: "",
+        amount: {
+          custom: "float bacardi",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Pink Penocha",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Everclear",
-        amount: "750 ml",
-        unit: "",
+        amount: {
+          ml: "750",
+        },
       },
       {
         name: "Vodka",
-        amount: "1750 ml",
-        unit: "",
+        amount: {
+          ml: "1750",
+        },
       },
       {
         name: "Peach Schnapps",
-        amount: "1750 ml",
-        unit: "",
+        amount: {
+          ml: "1750",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 gal",
-        unit: "",
+        amount: {
+          custom: "1 gal",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "1 gal",
-        unit: "",
+        amount: {
+          custom: "1 gal",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Orange Whip",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Orange Juice",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
       {
         name: "Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Cream",
-        amount: "1 package",
-        unit: "",
+        amount: {
+          custom: "1 package",
+        },
       },
       {
         name: "Ice",
-        amount: "Over",
-        unit: "",
+        amount: {
+          custom: "over",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bruised Heart",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Chambord Raspberry Liqueur",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Peachtree Schnapps",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Gideon's Green Dinosaur",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Dark Rum",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Vodka",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Tequila",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Melon Liqueur",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Mountain Dew",
-        amount: "Fill with",
-        unit: "",
+        amount: {
+          custom: "fill with",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "A True Amaretto Sour",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "1 jigger",
-        unit: "",
+        amount: {
+          custom: "1 jigger",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Ice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Maraschino Cherry",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Kool First Aid",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "151 Proof Rum",
-        amount: "2 oz light",
-        unit: "",
+        amount: {
+          custom: "2 oz light",
+        },
       },
       {
         name: "Kool-aid",
-        amount: "1/2 tsp Tropical",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp tropical",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Irish Russian",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Kahlua",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Cola",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Guinness Stout",
-        amount: "Fill with",
-        unit: "",
+        amount: {
+          custom: "fill with",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Auburn Headbanger",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Jägermeister",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Goldschlager",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Zima Blaster",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Zima",
-        amount: "12 oz",
-        unit: "",
+        amount: {
+          oz: "12",
+        },
       },
       {
         name: "Chambord Raspberry Liqueur",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Buccaneer",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Corona",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Bacardi Limon",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Homemade Kahlua",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Sugar",
-        amount: "2 1/2 cups",
-        unit: "",
+        amount: {
+          custom: "2 1/2 cups",
+        },
       },
       {
         name: "Corn Syrup",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Coffee",
-        amount: "1 1/2 oz instant",
-        unit: "",
+        amount: {
+          custom: "1 1/2 oz instant",
+        },
       },
       {
         name: "Vanilla Extract",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Water",
-        amount: "3 cups boiling",
-        unit: "",
+        amount: {
+          custom: "3 cups boiling",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 fifth",
-        unit: "",
+        amount: {
+          custom: "1 fifth",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "24k Nightmare",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Goldschlager",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Jägermeister",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Rumple Minze",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "151 Proof Rum",
-        amount: "1/2 oz Bacardi",
-        unit: "",
+        amount: {
+          custom: "1/2 oz bacardi",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Caribbean Boilermaker",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Corona",
-        amount: "1 bottle",
-        unit: "",
+        amount: {
+          custom: "1 bottle",
+        },
       },
       {
         name: "Light Rum",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Army Special",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "30 ml",
-        unit: "",
+        amount: {
+          ml: "30",
+        },
       },
       {
         name: "Gin",
-        amount: "30 ml",
-        unit: "",
+        amount: {
+          ml: "30",
+        },
       },
       {
         name: "Lime Juice Cordial",
-        amount: "45 ml",
-        unit: "",
+        amount: {
+          ml: "45",
+        },
       },
       {
         name: "Ice",
-        amount: "1/2 glass crushed",
-        unit: "",
+        amount: {
+          custom: "1/2 glass crushed",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Arizona Twister",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Malibu Rum",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Gold Tequila",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 splash",
-        unit: "",
+        amount: {
+          custom: "1 splash",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "1 splash",
-        unit: "",
+        amount: {
+          custom: "1 splash",
+        },
       },
       {
         name: "Cream of Coconut",
-        amount: "1 splash",
-        unit: "",
+        amount: {
+          custom: "1 splash",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Ice",
-        amount: "crushed",
-        unit: "",
+        amount: {
+          custom: "crushed",
+        },
       },
       {
         name: "Pineapple",
-        amount: "1 wedge",
-        unit: "",
+        amount: {
+          custom: "1 wedge",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Baby Guinness",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Kahlua",
-        amount: "2 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "2 1/2",
+        },
       },
       {
         name: "Baileys Irish Cream",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Alice In Wonderland",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Amaretto",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Grand Marnier",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Southern Comfort",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "501 Blue",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Blue Curacao",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Blueberry Schnapps",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Vodka",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "Sour Mix",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
       {
         name: "7-up",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Coke and Drops",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Cola",
-        amount: "1 dl",
-        unit: "",
+        amount: {
+          custom: "1 dl",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "7 drops",
-        unit: "",
+        amount: {
+          custom: "7 drops",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Ruby Tuesday",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "5 oz",
-        unit: "",
+        amount: {
+          oz: "5",
+        },
       },
       {
         name: "Grenadine",
-        amount: "2 splashes",
-        unit: "",
+        amount: {
+          custom: "2 splashes",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Arctic Mouthwash",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Maui",
-        amount: "5 oz blue",
-        unit: "",
+        amount: {
+          custom: "5 oz blue",
+        },
       },
       {
         name: "Mountain Dew",
-        amount: "5 oz",
-        unit: "",
+        amount: {
+          oz: "5",
+        },
       },
       {
         name: "Ice",
-        amount: "cubes",
-        unit: "",
+        amount: {
+          custom: "cubes",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Brain Fart",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Everclear",
-        amount: "1 fifth",
-        unit: "",
+        amount: {
+          custom: "1 fifth",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 fifth Smirnoff red label",
-        unit: "",
+        amount: {
+          custom: "1 fifth smirnoff red label",
+        },
       },
       {
         name: "Mountain Dew",
-        amount: "2 L",
-        unit: "",
+        amount: {
+          custom: "2 l",
+        },
       },
       {
         name: "Surge",
-        amount: "2 L",
-        unit: "",
+        amount: {
+          custom: "2 l",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 small bottle",
-        unit: "",
+        amount: {
+          custom: "1 small bottle",
+        },
       },
       {
         name: "Rum",
-        amount: "1 pint",
-        unit: "",
+        amount: {
+          custom: "1 pint",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Royal Bitch",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Frangelico",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Crown Royal",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Citrus Coke",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Bacardi Limon",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Cola",
-        amount: "2 parts",
-        unit: "",
+        amount: {
+          custom: "2 parts",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Smut",
     timing: "",
     tastes: ["Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Red Wine",
-        amount: "1/3 part",
-        unit: "",
+        amount: {
+          custom: "1/3 part",
+        },
       },
       {
         name: "Peach Schnapps",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Cola",
-        amount: "1/3 part",
-        unit: "",
+        amount: {
+          custom: "1/3 part",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1/3 part",
-        unit: "",
+        amount: {
+          custom: "1/3 part",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Raspberry Cooler",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Raspberry Vodka",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon-lime Soda",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
       {
         name: "Ice",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Amaretto Sunset",
     timing: "",
     tastes: ["Sweet", "Nutty"],
+    preparation: "",
     ingredients: [
       {
         name: "Triple Sec",
-        amount: "1/2 jigger",
-        unit: "",
+        amount: {
+          custom: "1/2 jigger",
+        },
       },
       {
         name: "Amaretto",
-        amount: "3 shots",
-        unit: "",
+        amount: {
+          shots: "3",
+        },
       },
       {
         name: "Cider",
-        amount: "1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1/2 cup",
+        },
       },
       {
         name: "Ice",
-        amount: "Add 1/2 cup",
-        unit: "",
+        amount: {
+          custom: "add 1/2 cup",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Cherry Electric Lemonade",
     timing: "",
     tastes: ["Sweet", "Sour", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Tequila",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Vodka",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "White Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Cherry Grenadine",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sweet and Sour",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Club Soda",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Girl From Ipanema",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Cachaca",
-        amount: "25 ml",
-        unit: "",
+        amount: {
+          ml: "25",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "15 ml",
-        unit: "",
+        amount: {
+          ml: "15",
+        },
       },
       {
         name: "Agave Syrup",
-        amount: "10 ml",
-        unit: "",
+        amount: {
+          ml: "10",
+        },
       },
       {
         name: "Champagne",
-        amount: "top up with",
-        unit: "",
+        amount: {
+          custom: "top up with",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Ipamena",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Lime",
-        amount: "½",
-        unit: "",
+        amount: {
+          custom: "½",
+        },
       },
       {
         name: "Brown Sugar",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Passion Fruit Juice",
-        amount: "4 cl",
-        unit: "",
+        amount: {
+          cl: "4",
+        },
       },
       {
         name: "Ginger Ale",
-        amount: "top up with",
-        unit: "",
+        amount: {
+          custom: "top up with",
+        },
       },
       {
         name: "Ice",
-        amount: "fill",
-        unit: "",
+        amount: {
+          custom: "fill",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Dark Caipirinha",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Demerara Sugar",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Lime",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Cachaca",
-        amount: "2 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "2 1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Jam Donut",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Baileys Irish Cream",
-        amount: "2/3 oz",
-        unit: "",
+        amount: {
+          oz: "2/3",
+        },
       },
       {
         name: "Chambord Raspberry Liqueur",
-        amount: "1/3 oz",
-        unit: "",
+        amount: {
+          oz: "1/3",
+        },
       },
       {
         name: "Sugar Syrup",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Sugar",
-        amount: "2 pinches",
-        unit: "",
+        amount: {
+          custom: "2 pinches",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Aviation",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "4.5 cl",
-        unit: "",
+        amount: {
+          cl: "4.5",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1.5 cl",
-        unit: "",
+        amount: {
+          cl: "1.5",
+        },
       },
       {
         name: "Maraschino Liqueur",
-        amount: "1.5 cl",
-        unit: "",
+        amount: {
+          cl: "1.5",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Dirty Martini",
     timing: "",
     tastes: ["Salty"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "70ml/2fl oz",
-        unit: "",
+        amount: {
+          oz: "70ml/2fl",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "1 tbsp",
-        unit: "",
+        amount: {
+          custom: "1 tbsp",
+        },
       },
       {
         name: "Olive Brine",
-        amount: "2 tbsp",
-        unit: "",
+        amount: {
+          custom: "2 tbsp",
+        },
       },
       {
         name: "Lemon",
-        amount: "1 wedge",
-        unit: "",
+        amount: {
+          custom: "1 wedge",
+        },
       },
       {
         name: "Olive",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Duchamp's Punch",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Pisco",
-        amount: "5 cl",
-        unit: "",
+        amount: {
+          cl: "5",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "2.5 cl",
-        unit: "",
+        amount: {
+          cl: "2.5",
+        },
       },
       {
         name: "Pineapple Syrup",
-        amount: "2.5 cl",
-        unit: "",
+        amount: {
+          cl: "2.5",
+        },
       },
       {
         name: "St. Germain",
-        amount: "1.5 cl",
-        unit: "",
+        amount: {
+          cl: "1.5",
+        },
       },
       {
         name: "Angostura Bitters",
-        amount: "2 Dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
       {
         name: "Pepper",
-        amount: "Pinch",
-        unit: "",
+        amount: {
+          custom: "pinch",
+        },
       },
       {
         name: "Lavender",
-        amount: "2 sprigs",
-        unit: "",
+        amount: {
+          custom: "2 sprigs",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bacardi Cocktail",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 3/4 oz Bacardi",
-        unit: "",
+        amount: {
+          custom: "1 3/4 oz bacardi",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sugar Syrup",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Between the Sheets",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Brandy",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Light Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Casino",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Maraschino Liqueur",
-        amount: "1/4 tsp",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1/4 tsp",
-        unit: "",
+        amount: {
+          custom: "1/4 tsp",
+        },
       },
       {
         name: "Orange Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
       {
         name: "Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Clover Club",
     timing: "",
     tastes: ["Sweet", "Tart"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Grenadine",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Egg White",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Derby",
     timing: "",
     tastes: ["Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "6 cl",
-        unit: "",
+        amount: {
+          cl: "6",
+        },
       },
       {
         name: "Peach Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
       {
         name: "Mint",
-        amount: "2 Fresh leaves",
-        unit: "",
+        amount: {
+          custom: "2 fresh leaves",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Mary Pickford",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Maraschino Liqueur",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Maraschino Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Monkey Gland",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Benedictine",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Paradise",
     timing: "",
     tastes: ["Sweet", "Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "7 parts",
-        unit: "",
+        amount: {
+          custom: "7 parts",
+        },
       },
       {
         name: "Apricot Brandy",
-        amount: "4 parts",
-        unit: "",
+        amount: {
+          custom: "4 parts",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "3 parts",
-        unit: "",
+        amount: {
+          custom: "3 parts",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Planter's Punch",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Dark Rum",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Orgeat Syrup",
-        amount: "1/2 part",
-        unit: "",
+        amount: {
+          custom: "1/2 part",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "2 parts",
-        unit: "",
+        amount: {
+          custom: "2 parts",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Porto Flip",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Brandy",
-        amount: "3 parts",
-        unit: "",
+        amount: {
+          custom: "3 parts",
+        },
       },
       {
         name: "Port",
-        amount: "9 parts",
-        unit: "",
+        amount: {
+          custom: "9 parts",
+        },
       },
       {
         name: "Egg Yolk",
-        amount: "2 parts",
-        unit: "",
+        amount: {
+          custom: "2 parts",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Stinger",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Brandy",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "White Creme De Menthe",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "White Lady",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "4cl",
-        unit: "",
+        amount: {
+          custom: "4cl",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "3cl",
-        unit: "",
+        amount: {
+          custom: "3cl",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "2cl",
-        unit: "",
+        amount: {
+          custom: "2cl",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bellini",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Champagne",
-        amount: "6 oz",
-        unit: "",
+        amount: {
+          oz: "6",
+        },
       },
       {
         name: "Peach Schnapps",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Cosmopolitan",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 1/4 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/4",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1/4 oz",
-        unit: "",
+        amount: {
+          oz: "1/4",
+        },
       },
       {
         name: "Cointreau",
-        amount: "1/4 oz",
-        unit: "",
+        amount: {
+          oz: "1/4",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "1/4 cup",
-        unit: "",
+        amount: {
+          custom: "1/4 cup",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "French 75",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Sugar",
-        amount: "2 tsp superfine",
-        unit: "",
+        amount: {
+          custom: "2 tsp superfine",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Champagne",
-        amount: "4 oz Chilled",
-        unit: "",
+        amount: {
+          custom: "4 oz chilled",
+        },
       },
       {
         name: "Orange",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Maraschino Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "French Connection",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Cognac",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Amaretto",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Golden Dream",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Galliano",
-        amount: "2 parts",
-        unit: "",
+        amount: {
+          custom: "2 parts",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "2 parts",
-        unit: "",
+        amount: {
+          custom: "2 parts",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "2 parts",
-        unit: "",
+        amount: {
+          custom: "2 parts",
+        },
       },
       {
         name: "Cream",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Grasshopper",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Green Creme De Menthe",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Creme De Cacao",
-        amount: "3/4 oz white",
-        unit: "",
+        amount: {
+          custom: "3/4 oz white",
+        },
       },
       {
         name: "Light Cream",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Hemingway Special",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Rum",
-        amount: "12 parts",
-        unit: "",
+        amount: {
+          custom: "12 parts",
+        },
       },
       {
         name: "Grapefruit Juice",
-        amount: "8 parts",
-        unit: "",
+        amount: {
+          custom: "8 parts",
+        },
       },
       {
         name: "Maraschino Liqueur",
-        amount: "3 parts",
-        unit: "",
+        amount: {
+          custom: "3 parts",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "3 parts",
-        unit: "",
+        amount: {
+          custom: "3 parts",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Horse's Neck",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Lemon Peel",
-        amount: "1 long strip",
-        unit: "",
+        amount: {
+          custom: "1 long strip",
+        },
       },
       {
         name: "Brandy",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Ginger Ale",
-        amount: "5 oz",
-        unit: "",
+        amount: {
+          oz: "5",
+        },
       },
       {
         name: "Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Kir",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Creme De Cassis",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Champagne",
-        amount: "5 parts",
-        unit: "",
+        amount: {
+          custom: "5 parts",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Long Island Iced Tea",
     timing: "",
     tastes: ["Sweet", "Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Tequila",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Light Rum",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Gin",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Cola",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "Twist of",
-        unit: "",
+        amount: {
+          custom: "twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Mimosa",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Champagne",
-        amount: "Chilled",
-        unit: "",
+        amount: {
+          custom: "chilled",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Mint Julep",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Mint",
-        amount: "4 fresh",
-        unit: "",
+        amount: {
+          custom: "4 fresh",
+        },
       },
       {
         name: "Bourbon",
-        amount: "2 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "2 1/2",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Water",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Pina Colada",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Coconut Milk",
-        amount: "3 tblsp",
-        unit: "",
+        amount: {
+          custom: "3 tblsp",
+        },
       },
       {
         name: "Pineapple",
-        amount: "3 tblsp",
-        unit: "",
+        amount: {
+          custom: "3 tblsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Rose",
     timing: "",
     tastes: ["Floral"],
+    preparation: "",
     ingredients: [
       {
         name: "Dry Vermouth",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Gin",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Apricot Brandy",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1/2 tsp",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Powdered Sugar",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Barracuda",
     timing: "",
     tastes: ["Sweet", "Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Rum",
-        amount: "4.5 cl",
-        unit: "",
+        amount: {
+          cl: "4.5",
+        },
       },
       {
         name: "Galliano",
-        amount: "1.5 cl",
-        unit: "",
+        amount: {
+          cl: "1.5",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "6 cl",
-        unit: "",
+        amount: {
+          cl: "6",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Prosecco",
-        amount: "top up",
-        unit: "",
+        amount: {
+          custom: "top up",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bramble",
     timing: "",
     tastes: ["Sweet", "Tart"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "4 cl",
-        unit: "",
+        amount: {
+          cl: "4",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1.5 cl",
-        unit: "",
+        amount: {
+          cl: "1.5",
+        },
       },
       {
         name: "Sugar Syrup",
-        amount: "1 cl",
-        unit: "",
+        amount: {
+          cl: "1",
+        },
       },
       {
         name: "Creme De Mure",
-        amount: "1.5 cl",
-        unit: "",
+        amount: {
+          cl: "1.5",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Dark and Stormy",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Dark Rum",
-        amount: "5 cl",
-        unit: "",
+        amount: {
+          cl: "5",
+        },
       },
       {
         name: "Ginger Beer",
-        amount: "10 cl",
-        unit: "",
+        amount: {
+          cl: "10",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Espresso Martini",
     timing: "",
     tastes: ["Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "5 cl",
-        unit: "",
+        amount: {
+          cl: "5",
+        },
       },
       {
         name: "Kahlua",
-        amount: "1 cl",
-        unit: "",
+        amount: {
+          cl: "1",
+        },
       },
       {
         name: "Sugar Syrup",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "French Martini",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "4.5 cl",
-        unit: "",
+        amount: {
+          cl: "4.5",
+        },
       },
       {
         name: "Raspberry Liqueur",
-        amount: "1.5 cl",
-        unit: "",
+        amount: {
+          cl: "1.5",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "1.5 cl",
-        unit: "",
+        amount: {
+          cl: "1.5",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Russian Spring Punch",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "2.5 cl",
-        unit: "",
+        amount: {
+          cl: "2.5",
+        },
       },
       {
         name: "Creme De Cassis",
-        amount: "1.5 cl",
-        unit: "",
+        amount: {
+          cl: "1.5",
+        },
       },
       {
         name: "Sugar Syrup",
-        amount: "1 cl",
-        unit: "",
+        amount: {
+          cl: "1",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "2.5 cl",
-        unit: "",
+        amount: {
+          cl: "2.5",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Spritz",
     timing: "",
     tastes: ["Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Prosecco",
-        amount: "6 cl",
-        unit: "",
+        amount: {
+          cl: "6",
+        },
       },
       {
         name: "Campari",
-        amount: "4 cl",
-        unit: "",
+        amount: {
+          cl: "4",
+        },
       },
       {
         name: "Soda Water",
-        amount: "splash",
-        unit: "",
+        amount: {
+          custom: "splash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Tommy's Margarita",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Tequila",
-        amount: "4.5 cl",
-        unit: "",
+        amount: {
+          cl: "4.5",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1.5 cl",
-        unit: "",
+        amount: {
+          cl: "1.5",
+        },
       },
       {
         name: "Agave Syrup",
-        amount: "2 spoons",
-        unit: "",
+        amount: {
+          custom: "2 spoons",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Vampiro",
     timing: "",
     tastes: ["Sweet", "Spicy"],
+    preparation: "",
     ingredients: [
       {
         name: "Tequila",
-        amount: "6 cl",
-        unit: "",
+        amount: {
+          cl: "6",
+        },
       },
       {
         name: "Tomato Juice",
-        amount: "3 cl",
-        unit: "",
+        amount: {
+          cl: "3",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "3 cl",
-        unit: "",
+        amount: {
+          cl: "3",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1.5 cl",
-        unit: "",
+        amount: {
+          cl: "1.5",
+        },
       },
       {
         name: "Sugar Syrup",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Salt",
-        amount: "1 pinch",
-        unit: "",
+        amount: {
+          custom: "1 pinch",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Vesper",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "6 cl",
-        unit: "",
+        amount: {
+          cl: "6",
+        },
       },
       {
         name: "Vodka",
-        amount: "1.5 cl",
-        unit: "",
+        amount: {
+          cl: "1.5",
+        },
       },
       {
         name: "Lillet Blanc",
-        amount: "0.75 cl",
-        unit: "",
+        amount: {
+          cl: "0.75",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Yellow Bird",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "White Rum",
-        amount: "3 cl",
-        unit: "",
+        amount: {
+          cl: "3",
+        },
       },
       {
         name: "Galliano",
-        amount: "1.5 cl",
-        unit: "",
+        amount: {
+          cl: "1.5",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1.5 cl",
-        unit: "",
+        amount: {
+          cl: "1.5",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1.5 cl",
-        unit: "",
+        amount: {
+          cl: "1.5",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Butter Baby",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vanilla Ice-cream",
-        amount: "2 scoops",
-        unit: "",
+        amount: {
+          custom: "2 scoops",
+        },
       },
       {
         name: "Butterscotch Schnapps",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Milk",
-        amount: "full glass",
-        unit: "",
+        amount: {
+          custom: "full glass",
+        },
       },
       {
         name: "Vodka",
-        amount: "2 parts",
-        unit: "",
+        amount: {
+          custom: "2 parts",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Boozy Snickers Milkshake",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Vanilla Ice-cream",
-        amount: "3 cups",
-        unit: "",
+        amount: {
+          custom: "3 cups",
+        },
       },
       {
         name: "Milk",
-        amount: "1 cup",
-        unit: "",
+        amount: {
+          custom: "1 cup",
+        },
       },
       {
         name: "Godiva Liqueur",
-        amount: "1/2 cup",
-        unit: "",
+        amount: {
+          custom: "1/2 cup",
+        },
       },
       {
         name: "Whipped Cream",
-        amount: "for topping",
-        unit: "",
+        amount: {
+          custom: "for topping",
+        },
       },
       {
         name: "Caramel Sauce",
-        amount: "4 tablespoons",
-        unit: "",
+        amount: {
+          custom: "4 tablespoons",
+        },
       },
       {
         name: "Chocolate Sauce",
-        amount: "4 tablespoons",
-        unit: "",
+        amount: {
+          custom: "4 tablespoons",
+        },
       },
       {
         name: "Mini-snickers Bars",
-        amount: 15,
-        unit: "",
+        amount: {
+          custom: 15,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "A1",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 3/4 shot",
-        unit: "",
+        amount: {
+          shot: "1 3/4",
+        },
       },
       {
         name: "Grand Marnier",
-        amount: "1 Shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1/4 Shot",
-        unit: "",
+        amount: {
+          shot: "1/4",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1/8 Shot",
-        unit: "",
+        amount: {
+          shot: "1/8",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Abbey Martini",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 shots",
-        unit: "",
+        amount: {
+          shots: "2",
+        },
       },
       {
         name: "Sweet Vermouth",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Angostura Bitters",
-        amount: "3 dashes",
-        unit: "",
+        amount: {
+          custom: "3 dashes",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Absolutely Fabulous",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "2 shots",
-        unit: "",
+        amount: {
+          shots: "2",
+        },
       },
       {
         name: "Champagne",
-        amount: "Top up with",
-        unit: "",
+        amount: {
+          custom: "top up with",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Ace",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 shots",
-        unit: "",
+        amount: {
+          shots: "2",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1/2 shot",
-        unit: "",
+        amount: {
+          shot: "1/2",
+        },
       },
       {
         name: "Heavy Cream",
-        amount: "1/2 shot",
-        unit: "",
+        amount: {
+          shot: "1/2",
+        },
       },
       {
         name: "Milk",
-        amount: "1/2 shot",
-        unit: "",
+        amount: {
+          shot: "1/2",
+        },
       },
       {
         name: "Egg White",
-        amount: "1/2 Fresh",
-        unit: "",
+        amount: {
+          custom: "1/2 fresh",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Adam & Eve",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Cognac",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Creme De Cassis",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1/8 shot",
-        unit: "",
+        amount: {
+          shot: "1/8",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Addington",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Sweet Vermouth",
-        amount: "2 shots",
-        unit: "",
+        amount: {
+          shots: "2",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Soda Water",
-        amount: "Top up with",
-        unit: "",
+        amount: {
+          custom: "top up with",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Addison",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 1/2 shot",
-        unit: "",
+        amount: {
+          shot: "1 1/2",
+        },
       },
       {
         name: "Vermouth",
-        amount: "1 1/2 shot",
-        unit: "",
+        amount: {
+          shot: "1 1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Adios Amigos Cocktail",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Rum",
-        amount: "1 shot",
-        unit: "",
+        amount: {
+          shot: "1",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "1/2 shot",
-        unit: "",
+        amount: {
+          shot: "1/2",
+        },
       },
       {
         name: "Cognac",
-        amount: "1/2 shot",
-        unit: "",
+        amount: {
+          shot: "1/2",
+        },
       },
       {
         name: "Gin",
-        amount: "1/2 shot",
-        unit: "",
+        amount: {
+          shot: "1/2",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1/4 shot",
-        unit: "",
+        amount: {
+          shot: "1/4",
+        },
       },
       {
         name: "Sugar Syrup",
-        amount: "1/4 shot",
-        unit: "",
+        amount: {
+          shot: "1/4",
+        },
       },
       {
         name: "Water",
-        amount: "1/2 shot",
-        unit: "",
+        amount: {
+          shot: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Gin Rickey",
     timing: "",
     tastes: ["Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Lemon",
-        amount: "Juice of 1/2",
-        unit: "",
+        amount: {
+          custom: "juice of 1/2",
+        },
       },
       {
         name: "Soda Water",
-        amount: "Top up with",
-        unit: "",
+        amount: {
+          custom: "top up with",
+        },
       },
       {
         name: "Lime",
-        amount: "Garnish",
-        unit: "",
+        amount: {
+          custom: "garnish",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Salted Toffee Martini",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "50 ml",
-        unit: "",
+        amount: {
+          ml: "50",
+        },
       },
       {
         name: "Chocolate Liqueur",
-        amount: "30 ml",
-        unit: "",
+        amount: {
+          ml: "30",
+        },
       },
       {
         name: "Amaretto",
-        amount: "15 ml",
-        unit: "",
+        amount: {
+          ml: "15",
+        },
       },
       {
         name: "Chocolate Sauce",
-        amount: "Garnish",
-        unit: "",
+        amount: {
+          custom: "garnish",
+        },
       },
       {
         name: "Salted Chocolate",
-        amount: "Grated",
-        unit: "",
+        amount: {
+          custom: "grated",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Hunter's Moon",
     timing: "",
     tastes: ["Sweet", "Tart"],
+    preparation: "",
     ingredients: [
       {
         name: "Vermouth",
-        amount: "25 ml",
-        unit: "",
+        amount: {
+          ml: "25",
+        },
       },
       {
         name: "Maraschino Cherry",
-        amount: "15 ml",
-        unit: "",
+        amount: {
+          ml: "15",
+        },
       },
       {
         name: "Sugar Syrup",
-        amount: "10 ml",
-        unit: "",
+        amount: {
+          ml: "10",
+        },
       },
       {
         name: "Lemonade",
-        amount: "100 ml",
-        unit: "",
+        amount: {
+          ml: "100",
+        },
       },
       {
         name: "Blackberries",
-        amount: 2,
-        unit: "",
+        amount: {
+          custom: 2,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Zombie",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Rum",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Gold Rum",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "151 Proof Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Pernod",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Angostura Bitters",
-        amount: "1 drop",
-        unit: "",
+        amount: {
+          custom: "1 drop",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bombay Cassis",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "50 ml",
-        unit: "",
+        amount: {
+          ml: "50",
+        },
       },
       {
         name: "Creme De Cassis",
-        amount: "20 ml",
-        unit: "",
+        amount: {
+          ml: "20",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "15 ml",
-        unit: "",
+        amount: {
+          ml: "15",
+        },
       },
       {
         name: "Ginger Beer",
-        amount: "75 ml",
-        unit: "",
+        amount: {
+          ml: "75",
+        },
       },
       {
         name: "Lime",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Ginger",
-        amount: "1 long strip",
-        unit: "",
+        amount: {
+          custom: "1 long strip",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Rosemary Blue",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "50 ml",
-        unit: "",
+        amount: {
+          ml: "50",
+        },
       },
       {
         name: "Blue Curacao",
-        amount: "15 ml",
-        unit: "",
+        amount: {
+          ml: "15",
+        },
       },
       {
         name: "Tonic Water",
-        amount: "100 ml",
-        unit: "",
+        amount: {
+          ml: "100",
+        },
       },
       {
         name: "Rosemary",
-        amount: "Garnish with",
-        unit: "",
+        amount: {
+          custom: "garnish with",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Empellón Cocina's Fat-washed Mezcal",
     timing: "",
     tastes: ["Smoky"],
+    preparation: "",
     ingredients: [
       {
         name: "Mezcal",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Chocolate Liqueur",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Coffee Liqueur",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "The Last Word",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Green Chartreuse",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Maraschino Liqueur",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Gin",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "French Negroni",
     timing: "",
     tastes: ["Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lillet",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sweet Vermouth",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Orange Peel",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Pegu Club",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Orange Curacao",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Angostura Bitters",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Orange Bitters",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Corpse Reviver",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Lillet Blanc",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Absinthe",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Boulevardier",
     timing: "",
     tastes: ["Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Campari",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sweet Vermouth",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Rye Whiskey",
-        amount: "1 1/4 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/4",
+        },
       },
       {
         name: "Orange Peel",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Greyhound",
     timing: "",
     tastes: ["Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Vodka",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Grapefruit Juice",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Paloma",
     timing: "",
     tastes: ["Sweet", "Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Grape Soda",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Tequila",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bijou",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Orange Bitters",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Green Chartreuse",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Gin",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Sweet Vermouth",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Gimlet",
     timing: "",
     tastes: ["Sour"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "2 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "2 1/2",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Sugar Syrup",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Lime",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Martinez 2",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Sweet Vermouth",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Maraschino Liqueur",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Angostura Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Oatmeal Cookie",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Kahlua",
-        amount: "2 parts",
-        unit: "",
+        amount: {
+          custom: "2 parts",
+        },
       },
       {
         name: "Baileys Irish Cream",
-        amount: "2 parts",
-        unit: "",
+        amount: {
+          custom: "2 parts",
+        },
       },
       {
         name: "Butterscotch Schnapps",
-        amount: "4 parts",
-        unit: "",
+        amount: {
+          custom: "4 parts",
+        },
       },
       {
         name: "Jagermeister",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Goldschlager",
-        amount: "1/2 part",
-        unit: "",
+        amount: {
+          custom: "1/2 part",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Bahama Mama",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Rum",
-        amount: "3 parts",
-        unit: "",
+        amount: {
+          custom: "3 parts",
+        },
       },
       {
         name: "Dark Rum",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Banana Liqueur",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Pineapple Juice",
-        amount: "2 parts",
-        unit: "",
+        amount: {
+          custom: "2 parts",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "2 parts",
-        unit: "",
+        amount: {
+          custom: "2 parts",
+        },
       },
       {
         name: "Sweet and Sour",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Blue Hurricane",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Rum",
-        amount: "4 parts",
-        unit: "",
+        amount: {
+          custom: "4 parts",
+        },
       },
       {
         name: "Dark Rum",
-        amount: "2 parts",
-        unit: "",
+        amount: {
+          custom: "2 parts",
+        },
       },
       {
         name: "Passoa",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Blue Curacao",
-        amount: "1 part",
-        unit: "",
+        amount: {
+          custom: "1 part",
+        },
       },
       {
         name: "Sweet and Sour",
-        amount: "6 parts",
-        unit: "",
+        amount: {
+          custom: "6 parts",
+        },
       },
       {
         name: "Ice",
-        amount: "cubes",
-        unit: "",
+        amount: {
+          custom: "cubes",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "The Laverstoke",
     timing: "",
     tastes: ["Herbal"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "50 ml",
-        unit: "",
+        amount: {
+          ml: "50",
+        },
       },
       {
         name: "Elderflower Cordial",
-        amount: "15 ml",
-        unit: "",
+        amount: {
+          ml: "15",
+        },
       },
       {
         name: "Rosso Vermouth",
-        amount: "15 ml",
-        unit: "",
+        amount: {
+          ml: "15",
+        },
       },
       {
         name: "Tonic Water",
-        amount: "75 ml",
-        unit: "",
+        amount: {
+          ml: "75",
+        },
       },
       {
         name: "Lime",
-        amount: "2 Wedges",
-        unit: "",
+        amount: {
+          custom: "2 wedges",
+        },
       },
       {
         name: "Ginger",
-        amount: "1 Slice",
-        unit: "",
+        amount: {
+          custom: "1 slice",
+        },
       },
       {
         name: "Mint",
-        amount: "1 Large Sprig",
-        unit: "",
+        amount: {
+          custom: "1 large sprig",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Brigadier",
     timing: "",
     tastes: ["Sweet", "Creamy"],
+    preparation: "",
     ingredients: [
       {
         name: "Hot Chocolate",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
       {
         name: "Green Chartreuse",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Cherry Heering",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "The Jimmy Conway",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Irish Whiskey",
-        amount: "50 ml",
-        unit: "",
+        amount: {
+          ml: "50",
+        },
       },
       {
         name: "Amaretto",
-        amount: "50 ml",
-        unit: "",
+        amount: {
+          ml: "50",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Old Pal",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Rye Whiskey",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Campari",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Tipperary",
     timing: "",
     tastes: ["Herbal", "Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Irish Whiskey",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Sweet Vermouth",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Green Chartreuse",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Penicillin",
     timing: "",
     tastes: ["Smoky"],
+    preparation: "",
     ingredients: [
       {
         name: "Blended Scotch",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Honey Syrup",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Ginger Syrup",
-        amount: "2 tsp",
-        unit: "",
+        amount: {
+          custom: "2 tsp",
+        },
       },
       {
         name: "Islay Single Malt Scotch",
-        amount: "1/4 oz",
-        unit: "",
+        amount: {
+          oz: "1/4",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Corn N Oil",
     timing: "",
     tastes: ["Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Lime",
-        amount: "1/2",
-        unit: "",
+        amount: {
+          custom: "1/2",
+        },
       },
       {
         name: "Falernum",
-        amount: "1/3 oz",
-        unit: "",
+        amount: {
+          oz: "1/3",
+        },
       },
       {
         name: "Angostura Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
       {
         name: "Añejo Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Blackstrap Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "A Furlong Too Late",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Ginger Beer",
-        amount: "4 oz",
-        unit: "",
+        amount: {
+          oz: "4",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "A Night In Old Mandalay",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Añejo Rum",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1/2",
+        },
       },
       {
         name: "Ginger Ale",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
       {
         name: "Lemon Peel",
-        amount: "1 twist of",
-        unit: "",
+        amount: {
+          custom: "1 twist of",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "A. J.",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Applejack",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Grapefruit Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Abbey Cocktail",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Gin",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Orange Bitters",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
       {
         name: "Orange",
-        amount: "Juice of 1/4",
-        unit: "",
+        amount: {
+          custom: "juice of 1/4",
+        },
       },
       {
         name: "Cherry",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Abilene",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Dark Rum",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Peach Nectar",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "3 oz",
-        unit: "",
+        amount: {
+          oz: "3",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Acapulco",
     timing: "",
     tastes: ["Sweet", "Fruity"],
+    preparation: "",
     ingredients: [
       {
         name: "Light Rum",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Triple Sec",
-        amount: "1 1/2 tsp",
-        unit: "",
+        amount: {
+          custom: "1 1/2 tsp",
+        },
       },
       {
         name: "Lime Juice",
-        amount: "1 tblsp",
-        unit: "",
+        amount: {
+          custom: "1 tblsp",
+        },
       },
       {
         name: "Sugar",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
       {
         name: "Egg White",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
       {
         name: "Mint",
-        amount: 1,
-        unit: "",
+        amount: {
+          custom: 1,
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Adam",
     timing: "",
     tastes: ["Sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Dark Rum",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Lemon Juice",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Grenadine",
-        amount: "1 tsp",
-        unit: "",
+        amount: {
+          custom: "1 tsp",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Adonis Cocktail",
     timing: "",
     tastes: ["Sweet", "Bitter sweet"],
+    preparation: "",
     ingredients: [
       {
         name: "Sweet Vermouth",
-        amount: "3/4 oz",
-        unit: "",
+        amount: {
+          oz: "3/4",
+        },
       },
       {
         name: "Sherry",
-        amount: "1 1/2 oz dry",
-        unit: "",
+        amount: {
+          custom: "1 1/2 oz dry",
+        },
       },
       {
         name: "Orange Bitters",
-        amount: "1 dash",
-        unit: "",
+        amount: {
+          custom: "1 dash",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Affair",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Strawberry Schnapps",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Orange Juice",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Cranberry Juice",
-        amount: "2 oz",
-        unit: "",
+        amount: {
+          oz: "2",
+        },
       },
       {
         name: "Club Soda",
-        amount: "",
-        unit: "",
+        amount: {
+          custom: "",
+        },
       },
     ],
-    preparation: "",
   },
   {
     name: "Affinity",
     timing: "",
     tastes: ["Boozy"],
+    preparation: "",
     ingredients: [
       {
         name: "Scotch",
-        amount: "1 1/2 oz",
-        unit: "",
+        amount: {
+          oz: "1 1/2",
+        },
       },
       {
         name: "Sweet Vermouth",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Dry Vermouth",
-        amount: "1 oz",
-        unit: "",
+        amount: {
+          oz: "1",
+        },
       },
       {
         name: "Orange Bitters",
-        amount: "2 dashes",
-        unit: "",
+        amount: {
+          custom: "2 dashes",
+        },
       },
     ],
-    preparation: "",
   },
 ];

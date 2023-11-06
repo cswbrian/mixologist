@@ -1,53 +1,36 @@
-import React, { useState, useEffect } from "react";
-import { ingredientsInventory } from "../inventoryStore";
+import React from "react";
+import { useIngredientsInventory } from "src/hooks/useIngredientsInventory";
 
 interface CheckboxListProps {
   ingredients: string[];
 }
 
 const CheckboxList: React.FC<CheckboxListProps> = ({ ingredients }) => {
-  const [selectedIngredients, setSelectedIngredients] = useState<string[]>([]);
-
   // Load the selected ingredients from local storage on component mount
-  useEffect(() => {
-    const savedSelectedIngredients = ingredientsInventory; // localStorage.getItem('selectedIngredients');
-
-    if (savedSelectedIngredients) {
-      setSelectedIngredients(savedSelectedIngredients.get());
-    }
-  }, []);
+  const { ingredientsInventory, updateIngredientsInventory } =
+    useIngredientsInventory();
 
   // Update the selected ingredients and save to local storage
   const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value.toLocaleLowerCase();
 
-    setSelectedIngredients((prevSelectedIngredients) => {
-      const updatedSelectedIngredients = [...prevSelectedIngredients];
+    const updatedSelectedIngredients = [...ingredientsInventory];
 
-      if (event.target.checked) {
-        updatedSelectedIngredients.push(value);
-      } else {
-        const index = updatedSelectedIngredients.indexOf(value);
-        if (index > -1) {
-          updatedSelectedIngredients.splice(index, 1);
-        }
+    if (event.target.checked) {
+      updatedSelectedIngredients.push(value);
+    } else {
+      const index = updatedSelectedIngredients.indexOf(value);
+      if (index > -1) {
+        updatedSelectedIngredients.splice(index, 1);
       }
-
-      // Save the updated selected ingredients to local storage
-      ingredientsInventory.set(updatedSelectedIngredients);
-      // localStorage.setItem(
-      //   'selectedIngredients',
-      //   JSON.stringify(updatedSelectedIngredients)
-      // );
-
-      return updatedSelectedIngredients;
-    });
+    }
+    updateIngredientsInventory(updatedSelectedIngredients);
   };
 
   return (
     <div className="flex flex-wrap gap-2">
       {ingredients.sort().map((ingredient) => {
-        const isChecked = selectedIngredients.includes(
+        const isChecked = ingredientsInventory.includes(
           ingredient.toLocaleLowerCase(),
         );
         return (

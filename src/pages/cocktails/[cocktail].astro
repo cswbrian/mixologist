@@ -1,8 +1,8 @@
 ---
 import { tasteColorMapping } from "src/const";
-import type { Taste } from "type";
 import { cocktails } from "../../const/cocktails";
 import Layout from "../../layouts/Layout.astro";
+import Ingredients from "@components/Ingredients";
 
 export function getStaticPaths() {
   return cocktails.map((cocktail) => {
@@ -31,15 +31,7 @@ const {
    })
   }
   <section class="p-4">
-    <p>Preparation: {preparation}</p>
-    <p>Timing: {timing}</p>
-    <h2 class="text-xl mt-6">Ingredients</h2>
-    <ul>
-      {
-        ingredients.map(({ name, amount, unit }) => {
-          return <li>{`${name} - ${amount} ${unit}`}</li>;
-        })
-      }
-    </ul>
+    <h2 class="text-sm">Ingredients</h2>
+    <Ingredients client:load ingredients={ingredients} />
   </section>
 </Layout>

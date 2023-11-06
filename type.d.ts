@@ -16,14 +16,27 @@ export type Taste =
   | "Smoky"
   | "Unknown";
 
+export type CocktailIngredients = {
+  name: string;
+  amount: {
+    oz?: string;
+    ml?: string;
+    cl?: string;
+    shot?: string;
+    custom?: string;
+  };
+};
+
 export type Cocktail = {
   name: string;
   timing: string;
   tastes: Taste[];
-  ingredients: {
+  ingredients: CocktailIngredients[];
+  garnishes?: {
     name: string;
-    amount: string | number;
-    unit: string;
+    amount: {
+      custom?: string;
+    };
   }[];
   preparation: string;
 };

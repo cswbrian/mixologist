@@ -1,15 +1,15 @@
 import { useState, useCallback, useMemo } from "react";
-import { useStore } from "@nanostores/react";
-import { ingredientsInventory } from "../inventoryStore";
 import { cocktails } from "../const/cocktails";
 import type { Taste } from "type";
 import { tasteColorMapping } from "../const";
 import Clear from "@icon/clear.svg";
+import Ingredients from "./Ingredients";
+import { useIngredientsInventory } from "src/hooks/useIngredientsInventory";
 
 export default function Recipes() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedTastes, setSelectedTastes] = useState<Taste[]>([]);
-  const $ingredientsInventory = useStore(ingredientsInventory);
+  const { ingredientsInventory } = useIngredientsInventory();
 
   const countMatches = useCallback((arr1: string[], arr2: string[]): number => {
     const arr1LowerCase = arr1.map((i) => i.toLocaleLowerCase());
@@ -29,14 +29,13 @@ export default function Recipes() {
     const cocktailIngredents = cocktail.ingredients.map(
       (ingredient) => ingredient.name,
     );
-    const matchedCount = countMatches(
-      $ingredientsInventory,
-      cocktailIngredents,
-    );
+
+    const matchedCount = countMatches(ingredientsInventory, cocktailIngredents);
+
     return {
       ...cocktail,
       matchedCount,
-      score: matchedCount / cocktail.ingredients.length,
+      score: matchedCount / cocktailIngredents.length,
     };
   });
 
@@ -65,6 +64,7 @@ export default function Recipes() {
             type="text"
             className="p-2 flex-grow border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm"
             placeholder="Search cocktails..."
+            value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
           <button
@@ -135,25 +135,7 @@ export default function Recipes() {
                     <span className="font-bold">{name}</span>
                     <span className="">{tastes.join(", ")}</span>
                   </div>
-                  <ul>
-                    {ingredients.map(({ name, amount, unit }, index) => {
-                      return (
-                        <li key={`${name}-${index}`}>
-                          {$ingredientsInventory.includes(
-                            name.toLocaleLowerCase(),
-                          ) ? (
-                            <>
-                              {name} - {amount} {unit}
-                            </>
-                          ) : (
-                            <s>
-                              {name} - {amount} {unit}
-                            </s>
-                          )}
-                        </li>
-                      );
-                    })}
-                  </ul>
+                  <Ingredients ingredients={ingredients} />
                 </div>
               </a>
             );
