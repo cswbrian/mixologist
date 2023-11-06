@@ -16,5 +16,4 @@ export const tasteColorMapping: Record<Taste, string> = {
   Herbal: "bg-lime-300",
   Floral: "bg-rose-400",
   Smoky: "bg-gray-300",
-  Unknown: "bg-slate-100",
 };

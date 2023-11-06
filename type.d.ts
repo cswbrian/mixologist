@@ -13,8 +13,7 @@ export type Taste =
   | "Umami"
   | "Herbal"
   | "Floral"
-  | "Smoky"
-  | "Unknown";
+  | "Smoky";
 
 export type CocktailIngredients = {
   name: string;
