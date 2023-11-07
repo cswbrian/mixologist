@@ -1,0 +1,33 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { ingredients } from '../../const/ingredients';
+
+
+export function getStaticPaths() {
+  return ingredients.map((ingredient) => {
+    return {
+      params: {
+        ingredient: ingredient.name.toLocaleLowerCase().replace(/[\s#\/]/g, "-"),
+      },
+      props: { ingredient },
+    };
+  });
+}
+
+const {
+    ingredient: { name, description, type, isAlcoholic, abv },
+} = Astro.props;
+---
+
+<Layout title={`${name} - Ingredient`}>
+    <section class={`px-4 pb-2`}>
+      <h1 class="text-3xl font-bold tracking-tight">{name}</h1>
+      <span>{type}</span>
+    </section>
+    
+  
+    <section class="p-4">
+      {description}
+    </section>
+  </Layout>
+  

@@ -2705,7 +2705,7 @@ export const ingredients: Ingredient[] = [
     abv: 0,
   },
   {
-    name: "Sugar Syrup",
+    name: "Simple Syrup",
     description: "",
     type: "Syrup",
     isAlcoholic: false,

@@ -121,7 +121,7 @@ export default function Recipes() {
                 key={`${name}-${index}`}
                 href={`/mixologist/cocktails/${name
                   .toLocaleLowerCase()
-                  .replace(/ /g, "-")}`}
+                  .replace(/[\s#\/]/g, "-")}`}
               >
                 <div
                   className={`p-4 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm 

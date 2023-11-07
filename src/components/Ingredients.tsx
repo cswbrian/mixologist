@@ -25,15 +25,21 @@ export default function Ingredients({ ingredients }: IngredientsProps) {
         const { name } = ingredient;
         return (
           <li key={`${name}-${index}`}>
-            {ingredientsInventory.includes(name.toLocaleLowerCase()) ? (
-              <>
-                {name} - {getUnit(ingredient)}
-              </>
-            ) : (
-              <s>
-                {name} - {getUnit(ingredient)}
-              </s>
-            )}
+            <a
+              href={`/mixologist/ingredients/${name
+                .toLocaleLowerCase()
+                .replace(/[\s#\/]/g, "-")}`}
+            >
+              {ingredientsInventory.includes(name.toLocaleLowerCase()) ? (
+                <>
+                  {name} - {getUnit(ingredient)}
+                </>
+              ) : (
+                <s>
+                  {name} - {getUnit(ingredient)}
+                </s>
+              )}
+            </a>
           </li>
         );
       })}

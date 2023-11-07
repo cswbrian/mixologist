@@ -2765,7 +2765,7 @@ export const cocktails: Cocktail[] = [
         },
       },
       {
-        name: "Sugar Syrup",
+        name: "Simple Syrup",
         amount: {
           custom: "1/4 tsp",
         },
@@ -6752,7 +6752,7 @@ export const cocktails: Cocktail[] = [
         },
       },
       {
-        name: "Sugar Syrup",
+        name: "Simple Syrup",
         amount: {
           cl: "2-3",
         },
@@ -6777,7 +6777,7 @@ export const cocktails: Cocktail[] = [
     tastes: ["Sweet"],
     ingredients: [
       {
-        name: "Sugar Syrup",
+        name: "Simple Syrup",
         amount: {
           custom: "2 tsp",
         },
@@ -6820,7 +6820,7 @@ export const cocktails: Cocktail[] = [
         },
       },
       {
-        name: "Sugar Syrup",
+        name: "Simple Syrup",
         amount: {
           custom: "2 tsp",
         },
@@ -15503,7 +15503,7 @@ export const cocktails: Cocktail[] = [
         },
       },
       {
-        name: "Sugar Syrup",
+        name: "Simple Syrup",
         amount: {
           custom: "3 dashes",
         },
@@ -17660,7 +17660,7 @@ export const cocktails: Cocktail[] = [
         },
       },
       {
-        name: "Sugar Syrup",
+        name: "Simple Syrup",
         amount: {
           custom: "1 tsp",
         },
@@ -17826,7 +17826,7 @@ export const cocktails: Cocktail[] = [
         },
       },
       {
-        name: "Sugar Syrup",
+        name: "Simple Syrup",
         amount: {
           custom: "1/2 tsp",
         },
@@ -18779,7 +18779,7 @@ export const cocktails: Cocktail[] = [
         },
       },
       {
-        name: "Sugar Syrup",
+        name: "Simple Syrup",
         amount: {
           cl: "1",
         },
@@ -18841,7 +18841,7 @@ export const cocktails: Cocktail[] = [
         },
       },
       {
-        name: "Sugar Syrup",
+        name: "Simple Syrup",
         amount: {
           custom: "1 dash",
         },
@@ -18903,7 +18903,7 @@ export const cocktails: Cocktail[] = [
         },
       },
       {
-        name: "Sugar Syrup",
+        name: "Simple Syrup",
         amount: {
           cl: "1",
         },
@@ -19012,7 +19012,7 @@ export const cocktails: Cocktail[] = [
         },
       },
       {
-        name: "Sugar Syrup",
+        name: "Simple Syrup",
         amount: {
           custom: "1 dash",
         },
@@ -19467,7 +19467,7 @@ export const cocktails: Cocktail[] = [
         },
       },
       {
-        name: "Sugar Syrup",
+        name: "Simple Syrup",
         amount: {
           shot: "1/4",
         },
@@ -19590,7 +19590,7 @@ export const cocktails: Cocktail[] = [
         },
       },
       {
-        name: "Sugar Syrup",
+        name: "Simple Syrup",
         amount: {
           ml: "10",
         },
@@ -20084,7 +20084,7 @@ export const cocktails: Cocktail[] = [
         },
       },
       {
-        name: "Sugar Syrup",
+        name: "Simple Syrup",
         amount: {
           oz: "1/2",
         },
