@@ -27,11 +27,11 @@ export default function Ingredients({ ingredients }: IngredientsProps) {
           <li key={`${name}-${index}`}>
             {ingredientsInventory.includes(name.toLocaleLowerCase()) ? (
               <>
-                {name} {getUnit(ingredient)}
+                {name} - {getUnit(ingredient)}
               </>
             ) : (
               <s>
-                {name} {getUnit(ingredient)}
+                {name} - {getUnit(ingredient)}
               </s>
             )}
           </li>

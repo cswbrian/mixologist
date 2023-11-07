@@ -16,13 +16,13 @@ export function getStaticPaths() {
 }
 
 const {
-  cocktail: { name, timing, tastes, ingredients, preparation },
+  cocktail: { name, timing, tastes, ingredients, catagory, iba, alcoholic, glass, instructions },
 } = Astro.props;
 ---
 
 <Layout title={`${name} - Cocktail`}>
   <section class={`-mt-16 pt-24 px-4 pb-2 ${tasteColorMapping[tastes[0]]}`}>
-    <h1 class="text-3xl font-bold">{name}</h1>
+    <h1 class="text-3xl font-bold tracking-tight">{name}</h1>
     <span>{tastes.map((taste) => taste).join(", ")}</span>
   </section>
   {
@@ -30,8 +30,43 @@ const {
     return <div class={`p-1 ${tasteColorMapping[taste]}`}></div>
    })
   }
+  <section class="p-4 grid grid-cols-3 gap-4">
+    {
+      [
+        {
+          title: 'Catagory',
+          value: catagory
+        },
+        {
+          title: 'IBA',
+          value: iba || 'None'
+        },
+        {
+          title: 'Alcoholic',
+          value: alcoholic
+        },
+        {
+          title: 'Glass',
+          value: glass
+        }
+      ].map(({ title, value }) => {
+        return (
+        <div>
+          <h2 class="text-sm font-semibold">{title}</h2>
+          <span>{value}</span>
+        </div>
+        )
+      })
+    }
+  </section>
+  
   <section class="p-4">
-    <h2 class="text-sm">Ingredients</h2>
+    <h2 class="text-sm font-semibold">Ingredients</h2>
     <Ingredients client:load ingredients={ingredients} />
+  </section>
+
+  <section class="p-4">
+    <h2 class="text-sm font-semibold">Instructions</h2>
+    {instructions}
   </section>
 </Layout>

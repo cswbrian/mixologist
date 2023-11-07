@@ -37,7 +37,11 @@ export type Cocktail = {
       custom?: string;
     };
   }[];
-  preparation: string;
+  catagory: string;
+  iba: string | null;
+  alcoholic: string;
+  glass: string;
+  instructions: string;
 };
 
 export type Ingredient = {
