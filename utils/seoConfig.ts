@@ -5,7 +5,7 @@ import type { ManifestOptions } from "vite-plugin-pwa";
  * Defines the default SEO configuration for the website.
  */
 export const seoConfig = {
-  siteURL: "https://cswbrian.github.com",
+  siteURL: "https://cswbrian.github.io",
   base: "/mixologist",
   description:
     "Discover the Perfect Mix: Explore Cocktail Ingredients and Recipes.",
