@@ -1,51 +1,15 @@
-import { useState, useCallback, useMemo } from "react";
+import { useState } from "react";
 import { cocktails } from "../const/cocktails";
 import type { Taste } from "type";
 import { tasteColorMapping } from "../const";
 import Clear from "@icon/clear.svg";
-import Ingredients from "./Ingredients";
-import { useIngredientsInventory } from "src/hooks/useIngredientsInventory";
+import CocktailCardList from "./CocktailCardList";
 
 export default function Recipes() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedTastes, setSelectedTastes] = useState<Taste[]>([]);
-  const { ingredientsInventory } = useIngredientsInventory();
 
-  const countMatches = useCallback((arr1: string[], arr2: string[]): number => {
-    const arr1LowerCase = arr1.map((i) => i.toLocaleLowerCase());
-    const arr2LowerCase = arr2.map((i) => i.toLocaleLowerCase());
-    let count = 0;
-
-    for (const element of arr1LowerCase) {
-      if (arr2LowerCase.includes(element)) {
-        count++;
-      }
-    }
-
-    return count;
-  }, []);
-
-  const matchedResult = cocktails.map((cocktail) => {
-    const cocktailIngredents = cocktail.ingredients.map(
-      (ingredient) => ingredient.name,
-    );
-
-    const matchedCount = countMatches(ingredientsInventory, cocktailIngredents);
-
-    return {
-      ...cocktail,
-      matchedCount,
-      score: matchedCount / cocktailIngredents.length,
-    };
-  });
-
-  const sortedResult = useMemo(() => {
-    return matchedResult.sort((a, b) => {
-      return b.score - a.score;
-    });
-  }, [matchedResult]);
-
-  const filteredResult = sortedResult
+  const filteredResult = cocktails
     .filter((item) => {
       if (selectedTastes.length) {
         return item.tastes.some((taste) => selectedTastes.includes(taste));
@@ -97,7 +61,7 @@ export default function Recipes() {
                         ),
                       );
                     } else {
-                      setSelectedTastes([...selectedTastes, taste]);
+                      setSelectedTastes([...selectedTastes, taste as Taste]);
                     }
                   }}
                 />
@@ -107,40 +71,13 @@ export default function Recipes() {
                   }`}
                 >
                   {taste}
-                  {/* ({tasteCount[taste] || 0}) */}
                 </span>
               </label>
             );
           })}
         </div>
 
-        <ul className="flex flex-col gap-6">
-          {filteredResult.map(({ name, tastes, ingredients, score }, index) => {
-            return (
-              <a
-                key={`${name}-${index}`}
-                href={`/mixologist/cocktails/${name
-                  .toLocaleLowerCase()
-                  .replace(/[\s#\/]/g, "-")}`}
-              >
-                <div
-                  className={`p-4 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm 
-                            ${
-                              tasteColorMapping[
-                                tastes.length && (tastes[0] as Taste)
-                              ]
-                            } ${score < 1 ? `opacity-60` : ``}`}
-                >
-                  <div className="flex justify-between">
-                    <span className="font-bold">{name}</span>
-                    <span className="">{tastes.join(", ")}</span>
-                  </div>
-                  <Ingredients ingredients={ingredients} />
-                </div>
-              </a>
-            );
-          })}
-        </ul>
+        <CocktailCardList cocktails={filteredResult} />
       </div>
     </div>
   );

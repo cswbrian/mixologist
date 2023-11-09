@@ -1770,13 +1770,6 @@ export const ingredients: Ingredient[] = [
     abv: 0,
   },
   {
-    name: "Lime Juice",
-    description: "",
-    type: "Juice",
-    isAlcoholic: false,
-    abv: 0,
-  },
-  {
     name: "Lime Liqueur",
     description: "",
     type: "Liqueur",

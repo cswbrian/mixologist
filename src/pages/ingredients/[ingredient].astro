@@ -1,33 +1,53 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { ingredients } from '../../const/ingredients';
-
+import { ingredients } from "src/const/ingredients";
+import { cocktails } from "src/const/cocktails";
+import CocktailCardList from "@components/CocktailCardList";
+import ToggleInventory from "@components/ToggleInventory";
 
 export function getStaticPaths() {
   return ingredients.map((ingredient) => {
+    const filteredCocktails = cocktails.filter((cocktail) => {
+      const currentIngredientName = ingredient.name;
+      return cocktail.ingredients.some(
+        (ingredient) =>
+          ingredient.name.toLocaleLowerCase() ===
+          currentIngredientName.toLocaleLowerCase(),
+      );
+    });
+
     return {
       params: {
-        ingredient: ingredient.name.toLocaleLowerCase().replace(/[\s#\/]/g, "-"),
+        ingredient: ingredient.name
+          .toLocaleLowerCase()
+          .replace(/[\s#\/]/g, "-"),
       },
-      props: { ingredient },
+      props: { ingredient, filteredCocktails },
     };
   });
 }
 
 const {
-    ingredient: { name, description, type, isAlcoholic, abv },
+  ingredient: { name, description, type, isAlcoholic, abv },
+  filteredCocktails,
 } = Astro.props;
 ---
 
 <Layout title={`${name} - Ingredient`}>
-    <section class={`px-4 pb-2`}>
-      <h1 class="text-3xl font-bold tracking-tight">{name}</h1>
-      <span>{type}</span>
-    </section>
-    
+  <section class={`px-4 pb-2`}>
+    <h1 class="text-3xl font-bold tracking-tight">{name}</h1>
+    <span>{type}</span>
+  </section>
+
   
-    <section class="p-4">
-      {description}
-    </section>
-  </Layout>
-  
+  <section class="px-4">
+    <ToggleInventory client:load ingredient={name} />
+  </section>
+
+  {description && <section class="p-4">{description}</section>}
+
+  <section class="p-4">
+    <h2 class="text-sm font-bold mb-2">Cocktails featuring {name}</h2>
+    <CocktailCardList client:load cocktails={filteredCocktails} />
+  </section>
+</Layout>

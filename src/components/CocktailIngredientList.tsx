@@ -17,9 +17,7 @@ function getUnit(cocktailIngredient: CocktailIngredients) {
   return cocktailIngredient.amount["custom"];
 }
 
-export default function CocktailIngredientList({
-  ingredients,
-}: IngredientsProps) {
+export default function Ingredients({ ingredients }: IngredientsProps) {
   const { ingredientsInventory } = useIngredientsInventory();
   return (
     <ul>

@@ -2,7 +2,7 @@
 import { tasteColorMapping } from "src/const";
 import { cocktails } from "../../const/cocktails";
 import Layout from "../../layouts/Layout.astro";
-import Ingredients from "@components/Ingredients";
+import CocktailIngredientList from "@components/CocktailIngredientList";
 
 export function getStaticPaths() {
   return cocktails.map((cocktail) => {
@@ -62,7 +62,7 @@ const {
   
   <section class="p-4">
     <h2 class="text-sm font-semibold">Ingredients</h2>
-    <Ingredients client:load ingredients={ingredients} />
+    <CocktailIngredientList client:load ingredients={ingredients} />
   </section>
 
   <section class="p-4">

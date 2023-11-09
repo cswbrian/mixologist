@@ -30,10 +30,7 @@ export default function Inventory({ groupedIngredients }) {
       {filteredIngredients.map((groupedIngredient) => (
         <div key={groupedIngredient.name}>
           <h2 className="font-bold mb-2">{groupedIngredient.name}</h2>
-          <IngredientSelector
-            client:load
-            ingredients={groupedIngredient.ingredients}
-          />
+          <IngredientSelector ingredients={groupedIngredient.ingredients} />
         </div>
       ))}
     </div>
