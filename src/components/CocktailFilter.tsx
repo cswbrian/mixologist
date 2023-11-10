@@ -4,6 +4,7 @@ import type { Taste } from "type";
 import { tasteColorMapping } from "../const";
 // import Clear from "@icon/clear.svg";
 import CocktailCardList from "./CocktailCardList";
+import SearchBox from "./SearchBox";
 
 export default function Recipes() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -24,12 +25,12 @@ export default function Recipes() {
     <div className="container mx-auto px-4 mb-16">
       <div className="flex flex-col gap-4">
         <div className="flex justify-between gap-2">
-          <input
-            type="text"
-            className="p-2 flex-grow border border-b-4 border-r-4 border-dynamic rounded-lg shadow-xs hover:shadow-sm bg-dynamic"
+          <SearchBox
             placeholder="Search cocktails..."
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              setSearchQuery(e.target.value)
+            }
           />
           {/* <button
             type="button"
