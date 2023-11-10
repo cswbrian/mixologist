@@ -1,3 +1,4 @@
+import { convertToValidPathname } from "src/helper";
 import { useIngredientsInventory } from "src/hooks/useIngredientsInventory";
 import type { CocktailIngredients } from "type";
 
@@ -25,11 +26,7 @@ export default function Ingredients({ ingredients }: IngredientsProps) {
         const { name } = ingredient;
         return (
           <li key={`${name}-${index}`}>
-            <a
-              href={`/mixologist/ingredients/${name
-                .toLocaleLowerCase()
-                .replace(/[\s#\/]/g, "-")}`}
-            >
+            <a href={`/mixologist/ingredients/${convertToValidPathname(name)}`}>
               {ingredientsInventory.includes(name.toLocaleLowerCase()) ? (
                 <>
                   {name} - {getUnit(ingredient)}

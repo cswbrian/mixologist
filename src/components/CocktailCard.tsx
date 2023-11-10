@@ -1,6 +1,7 @@
 import type { Taste, CocktailIngredients } from "type";
 import { tasteColorMapping } from "../const";
 import CocktailIngredientList from "@components/CocktailIngredientList";
+import { convertToValidPathname } from "src/helper";
 
 interface Props {
   name: string;
@@ -18,11 +19,7 @@ export default function CocktailCard({
 }: Props): JSX.Element {
   return (
     <li>
-      <a
-        href={`/mixologist/cocktails/${name
-          .toLocaleLowerCase()
-          .replace(/[\s#\/]/g, "-")}`}
-      >
+      <a href={`/mixologist/cocktails/${convertToValidPathname(name)}`}>
         <div
           className={`p-4 border border-b-4 border-r-4 border-dynamic rounded-lg shadow-xs hover:shadow-sm text-black 
                             ${tasteColorMapping[tastes.length && tastes[0]]} ${

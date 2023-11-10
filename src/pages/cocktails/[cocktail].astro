@@ -3,12 +3,13 @@ import { tasteColorMapping } from "src/const";
 import { cocktails } from "../../const/cocktails";
 import Layout from "../../layouts/Layout.astro";
 import CocktailIngredientList from "@components/CocktailIngredientList";
+import { convertToValidPathname } from "src/helper";
 
 export function getStaticPaths() {
   return cocktails.map((cocktail) => {
     return {
       params: {
-        cocktail: cocktail.name.toLocaleLowerCase().replace(/[\s#\/]/g, "-"),
+        cocktail: convertToValidPathname(cocktail.name),
       },
       props: { cocktail },
     };

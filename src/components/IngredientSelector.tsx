@@ -1,4 +1,5 @@
 import React from "react";
+import { convertToValidPathname } from "src/helper";
 import { useIngredientsInventory } from "src/hooks/useIngredientsInventory";
 
 interface CheckboxListProps {
@@ -34,22 +35,30 @@ const CheckboxList: React.FC<CheckboxListProps> = ({ ingredients }) => {
           ingredient.toLocaleLowerCase(),
         );
         return (
-          <label key={ingredient}>
+          <div
+            key={ingredient}
+            className={`flex gap-x-2 justify-center items-center p-2 text-xsfont-bold border border-b-4 border-r-4 border-dynamic rounded-lg shadow-xs hover:shadow-sm  ${
+              isChecked ? `bg-yellow-400 text-black` : `bg-dynamic`
+            }`}
+          >
+            <label>
+              <a
+                href={`/mixologist/ingredients/${convertToValidPathname(
+                  ingredient,
+                )}`}
+              >
+                {ingredient}
+              </a>
+            </label>
+
             <input
-              className="hidden"
+              className="w-4 h-4 accent-pink-500"
               type="checkbox"
               value={ingredient}
               checked={isChecked}
               onChange={handleCheckboxChange}
             />
-            <span
-              className={`p-2 text-xs	font-bold border border-b-4 border-r-4 border-dynamic rounded-lg shadow-xs hover:shadow-sm flex justify-center items-center ${
-                isChecked ? `bg-yellow-400 text-black` : `bg-dynamic`
-              }`}
-            >
-              {ingredient}
-            </span>
-          </label>
+          </div>
         );
       })}
     </div>
