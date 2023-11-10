@@ -22,8 +22,8 @@ const {
 
 <Layout title={`${name} - Cocktail`}>
   <section class={`-mt-16 pt-24 px-4 pb-2 ${tasteColorMapping[tastes[0]]}`}>
-    <h1 class="text-3xl font-bold tracking-tight">{name}</h1>
-    <span>{tastes.map((taste) => taste).join(", ")}</span>
+    <h1 class="text-3xl font-bold tracking-tight text-black">{name}</h1>
+    <span class="text-black">{tastes.map((taste) => taste).join(", ")}</span>
   </section>
   {
    tastes.slice(1).map((taste) => {

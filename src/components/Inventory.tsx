@@ -23,7 +23,7 @@ export default function Inventory({ groupedIngredients }) {
     <div className="flex flex-col gap-6">
       <input
         type="text"
-        className="p-2 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm"
+        className="p-2 border border-b-4 border-r-4 border-dynamic rounded-lg shadow-xs hover:shadow-sm"
         placeholder="Search ingredients..."
         onChange={(e) => setSearchQuery(e.target.value)}
       />

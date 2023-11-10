@@ -171,7 +171,7 @@ const {
 		<script is:inline src="/mixologist/registerSW.js"></script>
 		<link rel="manifest" href="/mixologist/manifest.webmanifest" />
 	</head>
-	<body class="bg-[#f2f5f2]">
+	<body>
 		<Header />
 		<main>
 			<slot />
@@ -184,7 +184,67 @@ const {
 		</script>
 	</body>
 </html>
+<script is:inline>
+	const theme = (() => {
+	  if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+		return localStorage.getItem("theme");
+	  }
+	  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+		return "dark";
+	  }
+	  return "light";
+	})();
+  
+	if (theme === "light") {
+	  document.documentElement.classList.remove("dark");
+	} else {
+	  document.documentElement.classList.add("dark");
+	}
+	window.localStorage.setItem("theme", theme);
+  </script>
 <style is:global>
+
+	:root {
+		--body-light: #f2f5f2;
+		--body-dark: #222921;
+		--text-primary-light: black;
+		--text-primary-dark: white;
+		--color-card-chi: #30392d;
+	}
+	html {
+		background-color: var(--body-light);
+		color: var(--text-primary-light);
+	}
+
+	.bg-dynamic {
+		background-color: var(--body-light);
+	}
+
+	.border-dynamic {
+		border-color: var(--text-primary-light);
+	}
+
+	.dark {
+		background-color: var(--body-dark);
+		color: var(--text-primary-dark);
+
+		& .bg-dynamic {
+			background-color: var(--body-dark);
+			stroke: var(--body-dark);
+
+			& .svg {
+				fill: var(--body-dark);
+			}
+		}
+
+		& .border-dynamic {
+			border-color: var(--body-light);
+			stroke: var(--body-light);
+		}
+	}
+
+
+
 	body {
 		font-family: 'Inter Variable', sans-serif;
 		margin-bottom: 60px;

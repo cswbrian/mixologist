@@ -24,7 +24,7 @@ export default function CocktailCard({
           .replace(/[\s#\/]/g, "-")}`}
       >
         <div
-          className={`p-4 border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm 
+          className={`p-4 border border-b-4 border-r-4 border-dynamic rounded-lg shadow-xs hover:shadow-sm text-black 
                             ${tasteColorMapping[tastes.length && tastes[0]]} ${
                               score && score < 1 ? `opacity-60` : ``
                             }`}

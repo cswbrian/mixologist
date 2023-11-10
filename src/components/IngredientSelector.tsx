@@ -43,8 +43,8 @@ const CheckboxList: React.FC<CheckboxListProps> = ({ ingredients }) => {
               onChange={handleCheckboxChange}
             />
             <span
-              className={`p-2 text-xs	font-bold border border-b-4 border-r-4 border-black rounded-lg shadow-xs hover:shadow-sm flex justify-center items-center ${
-                isChecked ? `bg-yellow-400` : `bg-white`
+              className={`p-2 text-xs	font-bold border border-b-4 border-r-4 border-dynamic rounded-lg shadow-xs hover:shadow-sm flex justify-center items-center ${
+                isChecked ? `bg-yellow-400 text-black` : `bg-dynamic`
               }`}
             >
               {ingredient}
