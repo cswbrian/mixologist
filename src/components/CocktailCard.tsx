@@ -21,7 +21,7 @@ export default function CocktailCard({
     <li>
       <a href={`/mixologist/cocktails/${convertToValidPathname(name)}`}>
         <div
-          className={`p-4 border border-b-4 border-r-4 border-dynamic rounded-lg shadow-xs hover:shadow-sm text-black 
+          className={`block p-4 border border-b-4 border-r-4 border-dynamic rounded-lg shadow-xs hover:shadow-sm text-black 
                             ${tasteColorMapping[tastes.length && tastes[0]]} ${
                               score && score < 1 ? `opacity-60` : ``
                             }`}

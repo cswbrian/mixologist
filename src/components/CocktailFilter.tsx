@@ -79,8 +79,9 @@ export default function Recipes() {
             );
           })}
         </div>
-
-        <CocktailCardList cocktails={filteredResult} />
+        <div className="h-[500px]">
+          <CocktailCardList cocktails={filteredResult} />
+        </div>
       </div>
     </div>
   );

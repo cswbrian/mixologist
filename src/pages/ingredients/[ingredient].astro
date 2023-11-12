@@ -38,7 +38,6 @@ const {
     <span>{type}</span>
   </section>
 
-  
   <section class="px-4">
     <ToggleInventory client:load ingredient={name} />
   </section>
@@ -47,6 +46,6 @@ const {
 
   <section class="p-4">
     <h2 class="text-sm font-bold mb-2">Cocktails featuring {name}</h2>
-    <CocktailCardList client:load cocktails={filteredCocktails} />
+      <CocktailCardList client:load cocktails={filteredCocktails} />
   </section>
 </Layout>
