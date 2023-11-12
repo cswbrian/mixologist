@@ -6,7 +6,7 @@ import { tasteColorMapping } from "../const";
 import CocktailCardList from "./CocktailCardList";
 import SearchBox from "./SearchBox";
 
-export default function Recipes() {
+export default function CocktailFilter() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedTastes, setSelectedTastes] = useState<Taste[]>([]);
 
