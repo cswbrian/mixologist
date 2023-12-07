@@ -2,7 +2,7 @@
 import { seoConfig } from "@utils/seoConfig";
 import ThemeIcon from './ThemeIcon.astro';
 ---
-<header class={`p-4 flex justify-between align-middle ${Astro.url.pathname.includes('/cocktails') && 'text-black'}`}>
+<header class={`p-4 flex justify-between align-middle text-2xl ${Astro.url.pathname.includes('/cocktails') && 'text-black'}`}>
    <a class="flex-grow font-bold" href="/mixologist">{seoConfig.siteName} 🍸</a>
    <!-- <a href="/mixologist/about/">about</a> -->
    <ThemeIcon />

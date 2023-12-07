@@ -22,7 +22,8 @@
     // Define your custom ESLint rules here, if needed.
     "react/react-in-jsx-scope": 0,
     "react/prop-types": 0,
-    "no-useless-escape": 0
+    "no-useless-escape": 0,
+    "@typescript-eslint/no-explicit-any": 0
   },
   "settings": {
     "react": {

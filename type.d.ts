@@ -37,7 +37,7 @@ export type Cocktail = {
       custom?: string;
     };
   }[];
-  catagory: string;
+  category: string;
   iba: string | null;
   alcoholic: string;
   glass: string;

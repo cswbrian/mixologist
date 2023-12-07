@@ -41,7 +41,7 @@ export default function CocktailCardList({ cocktails }: Props): JSX.Element {
   });
 
   return (
-    <div className="h-[500px]">
+    <div className="h-[800px]">
       <CocktailVirtualizedList cocktails={sortedResult} />
     </div>
   );
