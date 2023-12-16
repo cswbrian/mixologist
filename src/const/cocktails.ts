@@ -98,55 +98,6 @@ export const cocktails: Cocktail[] = [
       "Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved.\r\nFill the glass with ice cubes and add whiskey.\r\n\r\nGarnish with orange twist, and a cocktail cherry.",
   },
   {
-    name: "Long Island Tea",
-    timing: "",
-    tastes: ["Sour", "Sweet"],
-    ingredients: [
-      {
-        name: "Vodka",
-        amount: {
-          oz: "1/2",
-        },
-      },
-      {
-        name: "Light Rum",
-        amount: {
-          oz: "1/2",
-        },
-      },
-      {
-        name: "Gin",
-        amount: {
-          oz: "1/2",
-        },
-      },
-      {
-        name: "Tequila",
-        amount: {
-          oz: "1/2",
-        },
-      },
-      {
-        name: "Lemon",
-        amount: {
-          custom: "juice of 1/2",
-        },
-      },
-      {
-        name: "Cola",
-        amount: {
-          custom: "1 splash",
-        },
-      },
-    ],
-    category: "Ordinary Drink",
-    iba: null,
-    alcoholic: "Alcoholic",
-    glass: "Highball glass",
-    instructions:
-      "Combine all ingredients (except cola) and pour over ice in a highball glass. Add the splash of cola for color. Decorate with a slice of lemon and serve.",
-  },
-  {
     name: "Negroni",
     timing: "",
     tastes: ["Bitter sweet", "Herbal"],
@@ -14091,73 +14042,6 @@ export const cocktails: Cocktail[] = [
     glass: "Shot glass",
     instructions:
       "Add both ingredients to shot glass, shoot, and get drunk quick",
-  },
-  {
-    name: "3-mile Long Island Iced Tea",
-    timing: "",
-    tastes: ["Boozy"],
-    ingredients: [
-      {
-        name: "Gin",
-        amount: {
-          oz: "1/2",
-        },
-      },
-      {
-        name: "Light Rum",
-        amount: {
-          oz: "1/2",
-        },
-      },
-      {
-        name: "Tequila",
-        amount: {
-          oz: "1/2",
-        },
-      },
-      {
-        name: "Triple Sec",
-        amount: {
-          oz: "1/2",
-        },
-      },
-      {
-        name: "Vodka",
-        amount: {
-          oz: "1/2",
-        },
-      },
-      {
-        name: "Cola",
-        amount: {
-          oz: "1/2",
-        },
-      },
-      {
-        name: "Sweet and Sour",
-        amount: {
-          custom: "1-2 dash",
-        },
-      },
-      {
-        name: "Bitters",
-        amount: {
-          custom: "1 wedge",
-        },
-      },
-      {
-        name: "Lemon",
-        amount: {
-          custom: "garnish with",
-        },
-      },
-    ],
-    category: "Ordinary Drink",
-    iba: null,
-    alcoholic: "Alcoholic",
-    glass: "Collins Glass",
-    instructions:
-      "Fill 14oz glass with ice and alcohol. Fill 2/3 glass with cola and remainder with sweet & sour. Top with dash of bitters and lemon wedge.",
   },
   {
     name: "Zorro",
