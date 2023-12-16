@@ -4,15 +4,17 @@ import SearchBox from "@components/SearchBox";
 import CocktailCardList from "./CocktailCardList";
 import CocktailSearchFilter from "./CocktailSearchFilter";
 
+const DEFAULT_FILTER = {
+  tastes: [],
+  alcoholic: [],
+  categories: [],
+  ingredients: [],
+  glass: [],
+};
+
 export default function CocktailList() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedFilter, setSelectedFilter] = useState({
-    tastes: [],
-    alcoholic: [],
-    categories: [],
-    ingredients: [],
-    glass: [],
-  });
+  const [selectedFilter, setSelectedFilter] = useState(DEFAULT_FILTER);
 
   const filteredResult = cocktails
     .filter((item) => {
@@ -54,6 +56,7 @@ export default function CocktailList() {
             }
           />
           <CocktailSearchFilter
+            defaultFilter={DEFAULT_FILTER}
             selectedFilter={selectedFilter}
             onFilterApply={(value) => {
               setSelectedFilter(value);

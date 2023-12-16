@@ -7,12 +7,21 @@ import { groupByType } from "src/helper/ingredient";
 import Filter from "@components/icons/Filter";
 import Close from "@components/icons/Close";
 
+interface FilterProps {
+  tastes: string[];
+  alcoholic: string[];
+  categories: string[];
+  ingredients: string[];
+  glass: string[];
+}
 interface Props {
-  selectedFilter: any;
-  onFilterApply: any;
+  defaultFilter: FilterProps;
+  selectedFilter: FilterProps;
+  onFilterApply: (filter: FilterProps) => void;
 }
 
 export default function CocktailSearchFilter({
+  defaultFilter,
   selectedFilter,
   onFilterApply,
 }: Props): JSX.Element {
@@ -69,7 +78,7 @@ export default function CocktailSearchFilter({
               className="p-4 flex-grow text-center border-r-2 border-dynamic"
               type="button"
               onClick={() => {
-                setTemporarilySelectedFilter(() => selectedFilter);
+                setTemporarilySelectedFilter(() => defaultFilter);
               }}
             >
               Clear
@@ -104,7 +113,7 @@ export default function CocktailSearchFilter({
                           let newTastes = [];
                           if (isChecked) {
                             newTastes = temporarilySelectedFilter.tastes.filter(
-                              (selectedTaste: Taste) =>
+                              (selectedTaste) =>
                                 selectedTaste !== lowerCaseTaste,
                             );
                           } else {
