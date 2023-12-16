@@ -45,7 +45,7 @@ export default function CocktailList() {
     );
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="px-4">
       <div className="flex flex-col gap-4">
         <div className="flex gap-2">
           <SearchBox
