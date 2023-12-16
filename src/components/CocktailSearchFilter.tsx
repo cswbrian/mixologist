@@ -55,13 +55,13 @@ export default function CocktailSearchFilter({
   return (
     <>
       {isSearchFilterExpanded ? (
-        <div className="absolute bg-dynamic w-full top-16 left-0 z-10 border border-t-4 border-r-4 border-dynamic rounded-lg shadow-xs hover:shadow-sm">
+        <div className="absolute bg-dynamic w-full top-16 left-0 z-10 border border-t-4 border-x-4 border-dynamic rounded-lg shadow-xs hover:shadow-sm">
           <div className="p-4 flex justify-between">
             <h1 className="font-bold">Advanced Filter</h1>
             <div
               onClick={() => setIsSearchFilterExpanded(!isSearchFilterExpanded)}
             >
-              <Close className="w-6 h-6" />
+              <Close className="w-6 h-6 svg-dynamic" />
             </div>
           </div>
           <div className="px-4">
@@ -194,7 +194,7 @@ export default function CocktailSearchFilter({
               <h2 className="text-md font-bold mb-2">Ingredients</h2>
               {filteredIngredients.map((groupedIngredient) => (
                 <div key={groupedIngredient.name}>
-                  <h3 className="font-bold mb-2">{groupedIngredient.name}</h3>
+                  <h3 className="my-2">{groupedIngredient.name}</h3>
                   <div className="flex flex-wrap gap-2">
                     {groupedIngredient.ingredients.map((ingredient) => {
                       const lowerCaseIngredientName =
@@ -256,7 +256,7 @@ export default function CocktailSearchFilter({
           type="button"
           onClick={() => setIsSearchFilterExpanded(true)}
         >
-          <Filter className="w-6 h-6 fill-dynamic" />
+          <Filter className="w-6 h-6 svg-dynamic" />
           {filterCriteriaCount > 0 && (
             <span className="absolute flex justify-center items-center -top-3 -right-3 bg-black text-white rounded-full text-[.625rem] min-w-[1.5rem] min-h-[1.5rem]">
               {filterCriteriaCount}

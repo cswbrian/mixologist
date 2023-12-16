@@ -34,7 +34,7 @@ export default function Filter({ className }: SvgProps) {
             x2="16"
             y2="5"
             id="Path"
-            stroke="#0C0310"
+            className={className}
             strokeWidth="2"
             strokeLinecap="round"
           ></line>
@@ -44,7 +44,7 @@ export default function Filter({ className }: SvgProps) {
             x2="10"
             y2="12"
             id="Path"
-            stroke="#0C0310"
+            className={className}
             strokeWidth="2"
             strokeLinecap="round"
           ></line>
@@ -54,7 +54,7 @@ export default function Filter({ className }: SvgProps) {
             x2="20"
             y2="12"
             id="Path"
-            stroke="#0C0310"
+            className={className}
             strokeWidth="2"
             strokeLinecap="round"
           ></line>
@@ -64,13 +64,13 @@ export default function Filter({ className }: SvgProps) {
             x2="20"
             y2="19"
             id="Path"
-            stroke="#0C0310"
+            className={className}
             strokeWidth="2"
             strokeLinecap="round"
           ></line>
           <circle
             id="Oval"
-            stroke="#0C0310"
+            className={className}
             strokeWidth="2"
             strokeLinecap="round"
             cx="18"
@@ -79,7 +79,7 @@ export default function Filter({ className }: SvgProps) {
           ></circle>
           <circle
             id="Oval"
-            stroke="#0C0310"
+            className={className}
             strokeWidth="2"
             strokeLinecap="round"
             cx="12"
@@ -88,7 +88,7 @@ export default function Filter({ className }: SvgProps) {
           ></circle>
           <circle
             id="Oval"
-            stroke="#0C0310"
+            className={className}
             strokeWidth="2"
             strokeLinecap="round"
             cx="6"

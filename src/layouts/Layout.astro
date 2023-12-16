@@ -224,6 +224,10 @@ const {
 		border-color: var(--text-primary-light);
 	}
 
+	.svg-dynamic {
+		stroke: var(--text-primary-light);
+	}
+
 	.dark {
 		background-color: var(--body-dark);
 		color: var(--text-primary-dark);
@@ -233,7 +237,11 @@ const {
 		}
 
 		& .border-dynamic {
-			border-color: var(--body-light);
+			border-color: var(--text-primary-dark);
+		}
+
+		& .svg-dynamic {
+			stroke: var(--text-primary-dark);
 		}
 	}
 
